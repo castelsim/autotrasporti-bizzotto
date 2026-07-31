@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Variante E — Quadro comandi · Autotrasporti Bizzotto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Archivo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0A0F14; --panel:#111922; --line:#1e2a36; --amber:#F4B223;
+  --steel:#8b97a3; --white:#E8EDF2; --mono:"IBM Plex Mono",monospace; --sans:"Archivo",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--white);font:400 15.5px/1.65 var(--mono);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px}
+.wrap{width:min(1300px,94vw);margin-inline:auto}
+.lab{font:500 10px/1 var(--mono);letter-spacing:.26em;text-transform:uppercase;color:var(--steel)}
+
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(10,15,20,.92);backdrop-filter:blur(8px);z-index:70}
+.head-in{display:flex;align-items:center;gap:28px;height:66px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+.brand img{width:34px;height:34px}
+.brand b{font:700 16px/1 var(--mono);letter-spacing:.16em}
+nav{display:flex;gap:24px;margin-left:auto;font:500 11.5px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+nav a{text-decoration:none;color:var(--steel)}
+nav a:hover{color:var(--amber)}
+.pill{border:1px solid var(--amber);color:var(--amber);padding:11px 15px;font:600 12px/1 var(--mono);letter-spacing:.12em;text-decoration:none}
+.pill:hover{background:var(--amber);color:var(--bg)}
+@media(max-width:940px){nav{display:none}}
+
+/* stato in alto */
+.status{border-bottom:1px solid var(--line);background:var(--panel)}
+.status .wrap{display:flex;gap:26px;padding:9px 0;font:500 10.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--steel);flex-wrap:wrap}
+.status b{color:var(--amber);font-weight:600}
+.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--amber);margin-right:7px;animation:blink 2.4s steps(1) infinite}
+@keyframes blink{0%,70%{opacity:1}71%,100%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.dot{animation:none}}
+
+/* hero */
+.hero{padding:74px 0 60px}
+h1{font:600 clamp(34px,4.6vw,62px)/1.06 var(--mono);letter-spacing:-.03em;margin:20px 0 0;max-width:19ch}
+h1 span{color:var(--amber)}
+.hero p{color:var(--steel);max-width:60ch;margin:22px 0 0;font-size:16px}
+.cursor{display:inline-block;width:.55em;height:1em;background:var(--amber);vertical-align:-.13em;animation:cur 1.1s steps(1) infinite}
+@keyframes cur{0%,50%{opacity:1}51%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.cursor{animation:none}}
+
+/* board */
+.board{border:1px solid var(--line);background:var(--panel);margin-top:48px}
+.board-head{display:grid;grid-template-columns:2.1fr .8fr 1fr 1.5fr .9fr;gap:18px;padding:13px 20px;border-bottom:1px solid var(--line);font:500 10px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--steel);background:#0d151d}
+.row{display:grid;grid-template-columns:2.1fr .8fr 1fr 1.5fr .9fr;gap:18px;padding:19px 20px;border-bottom:1px solid var(--line);align-items:center;transition:background .15s}
+.row:last-child{border-bottom:0}
+.row:hover{background:#141d27}
+.row .name{font:600 16px/1.3 var(--mono);color:var(--white)}
+.row .un{color:var(--amber);font-weight:600}
+.row .cls,.row .area{color:var(--steel);font-size:14px}
+.row .ok{font:600 11px/1 var(--mono);letter-spacing:.14em;color:var(--amber);border:1px solid rgba(244,178,35,.4);padding:7px 10px;justify-self:start;white-space:nowrap}
+@media(max-width:900px){
+  .board-head{display:none}
+  .row{grid-template-columns:1fr;gap:7px;padding:18px 16px}
+  .row .cls::before{content:"CLASSE · "}
+  .row .area::before{content:"AREA · "}
+}
+.board-note{padding:16px 20px;color:var(--steel);font-size:13px;border-top:1px solid var(--line);background:#0d151d;max-width:none;margin:0}
+
+/* sezioni */
+.sec{padding:76px 0;border-top:1px solid var(--line)}
+h2{font:600 clamp(24px,2.9vw,36px)/1.14 var(--mono);letter-spacing:-.025em;margin:16px 0 0}
+.sec > .wrap > p{color:var(--steel);max-width:62ch;margin:16px 0 0}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:44px}
+.cols div{background:var(--panel);padding:28px 24px}
+.cols h3{font:600 17px/1.3 var(--mono);margin:14px 0 8px;color:var(--white)}
+.cols p{color:var(--steel);font-size:14.5px;margin:0}
+.cols .n{font:600 11px/1 var(--mono);letter-spacing:.2em;color:var(--amber)}
+@media(max-width:860px){.cols{grid-template-columns:1fr}}
+
+.ph{margin:0;background:repeating-linear-gradient(135deg,rgba(244,178,35,.13) 0 14px,transparent 14px 28px),#131c25;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;text-align:center}
+.ph figcaption{padding:22px;max-width:32ch}
+.ph .tag{display:inline-block;background:var(--amber);color:var(--bg);font:600 10px/1 var(--mono);letter-spacing:.18em;padding:6px 9px}
+.ph strong{display:block;margin:11px 0 6px;font:600 15.5px/1.3 var(--mono);color:var(--white)}
+.ph .meta{display:block;font:400 11.5px/1.6 var(--mono);color:var(--steel)}
+.shots{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:14px;margin-top:44px}
+.shots .ph{aspect-ratio:1/1}
+.shots .ph:first-child{aspect-ratio:auto}
+@media(max-width:900px){.shots{grid-template-columns:1fr}.shots .ph{aspect-ratio:4/3}}
+
+/* contatto stile terminale */
+.term{border:1px solid var(--line);background:var(--panel);margin-top:44px}
+.term-bar{display:flex;gap:8px;align-items:center;padding:12px 16px;border-bottom:1px solid var(--line);background:#0d151d;font:500 10.5px/1 var(--mono);letter-spacing:.18em;color:var(--steel);text-transform:uppercase}
+.term-bar i{width:9px;height:9px;border-radius:50%;background:#2c3945;display:block}
+.term-body{padding:26px 24px}
+.field{margin-bottom:16px}
+.field label{display:block;font:500 10px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--steel);margin-bottom:8px}
+.field label::before{content:"> ";color:var(--amber)}
+.field input,.field select,.field textarea{width:100%;background:#0b1219;border:1px solid var(--line);color:var(--white);padding:13px 14px;font:400 15px var(--mono);border-radius:0}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--amber)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.send{width:100%;background:var(--amber);color:var(--bg);border:0;padding:16px;font:700 14px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.send:hover{background:#ffc63d}
+.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:start}
+.info dl{margin:0;display:grid;gap:20px}
+.info dt{font:500 10px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--steel)}
+.info dd{margin:8px 0 0;font:600 18px/1.4 var(--mono)}
+.info dd a{text-decoration:none;color:var(--amber)}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:34px}.f2{grid-template-columns:1fr}}
+
+footer{border-top:1px solid var(--line);padding:44px 0 30px;color:var(--steel);font-size:13px}
+.legal{margin-top:24px;font-size:12px;line-height:1.9}
+.mockbar{background:var(--amber);color:#0A0F14;font:600 13px/1.5 var(--mono);padding:11px 0;text-align:center}
+.mockbar a{color:#0A0F14}
+</style>
+</head>
+<body>
+
+<div class="mockbar">MOCKUP E — «Quadro comandi» · tutto in carattere da macchina, denso di dati · <a href="index.html">torna alla galleria</a></div>
+
+<header>
+  <div class="wrap head-in">
+    <a class="brand" href="#"><img src="../materiali_sito/brand/logo-mark.svg" alt=""><b>BIZZOTTO</b></a>
+    <nav><a href="#trasporti">Trasporti</a><a href="#operativo">Operativo</a><a href="#mezzi">Mezzi</a><a href="#contatti">Contatti</a></nav>
+    <a class="pill" href="#contatti">Richiedi un trasporto</a>
+  </div>
+</header>
+
+<div class="status">
+  <div class="wrap">
+    <span><span class="dot"></span>Operativo lun–ven</span>
+    <span>Base <b>Cassola (VI)</b></span>
+    <span>Regime <b>ADR classe 3</b></span>
+    <span>Conto terzi</span>
+    <span>Dal <b>1988</b></span>
+  </div>
+</div>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <span class="lab">Trasporto carburanti in cisterna</span>
+    <h1>Quello che portiamo, <span>scritto per esteso</span><span class="cursor"></span></h1>
+    <p>Niente formule di circostanza: prodotto, numero ONU, classe di pericolo e area servita. Sono i dati che un committente verifica prima di affidare un carico, quindi stanno in prima pagina.</p>
+
+    <div class="board" id="trasporti">
+      <div class="board-head"><span>Prodotto</span><span>ONU</span><span>Classe</span><span>Destinazioni tipiche</span><span>Servizio</span></div>
+      <div class="row">
+        <span class="name">Gasolio per autotrazione</span>
+        <span class="un">1202</span>
+        <span class="cls">3 · infiammabile</span>
+        <span class="area">Distributori, depositi, cantieri</span>
+        <span class="ok">Conto terzi</span>
+      </div>
+      <div class="row">
+        <span class="name">Gasolio da riscaldamento</span>
+        <span class="un">1202</span>
+        <span class="cls">3 · infiammabile</span>
+        <span class="area">Aziende agricole, utenze</span>
+        <span class="ok">Conto terzi</span>
+      </div>
+      <div class="row">
+        <span class="name">Benzina</span>
+        <span class="un">1203</span>
+        <span class="cls">3 · infiammabile</span>
+        <span class="area">Distributori stradali</span>
+        <span class="ok">Conto terzi</span>
+      </div>
+      <div class="row">
+        <span class="name">Altri prodotti petroliferi</span>
+        <span class="un">—</span>
+        <span class="cls">Da valutare</span>
+        <span class="area">Compatibilità mezzo caso per caso</span>
+        <span class="ok">Su richiesta</span>
+      </div>
+      <p class="board-note">Ogni viaggio viaggia con il suo documento di trasporto. Il mezzo espone il pannello arancione con codice di pericolo e numero ONU della merce caricata.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="operativo">
+  <div class="wrap">
+    <span class="lab">Come lavoriamo</span>
+    <h2>Tre cose che facciamo sempre</h2>
+    <p>Non sono promesse commerciali: sono le procedure che rendono possibile trasportare un liquido infiammabile senza che succeda niente.</p>
+    <div class="cols">
+      <div><span class="n">01</span><h3>Presidio del carico</h3><p>L'autista non lascia il mezzo durante carico e scarico. È lui il responsabile del prodotto dal deposito alla destinazione.</p></div>
+      <div><span class="n">02</span><h3>Abilitazione ADR</h3><p>Patentino in corso di validità, mezzi omologati, procedure di emergenza note a chi guida. Verificabili su richiesta.</p></div>
+      <div><span class="n">03</span><h3>Un solo referente</h3><p>Chi legge le richieste sa quali mezzi sono liberi e quanto serve davvero per arrivare. Nessun passaggio di consegne.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="mezzi">
+  <div class="wrap">
+    <span class="lab">Mezzi</span>
+    <h2>Fotografie reali, nessun archivio</h2>
+    <div class="shots">
+      <figure class="ph"><figcaption><span class="tag">FOTO 01</span><strong>Flotta nel piazzale</strong><span class="meta">1600×1200<br>ricrop stretto di fleet.jpg:<br>togliere l'asfalto vuoto</span></figcaption></figure>
+      <figure class="ph"><figcaption><span class="tag">FOTO 02</span><strong>Manicotti in carico</strong><span class="meta">1000×1000<br>ricrop di operations.jpg<br>senza marchi terzi</span></figcaption></figure>
+      <figure class="ph"><figcaption><span class="tag">FOTO 03</span><strong>Pannello ADR</strong><span class="meta">1000×1000<br>da scattare</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contatti">
+  <div class="wrap">
+    <span class="lab">Contatti</span>
+    <h2>Cosa, da dove, a dove</h2>
+    <div class="contact-grid" style="margin-top:40px">
+      <div class="info">
+        <dl>
+          <div><dt>Email</dt><dd><a href="mailto:info@autotrasportibizzotto.it" style="font-size:15px">info@autotrasportibizzotto.it</a></dd></div>
+          <div><dt>Sede</dt><dd style="font-weight:400;font-size:15px">Via Asiago 33<br>36022 Cassola (VI)</dd></div>
+          <div><dt>Risposta</dt><dd style="font-weight:400;font-size:15px">Entro la giornata lavorativa</dd></div>
+        </dl>
+      </div>
+      <div class="term">
+        <div class="term-bar"><i></i><i></i><i></i><span style="margin-left:8px">richiesta-trasporto</span></div>
+        <div class="term-body">
+          <form onsubmit="event.preventDefault();alert('Mockup: il modulo non invia nulla.')">
+            <div class="f2">
+              <div class="field"><label for="e1">Azienda</label><input id="e1" type="text"></div>
+              <div class="field"><label for="e2">Referente</label><input id="e2" type="text"></div>
+            </div>
+            <div class="f2">
+              <div class="field"><label for="e3">Email</label><input id="e3" type="email"></div>
+              <div class="field"><label for="e4">Telefono</label><input id="e4" type="tel"></div>
+            </div>
+            <div class="field"><label for="e5">Prodotto</label><select id="e5"><option>Gasolio per autotrazione</option><option>Gasolio da riscaldamento</option><option>Benzina</option><option>Altro</option></select></div>
+            <div class="f2">
+              <div class="field"><label for="e6">Ritiro</label><input id="e6" type="text"></div>
+              <div class="field"><label for="e7">Consegna</label><input id="e7" type="text"></div>
+            </div>
+            <div class="field"><label for="e8">Note</label><textarea id="e8" rows="2"></textarea></div>
+            <button class="send" type="submit">Invia la richiesta</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="lab">Autotrasporti Bizzotto Srl · trasporto carburanti conto terzi</span>
+    <p style="margin:16px 0 0;font-weight:600"><a href="mailto:info@autotrasportibizzotto.it" style="color:inherit;text-decoration:none;border-bottom:2px solid #F4B223;padding-bottom:2px">info@autotrasportibizzotto.it</a></p>
+    <p class="legal">Via Asiago 33, 36022 Cassola (VI) · P. IVA 02020960247 · REA VI-______ · Albo autotrasportatori VI/2955214/A · Privacy · Cookie</p>
+  </div>
+</footer>
+
+<script src="mobile-nav.js?v=2" defer></script>
+</body>
+</html>

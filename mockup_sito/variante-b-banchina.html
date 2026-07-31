@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Variante B — Banchina · Autotrasporti Bizzotto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --graphite:#121820; --amber:#F4B223; --steel:#A7B0BA; --mist:#F2F4F5;
+  --white:#fff; --ink:#59636E; --line:#dde1e5;
+  --display:"Saira Condensed",system-ui,sans-serif;
+  --body:"Manrope",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--white);color:var(--graphite);font:400 16.5px/1.62 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--graphite);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.wrap{width:min(1280px,93vw);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;letter-spacing:.005em}
+
+/* header */
+.site-head{background:var(--graphite);color:var(--white);position:sticky;top:0;z-index:60}
+.head-in{display:flex;align-items:center;height:72px;gap:34px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+.brand img{width:38px;height:38px;filter:invert(1) brightness(2)}
+.brand b{font:800 20px/1 var(--display);letter-spacing:.09em}
+.brand i{display:block;font:500 9.5px/1.4 var(--mono);letter-spacing:.3em;color:var(--steel);font-style:normal;margin-top:2px}
+.nav{display:flex;gap:26px;margin-left:auto;font:600 13px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.nav a{text-decoration:none;color:var(--steel);padding:8px 0}
+.nav a:hover{color:var(--amber)}
+.head-tel{font:600 15px/1 var(--mono);text-decoration:none;padding-left:26px;border-left:1px solid rgba(255,255,255,.2)}
+@media (max-width:960px){.nav{display:none}}
+
+/* hero split */
+.hero{display:grid;grid-template-columns:1.08fr .92fr;background:var(--graphite);color:var(--white)}
+.hero-text{padding:82px 5vw 76px;display:flex;flex-direction:column;justify-content:center;max-width:760px;margin-left:auto;width:100%}
+.kicker{display:flex;align-items:center;gap:11px;font:500 11px/1 var(--mono);letter-spacing:.24em;color:var(--amber);text-transform:uppercase}
+.kicker::after{content:"";flex:1;height:1px;background:rgba(255,255,255,.2);max-width:120px}
+.hero h1{font-size:clamp(42px,5.3vw,74px);line-height:.96;font-weight:800;margin:24px 0 0;letter-spacing:-.004em}
+.hero h1 mark{background:none;color:var(--amber)}
+.hero-sub{font:400 18px/1.55 var(--body);color:#ccd4db;max-width:46ch;margin:24px 0 0;text-transform:none}
+.hero-cta{display:flex;flex-wrap:wrap;gap:13px;margin:34px 0 0}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 27px;background:var(--amber);color:var(--graphite);font:700 15px/1 var(--body);text-decoration:none;border:0;border-radius:3px;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{background:#dda01d;transform:translateY(-1px)}
+.btn--line{background:none;color:var(--white);border:1px solid rgba(255,255,255,.4)}
+.btn--line:hover{background:rgba(255,255,255,.1)}
+.hero-meta{display:flex;gap:34px;margin:44px 0 0;padding-top:26px;border-top:1px solid rgba(255,255,255,.16);flex-wrap:wrap}
+.hero-meta div{font:500 11px/1.5 var(--mono);letter-spacing:.16em;color:var(--steel);text-transform:uppercase}
+.hero-meta b{display:block;font:700 22px/1.2 var(--display);color:var(--white);letter-spacing:.02em;margin-bottom:5px}
+.hero-img{position:relative;min-height:600px}
+@media (max-width:980px){.hero{grid-template-columns:1fr}.hero-img{min-height:420px;order:-1}.hero-text{padding:56px 6vw 60px}}
+
+/* placeholder */
+.ph{margin:0;position:relative;height:100%;background:
+  repeating-linear-gradient(135deg,rgba(244,178,35,.15) 0 15px,transparent 15px 30px),#1b232d;
+  display:flex;align-items:center;justify-content:center;text-align:center;color:var(--white)}
+.ph--light{background:repeating-linear-gradient(135deg,rgba(18,24,32,.09) 0 15px,transparent 15px 30px),var(--mist);color:var(--graphite);border:1px dashed rgba(18,24,32,.3)}
+.ph figcaption{padding:26px;max-width:34ch}
+.ph .tag{display:inline-block;background:var(--amber);color:var(--graphite);font:600 10px/1 var(--mono);letter-spacing:.2em;padding:7px 10px}
+.ph strong{display:block;margin:13px 0 7px;font:700 18px/1.25 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.ph .meta{display:block;font:400 12px/1.6 var(--mono);opacity:.72}
+
+/* fascia servizi hairline */
+.strip{border-bottom:1px solid var(--line);background:var(--white)}
+.strip-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+.strip-grid > div{padding:44px 34px 46px;border-right:1px solid var(--line)}
+.strip-grid > div:first-child{padding-left:0}
+.strip-grid > div:last-child{border-right:0;padding-right:0}
+.strip h3{font-size:23px;font-weight:700;margin:16px 0 10px}
+.strip p{margin:0;color:var(--ink);font-size:15.5px}
+.strip .un{font:600 11px/1 var(--mono);letter-spacing:.18em;color:var(--graphite);border:1.5px solid var(--amber);padding:7px 10px;display:inline-block}
+@media (max-width:900px){.strip-grid{grid-template-columns:1fr}.strip-grid > div{border-right:0;border-bottom:1px solid var(--line);padding:34px 0}}
+
+/* preventivo anticipato */
+.quote{background:var(--mist);padding:86px 0}
+.quote-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:start}
+.quote h2{font-size:clamp(30px,3.5vw,44px);font-weight:800;line-height:1.04;margin:18px 0 0}
+.quote .lead{color:var(--ink);margin:18px 0 0;font-size:17.5px}
+.eyebrow{font:500 11px/1 var(--mono);letter-spacing:.24em;color:var(--ink);text-transform:uppercase}
+.steps{margin:38px 0 0;padding:0;list-style:none;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:44px 1fr;gap:18px;padding:18px 0;border-top:1px solid var(--line)}
+.steps li::before{content:counter(s,decimal-leading-zero);font:600 13px/1 var(--mono);color:var(--amber);padding-top:5px}
+.steps li > b,.steps li > span{grid-column:2}
+.steps b{font:700 17px/1.3 var(--display);text-transform:uppercase;letter-spacing:.02em}
+.steps span{display:block;color:var(--ink);font-size:15.5px;margin-top:5px}
+.card{background:var(--white);border:1px solid var(--line);border-top:4px solid var(--amber);padding:36px}
+.card h3{font-size:24px;font-weight:800;margin:0 0 6px}
+.card > p{margin:0 0 26px;color:var(--ink);font-size:15.5px}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:flex;flex-direction:column;margin-bottom:16px}
+.field label{font:600 10.5px/1 var(--mono);letter-spacing:.16em;color:var(--ink);text-transform:uppercase;margin-bottom:8px}
+.field input,.field select,.field textarea{border:1px solid var(--line);border-radius:2px;padding:13px 14px;font:400 15.5px var(--body);background:var(--white);color:var(--graphite)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:2px solid var(--graphite);outline-offset:0}
+.card .btn{width:100%}
+.note{margin:14px 0 0;font:400 12.5px/1.6 var(--mono);color:var(--ink)}
+@media (max-width:940px){.quote-grid{grid-template-columns:1fr;gap:44px}.f-row{grid-template-columns:1fr}}
+
+/* prova / flotta */
+.proof{padding:86px 0}
+.proof-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap}
+.proof h2{font-size:clamp(28px,3.3vw,40px);font-weight:800;margin:16px 0 0}
+.proof-grid{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:repeat(2,220px);gap:16px;margin-top:44px}
+.proof-grid .ph:first-child{grid-row:span 2}
+@media (max-width:900px){.proof-grid{grid-template-columns:1fr;grid-template-rows:none}.proof-grid .ph{min-height:230px}}
+
+/* azienda */
+.about{background:var(--graphite);color:var(--white);padding:86px 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about h2{font-size:clamp(28px,3.3vw,42px);font-weight:800;margin:16px 0 0}
+.about p{color:#ccd4db;font-size:17px}
+.about .eyebrow{color:var(--steel)}
+.about-facts{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:rgba(255,255,255,.16);margin-top:34px;border:1px solid rgba(255,255,255,.16)}
+.about-facts div{background:var(--graphite);padding:22px 20px}
+.about-facts dt{font:500 10px/1 var(--mono);letter-spacing:.2em;color:var(--steel);text-transform:uppercase}
+.about-facts dd{margin:9px 0 0;font:700 20px/1.2 var(--display);letter-spacing:.02em}
+.about .ph{min-height:380px}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr;gap:40px}}
+
+/* footer */
+footer{background:#0b1015;color:var(--steel);padding:58px 0 34px;font-size:14px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:42px}
+footer h4{font:600 10px/1 var(--mono);letter-spacing:.22em;color:var(--white);text-transform:uppercase;margin:0 0 16px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+footer a{text-decoration:none}
+footer a:hover{color:var(--amber)}
+.legal{margin-top:40px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font:400 12px/1.8 var(--mono)}
+@media (max-width:860px){.foot-grid{grid-template-columns:1fr;gap:30px}}
+.mockbar{background:var(--amber);color:var(--graphite);font:600 13px/1.5 var(--mono);padding:11px 0;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="mockbar">MOCKUP B — «Banchina» · schermata divisa, preventivo subito · <a href="index.html">confronta le tre varianti</a></div>
+
+<header class="site-head">
+  <div class="wrap head-in">
+    <a class="brand" href="#"><img src="../materiali_sito/brand/logo-mark.svg" alt=""><span><b>BIZZOTTO</b><i>AUTOTRASPORTI</i></span></a>
+    <nav class="nav"><a href="#servizi">Servizi</a><a href="#preventivo">Preventivo</a><a href="#flotta">Flotta</a><a href="#azienda">Azienda</a></nav>
+    <a class="head-tel" href="#preventivo">Chiedi un preventivo</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <span class="kicker">Cassola (VI) · dal 1988</span>
+    <h1>Carburante in cisterna,<br><mark>consegnato dove serve</mark></h1>
+    <p class="hero-sub">Ritiriamo da deposito e consegniamo a distributori, aziende e cantieri. Autisti ADR, mezzi omologati, un solo referente per tutto il viaggio.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#preventivo">Chiedi un preventivo</a>
+      <a class="btn btn--line" href="#servizi">Cosa trasportiamo</a>
+    </div>
+    <div class="hero-meta">
+      <div><b>1988</b>anno di inizio</div>
+      <div><b>ADR</b>merci pericolose</div>
+      <div><b>UN 1202</b>gasolio</div>
+      <div><b>VENETO</b>e nord italia</div>
+    </div>
+  </div>
+  <div class="hero-img">
+    <figure class="ph">
+      <figcaption>
+        <span class="tag">FOTO 01 · HERO</span>
+        <strong>Cisterna vista di tre quarti</strong>
+        <span class="meta">1200×1600 · verticale<br>taglio stretto sul mezzo, non sul piazzale<br>funziona anche un dettaglio della botte</span>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="strip" id="servizi">
+  <div class="wrap strip-grid">
+    <div>
+      <span class="un">UN 1202 · GASOLIO</span>
+      <h3>Prodotti petroliferi</h3>
+      <p>Gasolio da autotrazione e riscaldamento, benzine e prodotti affini. Da deposito o raffineria fino al punto di consumo.</p>
+    </div>
+    <div>
+      <span class="un">CLASSE 3 · ADR</span>
+      <h3>Merci pericolose</h3>
+      <p>Autisti con patentino ADR e mezzi omologati. Le procedure di carico e scarico sono scritte e vengono seguite.</p>
+    </div>
+    <div>
+      <span class="un">CONTO TERZI</span>
+      <h3>Per chi distribuisce</h3>
+      <p>Lavoriamo per operatori energetici, distributori e trader che hanno bisogno di un vettore costante, non occasionale.</p>
+    </div>
+  </div>
+</section>
+
+<section class="quote" id="preventivo">
+  <div class="wrap quote-grid">
+    <div>
+      <span class="eyebrow">Preventivo</span>
+      <h2>Un viaggio si quota in cinque minuti</h2>
+      <p class="lead">Serve sapere cosa si trasporta, da dove si ritira e dove si consegna. Il resto lo sistemiamo al telefono.</p>
+      <ol class="steps">
+        <li><b>Ci scrivete cosa serve</b><span>Prodotto, quantità indicativa, luogo di ritiro e di consegna.</span></li>
+        <li><b>Verifichiamo e quotiamo</b><span>Controlliamo compatibilità del mezzo, tempi e finestre di carico.</span></li>
+        <li><b>Fissiamo la consegna</b><span>Data concordata, documento di trasporto, riscontro a scarico avvenuto.</span></li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3>Richiesta di trasporto</h3>
+      <p>Rispondiamo entro la giornata lavorativa.</p>
+      <form onsubmit="event.preventDefault();alert('Mockup: il modulo non invia nulla.')">
+        <div class="f-row">
+          <div class="field"><label for="b1">Azienda</label><input id="b1" type="text"></div>
+          <div class="field"><label for="b2">Referente</label><input id="b2" type="text"></div>
+        </div>
+        <div class="f-row">
+          <div class="field"><label for="b3">Email</label><input id="b3" type="email"></div>
+          <div class="field"><label for="b4">Telefono</label><input id="b4" type="tel"></div>
+        </div>
+        <div class="field"><label for="b5">Prodotto</label><select id="b5"><option>Gasolio</option><option>Benzina</option><option>Altro prodotto petrolifero</option><option>Da definire</option></select></div>
+        <div class="f-row">
+          <div class="field"><label for="b6">Ritiro</label><input id="b6" type="text" placeholder="Deposito, città"></div>
+          <div class="field"><label for="b7">Consegna</label><input id="b7" type="text" placeholder="Destinazione"></div>
+        </div>
+        <div class="field"><label for="b8">Note</label><textarea id="b8" rows="2"></textarea></div>
+        <button class="btn" type="submit">Invia la richiesta</button>
+        <p class="note">Oppure scrivete a info@autotrasportibizzotto.it</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="proof" id="flotta">
+  <div class="wrap">
+    <div class="proof-head">
+      <div>
+        <span class="eyebrow">Flotta</span>
+        <h2>I mezzi che arrivano da voi</h2>
+      </div>
+      <p style="color:var(--ink);max-width:40ch;margin:0">Fotografie reali dei nostri mezzi e delle operazioni di carico. Nessuna immagine d'archivio.</p>
+    </div>
+    <div class="proof-grid">
+      <figure class="ph ph--light"><figcaption><span class="tag">FOTO 02</span><strong>Flotta schierata</strong><span class="meta">1600×1400 · verticale<br>ricrop stretto di fleet.jpg</span></figcaption></figure>
+      <figure class="ph ph--light"><figcaption><span class="tag">FOTO 03</span><strong>Operazioni di carico</strong><span class="meta">1000×620<br>ricrop di operations.jpg senza marchi terzi</span></figcaption></figure>
+      <figure class="ph ph--light"><figcaption><span class="tag">FOTO 04</span><strong>Pannello ADR</strong><span class="meta">1000×620 · dettaglio<br>da scattare</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="azienda">
+  <div class="wrap about-grid">
+    <div>
+      <span class="eyebrow">Azienda</span>
+      <h2>Piccoli, e per questo precisi</h2>
+      <p>Bizzotto lavora da Cassola dal 1988 e trasporta una cosa sola: carburante per chi lo distribuisce. La struttura è corta, il referente è sempre lo stesso, i mezzi si conoscono uno per uno.</p>
+      <p>Chi ci sceglie non cerca il vettore più grande. Cerca quello che risponde alle richieste e arriva quando ha detto che arriva.</p>
+      <dl class="about-facts">
+        <div><dt>Attività dal</dt><dd>1988</dd></div>
+        <div><dt>Sede</dt><dd>Cassola (VI)</dd></div>
+        <div><dt>Specializzazione</dt><dd>Cisterna ADR</dd></div>
+        <div><dt>Servizio</dt><dd>Conto terzi</dd></div>
+      </dl>
+    </div>
+    <figure class="ph"><figcaption><span class="tag">FOTO 05 · AZIENDA</span><strong>Titolare o autista al lavoro</strong><span class="meta">1200×1000<br>lo scatto che manca:<br>mette una faccia sull'azienda</span></figcaption></figure>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><h4>Autotrasporti Bizzotto Srl</h4><p style="margin:0;max-width:34ch">Trasporto di carburanti e prodotti petroliferi in cisterna, conto terzi.</p></div>
+      <div><h4>Servizi</h4><ul><li><a href="#servizi">Prodotti petroliferi</a></li><li><a href="#servizi">Merci pericolose ADR</a></li><li><a href="#preventivo">Preventivo</a></li></ul></div>
+      <div><h4>Contatti</h4><ul><li><a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a></li><li>Via Asiago 33, Cassola (VI)</li></ul></div>
+    </div>
+    <p class="legal">Autotrasporti Bizzotto Srl · Via Asiago 33, 36022 Cassola (VI) · P. IVA 02020960247 · REA VI-______ · Albo autotrasportatori VI/2955214/A<br>Privacy policy · Cookie policy</p>
+  </div>
+</footer>
+
+<script src="mobile-nav.js?v=2" defer></script>
+</body>
+</html>

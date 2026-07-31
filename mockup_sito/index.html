@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mockup homepage · Autotrasporti Bizzotto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--graphite:#121820;--amber:#F4B223;--steel:#A7B0BA;--mist:#F2F4F5;--ink:#59636E;--line:#d5dbe0;
+--body:"Manrope",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--mist);color:var(--graphite);font:400 16.5px/1.62 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--graphite);outline-offset:3px}
+.wrap{width:min(1320px,93vw);margin-inline:auto}
+.lab{font:500 10px/1 var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--ink)}
+
+header{background:var(--graphite);color:#fff;padding:56px 0 50px}
+header .lab{color:var(--amber)}
+header h1{font:800 clamp(32px,4.2vw,50px)/1.08 var(--body);letter-spacing:-.032em;margin:16px 0 0}
+header p{color:#c9d1d8;max-width:66ch;margin:20px 0 0;font-size:17.5px}
+.legend{display:flex;gap:26px;flex-wrap:wrap;margin:32px 0 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.16);font:500 12.5px/1.5 var(--mono);color:var(--steel)}
+.legend b{color:#fff;font-weight:600}
+
+main{padding:48px 0 84px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media (max-width:1150px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:680px){.grid{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .16s,box-shadow .16s}
+.card:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(18,24,32,.1)}
+.card-top{padding:22px 22px 0}
+.card .kind{display:inline-block;font:600 9.5px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--graphite);background:var(--amber);padding:6px 9px;margin-bottom:12px}
+.card h2{font:800 23px/1.15 var(--body);letter-spacing:-.022em;margin:0}
+.card .who{margin:11px 0 0;color:var(--ink);font-size:14.5px}
+
+/* miniature schematiche */
+.wf{margin:18px 22px 0;border:1px solid var(--line);background:var(--mist);padding:8px;display:grid;gap:5px}
+.wf i{display:block;background:#c3cbd2;border-radius:1px}
+.wf .bar{height:8px;background:var(--graphite)}
+.wf .img{background:repeating-linear-gradient(135deg,rgba(244,178,35,.55) 0 5px,transparent 5px 10px),#aeb7bf}
+.wf .dark{background:var(--graphite)}
+.wf .amb{background:var(--amber)}
+.wf .txt{height:6px;width:62%}
+.wf .txt2{height:6px;width:40%}
+.wf .row{display:grid;gap:5px}
+.wf .r3{grid-template-columns:1fr 1fr 1fr}
+.wf .r4{grid-template-columns:repeat(4,1fr)}
+.wf .split{grid-template-columns:1.1fr .9fr}
+.wf .rail{position:relative;padding-left:10px}
+.wf .rail::before{content:"";position:absolute;left:3px;top:0;bottom:0;width:2px;background:var(--amber)}
+
+ul.pts{margin:16px 22px 0;padding:0;list-style:none;display:grid;gap:7px;font-size:13.5px}
+ul.pts li{padding-left:15px;position:relative;color:var(--ink)}
+ul.pts li::before{content:"";position:absolute;left:0;top:.5em;width:6px;height:6px;background:var(--amber)}
+ul.pts li b{color:var(--graphite);font-weight:700}
+.go{margin:auto 22px 22px;padding-top:20px}
+.btn{display:flex;align-items:center;justify-content:center;min-height:48px;background:var(--graphite);color:#fff;font:700 14.5px/1 var(--body);text-decoration:none;border-radius:2px}
+.btn:hover{background:#000}
+
+.note{margin-top:40px;background:#fff;border:1px solid var(--line);border-left:4px solid var(--amber);padding:26px 28px}
+.note h3{font:800 19px/1.3 var(--body);margin:0 0 12px}
+.note ul{margin:0;padding-left:20px;display:grid;gap:8px;color:var(--ink);font-size:15.5px}
+.note b{color:var(--graphite)}
+.pick{margin-top:20px;background:var(--graphite);color:#fff;padding:26px 28px}
+.pick h3{font:800 19px/1.3 var(--body);margin:0 0 14px;color:#fff}
+.pick table{width:100%;border-collapse:collapse;font-size:15px}
+.pick td{padding:11px 0;border-bottom:1px solid rgba(255,255,255,.14);color:#c9d1d8;vertical-align:top}
+.pick td:first-child{width:46%;color:#fff;padding-right:24px}
+.pick tr:last-child td{border-bottom:0}
+.pick b{color:var(--amber)}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="lab">Autotrasporti Bizzotto · homepage</span>
+    <h1>Otto direzioni, otto caratteri diversi</h1>
+    <p>Stesso contenuto e stessa palette di marca: cambiano struttura, tipografia e temperatura. Le prime tre sono impostazioni classiche, le altre cinque spingono di più. Gli spazi delle fotografie sono segnati con il retino ambra e dicono cosa scattare o ritagliare.</p>
+    <div class="legend">
+      <span><b>Firma comune</b> · pannello ADR 30 / 1202, codice vero del gasolio</span>
+      <span><b>Contatto unico</b> · modulo ed email, nessun numero</span>
+      <span><b>Moduli</b> · non inviano nulla</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+
+    <article class="card">
+      <div class="card-top">
+        <span class="kind">Classica</span>
+        <h2>A · Pannello</h2>
+        <p class="who">Una cosa grande per schermata. La fotografia occupa tutta l'apertura, il titolo ci sta sopra.</p>
+      </div>
+      <div class="wf" aria-hidden="true">
+        <i class="bar"></i><i class="img" style="height:74px"></i>
+        <i class="txt"></i><i class="txt2"></i><i class="amb" style="height:9px;width:36%"></i>
+        <div class="row r3"><i style="height:18px"></i><i style="height:18px"></i><i style="height:18px"></i></div>
+        <i style="height:10px"></i><i style="height:10px"></i>
+        <i class="img" style="height:30px"></i><i class="dark" style="height:22px"></i>
+      </div>
+      <ul class="pts">
+        <li><b>Forte se</b> avete una gran foto d'apertura</li>
+        <li><b>Preventivo</b> in fondo</li>
+      </ul>
+      <div class="go"><a class="btn" href="variante-a-pannello.html">Apri A</a></div>
+    </article>
+
+    <article class="card">
+      <div class="card-top">
+        <span class="kind">Classica</span>
+        <h2>B · Banchina</h2>
+        <p class="who">Schermata divisa, foto verticale a destra. Il modulo di richiesta arriva a metà pagina.</p>
+      </div>
+      <div class="wf" aria-hidden="true">
+        <i class="bar"></i>
+        <div class="row split"><div class="row"><i class="txt"></i><i class="txt2"></i><i class="amb" style="height:9px;width:44%"></i></div><i class="img" style="height:62px"></i></div>
+        <div class="row r3"><i style="height:16px"></i><i style="height:16px"></i><i style="height:16px"></i></div>
+        <div class="row split"><i style="height:44px"></i><i class="amb" style="height:44px;opacity:.5"></i></div>
+        <div class="row r3"><i class="img" style="height:24px"></i><i class="img" style="height:24px"></i><i class="img" style="height:24px"></i></div>
+        <i class="dark" style="height:20px"></i>
+      </div>
+      <ul class="pts">
+        <li><b>Forte se</b> volete più richieste</li>
+        <li><b>Preventivo</b> a metà pagina</li>
+      </ul>
+      <div class="go"><a class="btn" href="variante-b-banchina.html">Apri B</a></div>
+    </article>
+
+    <article class="card">
+      <div class="card-top">
+        <span class="kind">Classica</span>
+        <h2>C · Documento</h2>
+        <p class="who">Impaginato come un documento di trasporto: scheda operativa e tabella dei prodotti.</p>
+      </div>
+      <div class="wf" aria-hidden="true">
+        <i class="bar"></i><i class="dark" style="height:6px;opacity:.6"></i>
+        <div class="row split"><div class="row"><i style="height:26px"></i><i class="txt2"></i><i class="amb" style="height:8px;width:40%"></i></div><i style="height:52px;background:#fff;border:1px solid var(--line)"></i></div>
+        <i class="img" style="height:22px"></i>
+        <i style="height:34px;background:#fff;border:1px solid var(--line)"></i>
+        <div class="row split"><i style="height:30px"></i><i style="height:30px"></i></div>
+        <div class="row r3"><i class="img" style="height:28px"></i><i class="img" style="height:28px"></i><i class="img" style="height:28px"></i></div>
+      </div>
+      <ul class="pts">
+        <li><b>Forte se</b> avete poche foto</li>
+        <li><b>Preventivo</b> in fondo</li>
+      </ul>
+      <div class="go"><a class="btn" href="variante-c-documento.html">Apri C</a></div>
+    </article>
+
+    <article class="card">
+      <div class="card-top">
+        <span class="kind">Con movimento</span>
+        <h2>D · Tracciato</h2>
+        <p class="who">Il viaggio raccontato tappa per tappa: una linea ambra si riempie mentre si scorre, come un carico che avanza.</p>
+      </div>
+      <div class="wf" aria-hidden="true">
+        <i class="amb" style="height:4px"></i><i class="bar"></i>
+        <div class="row split"><div class="row"><i class="txt"></i><i class="txt2"></i><i class="amb" style="height:9px;width:40%"></i></div><i class="img" style="height:58px"></i></div>
+        <div class="rail row" style="gap:8px;margin-top:4px"><i style="height:14px"></i><i style="height:14px"></i><i style="height:14px"></i><i style="height:14px"></i></div>
+        <div class="row r4"><i style="height:16px"></i><i style="height:16px"></i><i style="height:16px"></i><i style="height:16px"></i></div>
+        <i class="amb" style="height:24px"></i>
+      </div>
+      <ul class="pts">
+        <li><b>Sorprende:</b> animazione allo scorrimento</li>
+        <li><b>Spiega</b> un mestiere che nessuno conosce</li>
+      </ul>
+      <div class="go"><a class="btn" href="variante-d-tracciato.html">Apri D</a></div>
+    </article>
+
+    <article class="card">
+      <div class="card-top">
+        <span class="kind">Tecnica</span>
+        <h2>E · Quadro comandi</h2>
+        <p class="who">Tutto in carattere da macchina, come un pannello operativo. Prodotti, numeri ONU e classi in tabella già in apertura.</p>
+      </div>
+      <div class="wf" aria-hidden="true">
+        <i class="bar"></i><i class="dark" style="height:7px;opacity:.7"></i>
+        <i class="txt"></i><i class="txt2"></i>
+        <i style="height:8px;background:#8d99a5"></i>
+        <i style="height:13px"></i><i style="height:13px"></i><i style="height:13px"></i><i style="height:13px"></i>
+        <div class="row r3" style="margin-top:4px"><i style="height:22px"></i><i style="height:22px"></i><i style="height:22px"></i></div>
+        <div class="row split"><i style="height:26px"></i><i style="height:26px;background:#8d99a5"></i></div>
+      </div>
+      <ul class="pts">
+        <li><b>Forte se</b> i clienti sono tecnici</li>
+        <li><b>Nessun sito</b> del settore fa così</li>
+      </ul>
+      <div class="go"><a class="btn" href="variante-e-quadrocomandi.html">Apri E</a></div>
+    </article>
+
+    <article class="card">
+      <div class="card-top">
+        <span class="kind">Audace</span>
+        <h2>F · Cartello</h2>
+        <p class="who">Linguaggio della segnaletica di pericolo: nastri diagonali, riquadri spessi, il rombo di classe 3 in filigrana.</p>
+      </div>
+      <div class="wf" aria-hidden="true">
+        <i class="bar"></i>
+        <i style="height:6px;background:repeating-linear-gradient(45deg,var(--graphite) 0 6px,var(--amber) 6px 12px)"></i>
+        <div class="row split"><div class="row"><i class="txt"></i><i class="amb" style="height:10px;width:52%"></i><i class="txt2"></i></div><i class="img" style="height:56px"></i></div>
+        <div class="row r3"><i style="height:26px;border:1px solid var(--graphite)"></i><i style="height:26px;border:1px solid var(--graphite)"></i><i style="height:26px;border:1px solid var(--graphite)"></i></div>
+        <i class="amb" style="height:20px"></i>
+        <i class="dark" style="height:18px"></i>
+      </div>
+      <ul class="pts">
+        <li><b>Sorprende:</b> si riconosce da lontano</li>
+        <li><b>Rischio:</b> tono molto marcato</li>
+      </ul>
+      <div class="go"><a class="btn" href="variante-f-cartello.html">Apri F</a></div>
+    </article>
+
+    <article class="card">
+      <div class="card-top">
+        <span class="kind">Sobria</span>
+        <h2>G · Bianco tecnico</h2>
+        <p class="who">Molto spazio, griglia rigorosa, figure quotate come in un disegno tecnico. L'ambra compare pochissimo.</p>
+      </div>
+      <div class="wf" aria-hidden="true">
+        <i class="bar" style="background:#e9edf0"></i>
+        <i style="height:22px;background:#dfe4e8"></i>
+        <div class="row split"><i class="txt"></i><i style="height:26px;background:#e9edf0"></i></div>
+        <i class="img" style="height:30px"></i>
+        <div class="row" style="grid-template-columns:.2fr 1fr"><i style="height:40px;background:#e9edf0"></i><div class="row"><i style="height:11px"></i><i style="height:11px"></i><i style="height:11px"></i></div></div>
+        <div class="row r3"><i class="img" style="height:26px"></i><i class="img" style="height:26px"></i><i class="img" style="height:26px"></i></div>
+      </div>
+      <ul class="pts">
+        <li><b>Forte se</b> puntate su clienti grandi</li>
+        <li><b>Invecchia</b> meglio di tutte</li>
+      </ul>
+      <div class="go"><a class="btn" href="variante-g-biancotecnico.html">Apri G</a></div>
+    </article>
+
+    <article class="card">
+      <div class="card-top">
+        <span class="kind">Da manifesto</span>
+        <h2>H · Notturno</h2>
+        <p class="who">Fondo nero, titolo in carattere elegante, luce ambra: il turno che comincia prima dell'alba. Poche parole, molta atmosfera.</p>
+      </div>
+      <div class="wf" aria-hidden="true">
+        <i class="dark" style="height:78px;background:repeating-linear-gradient(135deg,rgba(244,178,35,.35) 0 5px,transparent 5px 10px),#121820"></i>
+        <i style="height:12px"></i>
+        <i style="height:11px"></i><i style="height:11px"></i><i style="height:11px"></i>
+        <div class="row split"><i class="img" style="height:34px"></i><div class="row"><i class="img" style="height:15px"></i><i class="img" style="height:14px"></i></div></div>
+        <i class="dark" style="height:22px"></i>
+      </div>
+      <ul class="pts">
+        <li><b>Sorprende:</b> sembra un manifesto, non un sito</li>
+        <li><b>Chiede</b> una foto notturna vera</li>
+      </ul>
+      <div class="go"><a class="btn" href="variante-h-notturno.html">Apri H</a></div>
+    </article>
+
+  </div>
+
+  <div class="pick">
+    <h3>Se non sapete decidere</h3>
+    <table>
+      <tr><td>Volete più richieste di preventivo</td><td><b>B</b> — il modulo è alto in pagina</td></tr>
+      <tr><td>Volete distinguervi e avete una bella foto</td><td><b>H</b>, altrimenti <b>D</b></td></tr>
+      <tr><td>I vostri committenti sono tecnici e frettolosi</td><td><b>E</b> — i dati sono in prima pagina</td></tr>
+      <tr><td>Volete qualcosa che duri dieci anni</td><td><b>G</b> — è la più sobria</td></tr>
+      <tr><td>Volete farvi notare in zona</td><td><b>F</b> — nessuno in provincia comunica così</td></tr>
+      <tr><td>Le fotografie tarderanno</td><td><b>C</b> o <b>E</b> — reggono senza immagini</td></tr>
+    </table>
+  </div>
+
+  <div class="note">
+    <h3>Vale per tutte</h3>
+    <ul>
+      <li>Il logo è il <b>solo simbolo</b> più il nome in carattere tipografico: il wordmark del pacchetto è troncato e va rifatto in tracciati.</li>
+      <li><b>Nessun numero di telefono in pagina</b>, per scelta: il canale unico è il modulo, che scrive a <b>info@autotrasportibizzotto.it</b>. La casella va creata su Aruba e inoltrata a te.</li>
+      <li><b>«Dal 1988»</b> va confermato con la visura prima di pubblicare.</li>
+      <li>I caratteri arrivano da Google Fonts solo nei mockup: nel sito vero vanno ospitati sul dominio.</li>
+      <li>Numero <b>REA</b> lasciato in bianco nel piè di pagina: serve per l'obbligo di legge.</li>
+      <li>L'animazione di <b>D</b> usa le animazioni legate allo scorrimento: si vedono su Chrome, altrove la linea resta piena senza rompere niente. Chi ha attivato la riduzione del movimento non vede animazioni.</li>
+    </ul>
+  </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144" role="img" aria-labelledby="title desc">
+  <title id="title">Bizzotto</title>
+  <desc id="desc">Monogramma B con linea ambra</desc>
+  <rect width="144" height="144" rx="22" fill="#121820"/>
+  <path fill="#fff" fill-rule="evenodd" d="M39 27h38c22 0 35 11 35 28 0 10-5 18-14 23 12 5 19 14 19 27 0 20-15 32-39 32H39V27Zm22 19v23h15c9 0 14-4 14-12 0-7-5-11-14-11H61Zm0 41v30h17c11 0 17-5 17-15s-6-15-17-15H61Z"/>
+  <rect x="25" y="76.5" width="94" height="7" rx="3.5" fill="#F4B223"/>
+  <circle cx="124" cy="80" r="7" fill="#F4B223"/>
+</svg>

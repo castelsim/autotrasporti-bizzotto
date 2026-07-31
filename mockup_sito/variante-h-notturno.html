@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Variante H — Notturno · Autotrasporti Bizzotto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#070A0E; --deep:#0D131A; --amber:#F4B223; --warm:#FFD37A;
+  --steel:#98A3AE; --white:#F5F7F9;
+  --serif:"Instrument Serif",Georgia,serif; --sans:"Barlow",system-ui,sans-serif; --mono:"IBM Plex Mono",monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--night);color:var(--white);font:400 17px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:4px}
+.wrap{width:min(1280px,92vw);margin-inline:auto}
+.lab{font:400 10.5px/1 var(--mono);letter-spacing:.26em;text-transform:uppercase;color:var(--amber)}
+
+header{position:absolute;top:0;left:0;right:0;z-index:60;padding-top:26px}
+.head-in{display:flex;align-items:center;gap:30px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:40px;height:40px}
+.brand b{font:400 22px/1 var(--serif);letter-spacing:.01em}
+.brand i{display:block;font:400 8.5px/1.4 var(--mono);letter-spacing:.3em;color:var(--steel);font-style:normal;margin-top:2px}
+nav{display:flex;gap:28px;margin-left:auto;font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+nav a{text-decoration:none;color:var(--steel)}
+nav a:hover{color:var(--warm)}
+.tel{font:500 14px/1 var(--mono);text-decoration:none;color:var(--white);border:1px solid rgba(255,255,255,.28);padding:12px 16px}
+.tel:hover{border-color:var(--amber);color:var(--amber)}
+@media(max-width:980px){nav{display:none}}
+
+/* hero notturna */
+.hero{position:relative;min-height:96vh;display:flex;align-items:flex-end;padding:150px 0 62px;overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-bg .ph{height:100%;border:0;background:repeating-linear-gradient(135deg,rgba(244,178,35,.09) 0 18px,transparent 18px 36px),#10171f;align-items:flex-start;justify-content:flex-end}
+.hero-bg::after{content:"";position:absolute;inset:0;background:
+   radial-gradient(ellipse 60% 50% at 76% 34%,rgba(255,190,80,.22),transparent 62%),
+   linear-gradient(180deg,rgba(7,10,14,.72) 0%,rgba(7,10,14,.42) 40%,rgba(7,10,14,.95) 92%)}
+.hero-in{position:relative;z-index:3}
+h1{font:400 clamp(50px,8.2vw,124px)/0.92 var(--serif);letter-spacing:-.022em;margin:22px 0 0;max-width:15ch}
+h1 em{font-style:italic;color:var(--warm)}
+.hero p{font-size:19px;color:#c8d1da;max-width:44ch;margin:26px 0 0}
+.hero-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-top:44px;padding-top:26px;border-top:1px solid rgba(255,255,255,.16);flex-wrap:wrap}
+.hero-foot .cta{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;background:var(--amber);color:#0b0f14;font:600 15.5px/1 var(--sans);text-decoration:none;border:0;border-radius:2px;cursor:pointer}
+.btn:hover{background:var(--warm)}
+.btn--line{background:none;color:var(--white);border:1px solid rgba(255,255,255,.35)}
+.btn--line:hover{border-color:var(--amber);color:var(--amber)}
+.hero-meta{font:400 12px/1.9 var(--mono);color:var(--steel);letter-spacing:.1em;text-align:right}
+.hero-meta b{color:var(--white);font-weight:500}
+
+.ph{margin:0;background:repeating-linear-gradient(135deg,rgba(244,178,35,.1) 0 16px,transparent 16px 32px),#111922;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;text-align:center}
+.ph figcaption{padding:24px;max-width:32ch}
+.ph .tag{display:inline-block;font:400 10px/1 var(--mono);letter-spacing:.2em;color:var(--amber);border-bottom:1px solid var(--amber);padding-bottom:5px}
+.ph strong{display:block;margin:13px 0 7px;font:400 20px/1.25 var(--serif)}
+.ph .meta{display:block;font:400 11.5px/1.65 var(--mono);color:var(--steel)}
+.hero-bg .ph figcaption{margin:120px 40px 0 0;background:rgba(7,10,14,.62);border:1px solid rgba(255,255,255,.12)}
+@media(max-width:900px){.hero-bg .ph figcaption{display:none}}
+
+/* il turno */
+.shift{padding:104px 0;background:var(--deep)}
+h2{font:400 clamp(34px,4.6vw,62px)/1.05 var(--serif);letter-spacing:-.02em;margin:18px 0 0;max-width:18ch}
+h2 em{font-style:italic;color:var(--warm)}
+.shift > .wrap > p{color:var(--steel);max-width:56ch;margin:22px 0 0}
+.hours{margin-top:56px;border-top:1px solid rgba(255,255,255,.14)}
+.hours article{display:grid;grid-template-columns:130px 1fr 1.1fr;gap:38px;padding:30px 0;border-bottom:1px solid rgba(255,255,255,.14);align-items:baseline;transition:background .2s}
+.hours article:hover{background:rgba(255,255,255,.025)}
+.hours time{font:400 30px/1 var(--serif);color:var(--warm)}
+.hours h3{font:600 18px/1.35 var(--sans);margin:0;letter-spacing:.005em}
+.hours p{margin:0;color:var(--steel);font-size:16px}
+@media(max-width:880px){.hours article{grid-template-columns:1fr;gap:9px}}
+
+/* galleria notturna */
+.gal{padding:104px 0}
+.gal-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:20px;margin-top:52px}
+.gal-grid .ph{aspect-ratio:4/3;min-width:0}
+.gal-col{display:grid;gap:20px;min-width:0}
+.gal-col .ph{aspect-ratio:16/10}
+@media(max-width:900px){.gal-grid{grid-template-columns:minmax(0,1fr)}}
+
+/* citazione */
+.quote{padding:104px 0;background:var(--deep);text-align:center}
+.quote blockquote{margin:0 auto;max-width:22ch;font:400 clamp(30px,4.4vw,58px)/1.14 var(--serif);letter-spacing:-.02em}
+.quote blockquote em{font-style:italic;color:var(--warm)}
+.quote .lab{display:block;margin-top:30px}
+
+/* contatti */
+.contact{padding:104px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:46px;align-items:start}
+.contact dl{margin:0;display:grid;gap:26px}
+.contact dt{font:400 10.5px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--steel)}
+.contact dd{margin:10px 0 0;font:400 28px/1.2 var(--serif)}
+.contact dd a{text-decoration:none;border-bottom:1px solid var(--amber)}
+.contact dd.small{font:400 17px/1.6 var(--sans);color:#c8d1da}
+form{border:1px solid rgba(255,255,255,.15);padding:34px;background:rgba(255,255,255,.02)}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{display:flex;flex-direction:column;margin-bottom:18px}
+.field label{font:400 10.5px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--steel);margin-bottom:9px}
+.field input,.field select,.field textarea{background:none;border:0;border-bottom:1px solid rgba(255,255,255,.28);color:var(--white);padding:11px 2px;font:400 16px var(--sans);border-radius:0}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-bottom-color:var(--amber)}
+.field select option{background:var(--deep)}
+form .btn{width:100%;margin-top:10px}
+.note{margin:14px 0 0;font:400 12.5px/1.6 var(--mono);color:var(--steel)}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:40px}.f2{grid-template-columns:1fr}}
+
+footer{border-top:1px solid rgba(255,255,255,.12);padding:52px 0 34px;color:var(--steel);font-size:14.5px}
+.legal{margin-top:30px;font:400 12px/1.9 var(--mono)}
+.mockbar{background:var(--amber);color:#0b0f14;font:500 13px/1.5 var(--mono);padding:11px 0;text-align:center;position:relative;z-index:90}
+.mockbar a{color:#0b0f14}
+</style>
+</head>
+<body>
+
+<div class="mockbar">MOCKUP H — «Notturno» · da manifesto, poche parole, molta atmosfera · <a href="index.html">torna alla galleria</a></div>
+
+<section class="hero">
+  <div class="hero-bg">
+    <figure class="ph">
+      <figcaption>
+        <span class="tag">FOTO 01 · HERO</span>
+        <strong>Mezzo nel piazzale prima dell'alba</strong>
+        <span class="meta">2400×1600 · orizzontale<br>luce dei fari o del piazzale, cielo scuro<br>è lo scatto che regge tutta questa variante</span>
+      </figcaption>
+    </figure>
+  </div>
+  <header>
+    <div class="wrap head-in">
+      <a class="brand" href="#"><img src="../materiali_sito/brand/logo-mark.svg" alt=""><span><b>Bizzotto</b><i>AUTOTRASPORTI</i></span></a>
+      <nav><a href="#turno">Il turno</a><a href="#mezzi">Mezzi</a><a href="#contatti">Contatti</a></nav>
+      <a class="tel" href="#contatti">Scrivici</a>
+    </div>
+  </header>
+  <div class="wrap hero-in">
+    <span class="lab">Cassola (VI) · dal 1988</span>
+    <h1>Quando voi aprite,<br><em>noi abbiamo già</em> consegnato.</h1>
+    <p>Trasporto di carburanti in cisterna. I giri cominciano al buio perché i distributori devono essere pieni quando arriva il primo cliente.</p>
+    <div class="hero-foot">
+      <div class="cta">
+        <a class="btn" href="#contatti">Richiedi un trasporto</a>
+        <a class="btn btn--line" href="#turno">Come lavoriamo</a>
+      </div>
+      <div class="hero-meta">
+        <b>ADR classe 3</b> · liquidi infiammabili<br>
+        <b>UN 1202</b> gasolio · <b>UN 1203</b> benzina<br>
+        Conto terzi · Veneto e Nord Italia
+      </div>
+    </div>
+  </div>
+</section>
+
+<main>
+<section class="shift" id="turno">
+  <div class="wrap">
+    <span class="lab">Una giornata</span>
+    <h2>Il lavoro comincia <em>quando è ancora buio</em></h2>
+    <p>Non è un dettaglio romantico: è il motivo per cui i committenti tornano da noi. La consegna deve essere finita prima che il punto vendita apra.</p>
+    <div class="hours">
+      <article>
+        <time>04:30</time>
+        <h3>Controllo del mezzo</h3>
+        <p>Verifiche prima della partenza, documenti, dotazioni di sicurezza. Nessun mezzo esce senza controllo.</p>
+      </article>
+      <article>
+        <time>05:15</time>
+        <h3>Carico al deposito</h3>
+        <p>Prodotto e quantità verificati, pannello arancione esposto con il codice della merce caricata.</p>
+      </article>
+      <article>
+        <time>07:00</time>
+        <h3>Prima consegna</h3>
+        <p>Collegamento, messa a terra, travaso presidiato. L'autista resta sul posto fino alla fine.</p>
+      </article>
+      <article>
+        <time>13:30</time>
+        <h3>Documenti chiusi</h3>
+        <p>Documento di trasporto firmato e riscontro al committente. Il giro si chiude quando la carta è in ordine.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="gal" id="mezzi">
+  <div class="wrap">
+    <span class="lab">Mezzi</span>
+    <h2>Le fotografie sono nostre</h2>
+    <div class="gal-grid">
+      <figure class="ph"><figcaption><span class="tag">FOTO 02</span><strong>Flotta nel piazzale</strong><span class="meta">1600×1200<br>ricrop stretto di fleet.jpg<br>meglio con luce di sera</span></figcaption></figure>
+      <div class="gal-col">
+        <figure class="ph"><figcaption><span class="tag">FOTO 03</span><strong>Manicotti in carico</strong><span class="meta">1000×620<br>ricrop di operations.jpg<br>senza marchi di terzi</span></figcaption></figure>
+        <figure class="ph"><figcaption><span class="tag">FOTO 04</span><strong>Autista al lavoro</strong><span class="meta">1000×620<br>da scattare, controluce dei fari</span></figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="wrap">
+    <blockquote>Un carico di gasolio <em>non ammette</em> improvvisazione.</blockquote>
+    <span class="lab">Dal 1988, sempre lo stesso mestiere</span>
+  </div>
+</section>
+
+<section class="contact" id="contatti">
+  <div class="wrap">
+    <span class="lab">Contatti</span>
+    <h2>Cosa, da dove, <em>a dove</em></h2>
+    <div class="contact-grid">
+      <div>
+        <dl>
+          <div><dt>Email</dt><dd class="small"><a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a></dd></div>
+          <div><dt>Sede</dt><dd class="small">Via Asiago 33 · 36022 Cassola (VI)</dd></div>
+          <div><dt>Risposta</dt><dd class="small">Entro la giornata lavorativa</dd></div>
+        </dl>
+      </div>
+      <form onsubmit="event.preventDefault();alert('Mockup: il modulo non invia nulla.')">
+        <div class="f2">
+          <div class="field"><label for="h1">Azienda</label><input id="h1" type="text"></div>
+          <div class="field"><label for="h2f">Referente</label><input id="h2f" type="text"></div>
+        </div>
+        <div class="f2">
+          <div class="field"><label for="h3">Email</label><input id="h3" type="email"></div>
+          <div class="field"><label for="h4">Telefono</label><input id="h4" type="tel"></div>
+        </div>
+        <div class="field"><label for="h5">Prodotto</label><select id="h5"><option>Gasolio</option><option>Benzina</option><option>Altro prodotto petrolifero</option></select></div>
+        <div class="f2">
+          <div class="field"><label for="h6">Ritiro</label><input id="h6" type="text"></div>
+          <div class="field"><label for="h7">Consegna</label><input id="h7" type="text"></div>
+        </div>
+        <button class="btn" type="submit">Invia la richiesta</button>
+        <p class="note">Una richiesta scritta è già metà del preventivo.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="lab">Autotrasporti Bizzotto Srl</span>
+    <p style="margin:14px 0 0;max-width:42ch">Trasporto di carburanti e prodotti petroliferi in cisterna, conto terzi. Cassola, provincia di Vicenza.</p>
+    <p style="margin:16px 0 0;font-weight:600"><a href="mailto:info@autotrasportibizzotto.it" style="color:inherit;text-decoration:none;border-bottom:2px solid #F4B223;padding-bottom:2px">info@autotrasportibizzotto.it</a></p>
+    <p class="legal">Via Asiago 33, 36022 Cassola (VI) · P. IVA 02020960247 · REA VI-______ · Albo autotrasportatori VI/2955214/A · Privacy · Cookie</p>
+  </div>
+</footer>
+
+<script src="mobile-nav.js?v=2" defer></script>
+</body>
+</html>
