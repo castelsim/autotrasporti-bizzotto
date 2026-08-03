@@ -56,6 +56,9 @@ h2{font:800 23px/1.25 var(--body);letter-spacing:-.022em;margin:0}
 .note h3{font:800 19px/1.3 var(--body);margin:0 0 12px}
 .note ul{margin:0;padding-left:20px;display:grid;gap:10px;color:var(--ink);font-size:15.5px}
 .note b{color:var(--graphite)}
+.sez{font:800 clamp(24px,3.2vw,34px)/1.15 var(--body);letter-spacing:-.026em;margin:44px 0 0}
+.sez-p{color:var(--ink);margin:14px 0 26px;max-width:72ch;font-size:16.5px}
+.sez-p b{color:var(--graphite)}
 footer{color:var(--ink);font:400 13px/1.7 var(--mono);padding-bottom:54px}
 </style>
 </head>
@@ -142,6 +145,90 @@ footer{color:var(--ink);font:400 13px/1.7 var(--mono);padding-bottom:54px}
     </div>
   </section>
 
+  <h2 class="sez">Il loop: quando il video si ripete senza che si veda</h2>
+  <p class="sez-p">Un video in apertura di sito gira all'infinito. Se l'ultimo fotogramma non
+  combacia con il primo, a ogni giro c'è uno <b>scatto</b> — ed è la cosa che fa sembrare
+  dilettante un sito. Il video qui sopra (modo 4) ha esattamente questo difetto: alla fine
+  torna indietro di colpo. I tre qui sotto no, e si può misurare.</p>
+
+  <section>
+    <div class="stage">
+      <video autoplay muted loop playsinline preload="none" poster="m/poster.jpg">
+        <source src="m/loop-respiro.mp4" type="video/mp4"></video>
+      <div class="velo"></div>
+      <div class="testo"><b>Trasportiamo carburante.<em>Dal 1988.</em></b><span>Loop 1 · Respiro</span></div>
+    </div>
+    <div class="in">
+      <span class="tag">Loop 1</span>
+      <h2>Respiro</h2>
+      <p>L'inquadratura si avvicina e si riallontana seguendo una curva che <b>torna esatta al
+      punto di partenza</b>. Dodici secondi, poi ricomincia senza che nessuno se ne accorga.</p>
+      <div class="dati"><span class="si">Stacco invisibile</span><span>1,1 MB · 12 secondi</span>
+        <span>Il movimento più discreto dei tre</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="stage">
+      <video autoplay muted loop playsinline preload="none" poster="m/poster.jpg">
+        <source src="m/loop-carrellata.mp4" type="video/mp4"></video>
+      <div class="velo"></div>
+      <div class="testo"><b>Carburante in cisterna,<em>consegnato dove serve.</em></b><span>Loop 2 · Carrellata</span></div>
+    </div>
+    <div class="in">
+      <span class="tag">Loop 2</span>
+      <h2>Carrellata che va e torna</h2>
+      <p>La macchina da presa scorre lungo la fila di mezzi e rientra, chiudendo il cerchio.
+      Quindici secondi. È quello che fa scoprire di più: i mezzi entrano ed escono
+      dall'inquadratura uno alla volta.</p>
+      <div class="dati"><span class="si">Stacco invisibile</span><span class="si">784 KB · il più leggero</span>
+        <span>15 secondi</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="stage">
+      <video autoplay muted loop playsinline preload="none" poster="m/poster.jpg">
+        <source src="m/loop-andata-ritorno.mp4" type="video/mp4"></video>
+      <div class="velo"></div>
+      <div class="testo"><b>Da chi lo produce<em>a chi lo distribuisce.</em></b><span>Loop 3 · Andata e ritorno</span></div>
+    </div>
+    <div class="in">
+      <span class="tag">Loop 3</span>
+      <h2>Andata e ritorno</h2>
+      <p>Il movimento va avanti per otto secondi e poi si riavvolge. Combacia per costruzione,
+      ma il riavvolgimento <b>si nota</b>: va bene su movimenti minimi come questo, stona su
+      quelli marcati, dove si capisce che il tempo torna indietro.</p>
+      <div class="dati"><span class="si">Stacco invisibile</span><span>1,3 MB · 16 secondi</span>
+        <span class="no">Il riavvolgimento è percepibile</span></div>
+    </div>
+  </section>
+
+  <div class="note" style="margin-bottom:26px">
+    <h3>La verifica, in numeri</h3>
+    <p style="margin:0 0 14px;color:var(--ink);font-size:15.5px">Un loop è perfetto quando il
+    salto dall'ultimo fotogramma al primo è <b>indistinguibile</b> da un normale avanzamento.
+    Ho misurato la differenza fra le due coppie di fotogrammi: se i due numeri si somigliano,
+    l'occhio non vede niente.</p>
+    <table style="width:100%;border-collapse:collapse;font-size:15px">
+      <tr style="border-bottom:1px solid var(--line)">
+        <th style="text-align:left;padding:10px 12px 10px 0;font:500 10.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--ink)">Video</th>
+        <th style="text-align:right;padding:10px 12px;font:500 10.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--ink)">Stacco</th>
+        <th style="text-align:right;padding:10px 0;font:500 10.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--ink)">Passo normale</th>
+      </tr>
+      <tr style="border-bottom:1px solid var(--line)"><td style="padding:13px 12px 13px 0">Respiro</td>
+        <td style="text-align:right;padding:13px 12px;font-family:var(--mono)">0,042</td><td style="text-align:right;padding:13px 0;font-family:var(--mono)">0,040</td></tr>
+      <tr style="border-bottom:1px solid var(--line)"><td style="padding:13px 12px 13px 0">Carrellata</td>
+        <td style="text-align:right;padding:13px 12px;font-family:var(--mono)">0,046</td><td style="text-align:right;padding:13px 0;font-family:var(--mono)">0,045</td></tr>
+      <tr style="border-bottom:1px solid var(--line)"><td style="padding:13px 12px 13px 0">Andata e ritorno</td>
+        <td style="text-align:right;padding:13px 12px;font-family:var(--mono)">0,027</td><td style="text-align:right;padding:13px 0;font-family:var(--mono)">0,036</td></tr>
+      <tr><td style="padding:13px 12px 13px 0"><b>Video di prima (modo 4)</b></td>
+        <td style="text-align:right;padding:13px 12px;font-family:var(--mono);color:#9b3b3b"><b>0,175</b></td><td style="text-align:right;padding:13px 0;font-family:var(--mono)">0,019</td></tr>
+    </table>
+    <p style="margin:16px 0 0;color:var(--ink);font-size:15.5px">L'ultimo ha uno stacco
+    <b>nove volte</b> più grande di un passo normale: quello si vede. I primi tre no.</p>
+  </div>
+
   <div class="note">
     <h3>Quello che non ho fatto, e perché</h3>
     <ul>
@@ -156,6 +243,29 @@ footer{color:var(--ink);font:400 13px/1.7 var(--mono);padding-bottom:54px}
       <li><b>La cosa migliore resta un video vero.</b> Trenta secondi girati col telefono —
       un mezzo che entra nel piazzale, i manicotti che si collegano — valgono più di qualsiasi
       movimento applicato a una foto. Se lo giri, lo monto io.</li>
+    </ul>
+  </div>
+
+  <div class="note" style="margin-top:26px">
+    <h3>Se vuoi provare con ChatGPT: come si fa e cosa aspettarsi</h3>
+    <ul>
+      <li><b>Sì, ChatGPT genera video</b> attraverso Sora, il modello video di OpenAI, incluso
+      negli abbonamenti a pagamento. Accetta una fotografia di partenza e la anima. Le
+      condizioni e i limiti cambiano spesso: <b>verifica cosa è attivo sul tuo piano</b> prima
+      di contarci.</li>
+      <li><b>Non fa loop.</b> Genera una clip che comincia e finisce dove capita: per farla
+      girare senza stacco serve comunque il lavoro che ho fatto qui sopra. Quindi le due
+      strade non sono alternative — una genera il movimento, l'altra lo chiude ad anello.</li>
+      <li><b>Il rischio vero sono i dettagli tecnici.</b> Su questa foto ci sono targhe,
+      pannelli arancioni e scritte sulle fiancate. Un modello generativo li ridisegna a modo
+      suo: sulle immagini che abbiamo già ritoccato i numeri ADR sono diventati illeggibili.
+      Su un sito di trasporto merci pericolose, un pannello con numeri sbagliati è l'errore
+      peggiore possibile — chi lavora nel settore lo nota subito.</li>
+      <li><b>Se provi, chiedi movimenti minimi.</b> Nuvole che scorrono, luce che cambia,
+      niente ruote che girano e niente inquadrature che si spostano molto. Poi <b>ingrandisci
+      i pannelli arancioni e le targhe</b> prima di dire che va bene. Se sono cambiati, scarta.</li>
+      <li><b>Mandami il file e lo chiudo ad anello.</b> Da qualsiasi clip esca, posso renderla
+      un loop invisibile e portarla al peso giusto per il sito.</li>
     </ul>
   </div>
 </main>
