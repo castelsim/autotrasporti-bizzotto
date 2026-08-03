@@ -61,8 +61,8 @@ footer a{color:var(--ink)}
 <header>
   <div class="wrap">
     <span class="lab">Autotrasporti Bizzotto Srl · Cassola (VI)</span>
-    <h1>Il marchio, ridisegnato</h1>
-    <p>La direzione scelta con ChatGPT, ricostruita in vettoriale: tracciati esatti, colori giusti, tutte le versioni che servono. Da qui si può stampare su una fiancata o mettere in un favicon da 16 pixel senza rifare niente.</p>
+    <h1>Il marchio, in vettoriale</h1>
+    <p>La direzione scelta con ChatGPT, <b>ricalcata</b> contorno per contorno: stesso disegno, bordi netti, colori esatti, tutte le versioni che servono. Da qui si può stampare su una fiancata o mettere in un favicon da 16 pixel senza rifare niente.</p>
   </div>
 </header>
 
@@ -99,8 +99,9 @@ footer a{color:var(--ink)}
       <figure><img class="h24" src="png/logo-orizzontale-2400.png" alt=""><figcaption>24 px</figcaption></figure>
       <figure><img class="f32" src="png/favicon-512.png" alt=""><figcaption>32 px</figcaption></figure>
       <figure><img class="f16" src="png/favicon-512.png" alt=""><figcaption>16 px — scheda</figcaption></figure>
+      <figure><img class="f16" src="svg/favicon-16.svg" alt=""><figcaption>16 px — versione ridotta</figcaption></figure>
     </div>
-    <div class="note">A 24 pixel «AUTOTRASPORTI» diventa marginale: sotto i 28 pixel conviene usare il solo simbolo. Nella proposta generata da ChatGPT quella riga spariva già a 32.</div>
+    <div class="note">A 24 pixel «AUTOTRASPORTI» diventa marginale: sotto i 28 pixel conviene usare il solo simbolo. E a 16 pixel la carreggiata diventa una macchia gialla: per quella misura c'è una <b>icona ridotta</b> con la sola B — è l'ultima qui sopra, ed è quella che il browser userà nella scheda.</div>
   </section>
 
   <section>
@@ -127,13 +128,15 @@ footer a{color:var(--ink)}
   </section>
 
   <section>
-    <h2>Che cosa ho cambiato</h2>
+    <h2>Che cosa ho fatto, esattamente</h2>
+    <p class="sub">Il disegno è il tuo, senza reinterpretazioni: ogni forma è <b>ricalcata</b> dall'immagine, non ridisegnata a somiglianza.</p>
     <ul>
-      <li><b>Tutto è in tracciati.</b> Quella di ChatGPT era un'immagine a pixel: ingrandita sgranava, i bordi erano sfrangiati, non esisteva una versione trasparente. Questa si ingrandisce all'infinito.</li>
-      <li><b>I colori sono quelli esatti.</b> Nell'immagine generata erano approssimati — il grafite usciva <code>#141A22</code> invece di <code>#121820</code>, l'ambra <code>#F2B022</code> invece di <code>#F4B223</code>. Piccoli scarti che però si vedono quando il logo sta accanto a un fondo del sito.</li>
-      <li><b>Il sottotitolo si legge.</b> Era in grigio chiaro: l'ho portato a <code>#59636E</code> e a un peso più solido, così regge anche stampato in piccolo.</li>
-      <li><b>Il carattere è vero.</b> Le lettere generate non appartenevano a nessun font: erano disegnate a occhio, con spessori e spaziature irregolari. Ora è <b>Saira ExtraBold</b> in larghezza 125, la corrispondenza più vicina, con licenza libera anche per uso commerciale.</li>
-      <li><b>La B ha ritrovato il piede.</b> Nel disegno originale la lettera era interrotta dalla strada e a lettura veloce poteva sembrare una R. Il taglio ora segue esattamente la prospettiva della carreggiata: la strada passa sotto la lettera, non attraverso.</li>
+      <li><b>Ricalco, non riscrittura.</b> Ho ingrandito la tavola otto volte, separato i due colori e ricalcato ogni contorno. La B, le lettere del nome, le strisce della carreggiata: sono le tue, punto per punto. Un primo tentativo l'avevo ricostruito da capo con un carattere simile — non combaciava, ed è stato buttato.</li>
+      <li><b>Tolti gli artefatti.</b> L'immagine generata aveva bordi sfrangiati e un alone sfocato attorno alla lettera. Ricalcando ho lisciato le micro-ondulazioni: la sagoma è identica, i bordi sono netti.</li>
+      <li><b>Tutto è in tracciati.</b> Il file di partenza era a pixel: ingrandito sgranava, non esisteva versione trasparente né monocromatica. Ora si ingrandisce senza limite e pesa 21 KB.</li>
+      <li><b>I colori sono quelli esatti.</b> Nell'immagine erano approssimati — grafite <code>#141A22</code> invece di <code>#121820</code>, ambra <code>#F2B022</code> invece di <code>#F4B223</code>. Scarti piccoli, ma si vedono quando il logo sta accanto a un fondo del sito.</li>
+      <li><b>Il sottotitolo si legge.</b> Era in grigio troppo chiaro, sotto il minimo di contrasto: portato a <code>#59636E</code>, regge anche stampato in piccolo.</li>
+      <li><b>La versione orizzontale ha le proporzioni della tavola.</b> Non le ho scelte io: le ho misurate sul pannello scuro. Il blocco di testo è il 78,6% dell'altezza del segno, staccato del 31,6%, e appoggia sulla stessa linea di base — non è centrato.</li>
     </ul>
   </section>
 
@@ -158,6 +161,7 @@ footer a{color:var(--ink)}
       <a href="svg/logo-horizontal-reverse.svg">Fondo scuro SVG</a>
       <a href="svg/logo-mark.svg">Solo segno SVG</a>
       <a href="svg/favicon.svg">Icona SVG</a>
+      <a href="svg/favicon-16.svg">Icona ridotta SVG</a>
       <a href="png/logo-orizzontale-2400.png">Orizzontale PNG</a>
       <a href="png/logo-orizzontale-reverse-2400.png">Fondo scuro PNG</a>
       <a href="png/logo-impilato-1600.png">Impilato PNG</a>
