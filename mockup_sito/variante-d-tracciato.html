@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <title>Variante D — Tracciato · Autotrasporti Bizzotto</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +34,8 @@ a{color:inherit}
 header{position:sticky;top:0;z-index:80;background:rgba(8,12,17,.86);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.09)}
 .head-in{display:flex;align-items:center;gap:30px;height:76px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand img{width:40px;height:40px}
+.brand img{height:38px;width:auto;display:block;filter:none}
+@media (max-width:560px){.brand img{height:28px}}
 .brand b{font:900 19px/1 var(--display);letter-spacing:.07em}
 .brand i{display:block;font:500 9px/1.4 var(--mono);letter-spacing:.3em;color:var(--steel);font-style:normal;margin-top:3px}
 nav{display:flex;gap:28px;margin-left:auto;font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
@@ -52,11 +54,20 @@ h1{font:900 clamp(42px,6vw,86px)/0.98 var(--display);letter-spacing:-.03em;margi
 h1 em{font-style:normal;color:var(--amber)}
 .hero p{color:#c2cad2;font-size:19px;max-width:46ch;margin:24px 0 0}
 .hero-cta{display:flex;gap:13px;flex-wrap:wrap;margin:34px 0 0}
-.ph{margin:0;background:repeating-linear-gradient(135deg,rgba(244,178,35,.14) 0 15px,transparent 15px 30px),#141b23;border:1px solid rgba(255,255,255,.12);border-radius:8px;display:flex;align-items:center;justify-content:center;text-align:center}
-.ph figcaption{padding:24px;max-width:32ch}
-.ph .tag{display:inline-block;background:var(--amber);color:var(--graphite);font:600 10px/1 var(--mono);letter-spacing:.2em;padding:7px 10px;border-radius:2px}
-.ph strong{display:block;margin:12px 0 6px;font:700 17px/1.3 var(--display)}
-.ph .meta{display:block;font:400 12px/1.6 var(--mono);color:var(--steel)}
+.ph{margin:0;position:relative;overflow:hidden;background:#0f151c;line-height:0}
+.ph picture{display:block;width:100%;height:100%}
+.ph img{display:block;width:100%;height:100%;object-fit:cover}
+.hero-media .ph,.hero-bg .ph{position:absolute;inset:0;height:100%;width:100%;overflow:hidden}
+.hero-media .ph{height:100%}
+
+.ph picture{display:block;width:100%;height:100%}
+.ph img{display:block;width:100%;height:100%;object-fit:cover}
+
+
+
+
+
+
 .hero .ph{aspect-ratio:4/5}
 @media(max-width:920px){.hero-in{grid-template-columns:1fr;gap:40px}}
 
@@ -123,7 +134,7 @@ footer{background:var(--deep);padding:52px 0 32px;color:var(--steel);font-size:1
 
 <header>
   <div class="wrap head-in">
-    <a class="brand" href="#"><img src="../materiali_sito/brand/logo-mark.svg" alt=""><span><b>BIZZOTTO</b><i>AUTOTRASPORTI</i></span></a>
+    <a class="brand" href="#" aria-label="Autotrasporti Bizzotto"><img src="img/logo-reverse.svg" alt="Autotrasporti Bizzotto"></a>
     <nav><a href="#viaggio">Il viaggio</a><a href="#mezzi">Mezzi</a><a href="#contatti">Contatti</a></nav>
     <a class="btn" href="#contatti">Richiedi un trasporto</a>
   </div>
@@ -141,13 +152,7 @@ footer{background:var(--deep);padding:52px 0 32px;color:var(--steel);font-size:1
         <a class="btn btn--ghost" href="#viaggio">Come funziona</a>
       </div>
     </div>
-    <figure class="ph">
-      <figcaption>
-        <span class="tag">FOTO 01 · HERO</span>
-        <strong>Cisterna di tre quarti, luce laterale</strong>
-        <span class="meta">1200×1500 · verticale<br>fondo scuro o sera, mezzo pulito<br>ricrop o nuovo scatto</span>
-      </figcaption>
-    </figure>
+    <figure class="ph"><picture><source type="image/webp" srcset="img/piazzale-sera-800.webp 800w, img/piazzale-sera-1200.webp 1200w, img/piazzale-sera-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/piazzale-sera-1600.jpg" srcset="img/piazzale-sera-800.jpg 800w, img/piazzale-sera-1200.jpg 1200w, img/piazzale-sera-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="Autocisterna Bizzotto nel piazzale aziendale al tramonto" width="1600" height="900" loading="eager" fetchpriority="high"></picture></figure>
   </div>
 </section>
 
@@ -195,9 +200,9 @@ footer{background:var(--deep);padding:52px 0 32px;color:var(--steel);font-size:1
     <span class="lab">Mezzi</span>
     <h2>Le foto sono nostre, i mezzi anche</h2>
     <div class="grid3">
-      <figure class="ph"><figcaption><span class="tag">FOTO 02</span><strong>Flotta nel piazzale</strong><span class="meta">900×1200 · verticale<br>ricrop stretto di fleet.jpg</span></figcaption></figure>
-      <figure class="ph"><figcaption><span class="tag">FOTO 03</span><strong>Manicotti in carico</strong><span class="meta">900×1200<br>ricrop di operations.jpg<br>senza marchi di terzi</span></figcaption></figure>
-      <figure class="ph"><figcaption><span class="tag">FOTO 04</span><strong>Autista al lavoro</strong><span class="meta">900×1200<br>da scattare: è lo scatto che manca</span></figcaption></figure>
+      <figure class="ph"><picture><source type="image/webp" srcset="img/flotta-tramonto-800.webp 800w, img/flotta-tramonto-1200.webp 1200w, img/flotta-tramonto-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/flotta-tramonto-1600.jpg" srcset="img/flotta-tramonto-800.jpg 800w, img/flotta-tramonto-1200.jpg 1200w, img/flotta-tramonto-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="I mezzi della flotta schierati nel piazzale al tramonto" width="1600" height="900" loading="lazy" decoding="async"></picture></figure>
+      <figure class="ph"><picture><source type="image/webp" srcset="img/carico-700.webp 700w, img/carico-1000.webp 1000w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/carico-1000.jpg" srcset="img/carico-700.jpg 700w, img/carico-1000.jpg 1000w" sizes="(max-width:900px) 100vw, 60vw" alt="Due autocisterne collegate ai manicotti durante le operazioni di carico" width="900" height="1200" loading="lazy" decoding="async"></picture></figure>
+      <figure class="ph"><picture><source type="image/webp" srcset="img/flotta-inverno-800.webp 800w, img/flotta-inverno-1200.webp 1200w, img/flotta-inverno-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/flotta-inverno-1600.jpg" srcset="img/flotta-inverno-800.jpg 800w, img/flotta-inverno-1200.jpg 1200w, img/flotta-inverno-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="La flotta schierata nel piazzale, con le Prealpi innevate sullo sfondo" width="1600" height="900" loading="lazy" decoding="async"></picture></figure>
     </div>
   </div>
 </section>

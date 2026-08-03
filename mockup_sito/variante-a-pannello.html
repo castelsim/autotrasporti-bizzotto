@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <title>Variante A — Pannello · Autotrasporti Bizzotto</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +29,8 @@ a{color:inherit}
 .site-head{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .head-in{display:flex;align-items:center;gap:32px;height:78px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
-.brand img{width:44px;height:44px;display:block}
+.brand img{height:40px;width:auto;display:block;filter:none}
+@media (max-width:560px){.brand img{height:30px}}
 .brand b{font:900 21px/1 var(--display);letter-spacing:.06em}
 .brand span{display:block;font:500 10px/1.4 var(--mono);letter-spacing:.34em;color:var(--ink);margin-top:3px}
 .nav{display:flex;gap:30px;margin-left:auto;font-weight:600;font-size:15px}
@@ -72,20 +74,24 @@ a{color:inherit}
 @media (max-width:860px){.facts{grid-template-columns:repeat(2,1fr)}.facts div{border-bottom:1px solid rgba(255,255,255,.16)}}
 
 /* ---------- placeholder foto ---------- */
-.ph{margin:0;position:relative;background:
-   repeating-linear-gradient(135deg,rgba(244,178,35,.16) 0 14px,transparent 14px 28px),
-   var(--mist);
-  border:1.5px dashed rgba(18,24,32,.32);display:flex;align-items:center;justify-content:center;text-align:center}
-.hero-media .ph{border:0;background:
-   repeating-linear-gradient(135deg,rgba(244,178,35,.13) 0 16px,transparent 16px 32px),#1b232d;
-   height:100%;align-items:flex-end;justify-content:flex-end}
-.hero-media .ph figcaption{text-align:right;margin:0 clamp(20px,4vw,54px) 46px 0;background:rgba(11,16,21,.72);border:1px solid rgba(255,255,255,.14);border-radius:6px;backdrop-filter:blur(3px)}
-.ph figcaption{padding:24px;max-width:36ch}
-.ph .tag{display:inline-block;background:var(--graphite);color:var(--amber);font:600 10px/1 var(--mono);letter-spacing:.22em;padding:7px 11px;border-radius:3px}
-.ph strong{display:block;margin:14px 0 6px;font:800 17px/1.3 var(--display);color:var(--graphite)}
-.hero-media .ph strong{color:var(--white)}
-.ph .meta{display:block;font:400 12px/1.55 var(--mono);color:var(--ink)}
-.hero-media .ph .meta{color:var(--steel)}
+.ph{margin:0;position:relative;overflow:hidden;background:#0f151c;line-height:0}
+.ph picture{display:block;width:100%;height:100%}
+.ph img{display:block;width:100%;height:100%;object-fit:cover}
+.hero-media .ph,.hero-bg .ph{position:absolute;inset:0;height:100%;width:100%;overflow:hidden}
+.hero-media .ph{height:100%}
+
+.ph picture{display:block;width:100%;height:100%}
+.ph img{display:block;width:100%;height:100%;object-fit:cover}
+
+
+
+
+
+
+
+
+
+
 
 /* ---------- sezioni ---------- */
 section{padding:104px 0}
@@ -164,10 +170,7 @@ footer a:hover{color:var(--amber)}
 
 <header class="site-head">
   <div class="wrap head-in">
-    <a class="brand" href="#">
-      <img src="../materiali_sito/brand/logo-mark.svg" alt="">
-      <span style="display:block"><b>BIZZOTTO</b><span>AUTOTRASPORTI</span></span>
-    </a>
+    <a class="brand" href="#" aria-label="Autotrasporti Bizzotto"><img src="img/logo.svg" alt="Autotrasporti Bizzotto"></a>
     <nav class="nav">
       <a href="#servizi">Servizi</a>
       <a href="#azienda">Azienda</a>
@@ -183,13 +186,7 @@ footer a:hover{color:var(--amber)}
 <main>
 <section class="hero" style="padding:0">
   <div class="hero-media">
-    <figure class="ph">
-      <figcaption>
-        <span class="tag">FOTO 01 · HERO</span>
-        <strong>Autocisterna nel piazzale, luce di sera</strong>
-        <span class="meta">2400×1350 · orizzontale<br>spazio libero a sinistra per il titolo<br>ricrop di hero-desktop o nuovo scatto</span>
-      </figcaption>
-    </figure>
+    <figure class="ph"><picture><source type="image/webp" srcset="img/piazzale-sera-800.webp 800w, img/piazzale-sera-1200.webp 1200w, img/piazzale-sera-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/piazzale-sera-1600.jpg" srcset="img/piazzale-sera-800.jpg 800w, img/piazzale-sera-1200.jpg 1200w, img/piazzale-sera-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="Autocisterna Bizzotto nel piazzale aziendale al tramonto" width="1600" height="900" loading="eager" fetchpriority="high"></picture></figure>
   </div>
   <div class="wrap hero-in">
     <span class="eyebrow">Cassola (VI) · conto terzi</span>
@@ -260,13 +257,7 @@ footer a:hover{color:var(--amber)}
         <li><b>DOMANI</b><span>Gli stessi mezzi e le stesse regole, per i vettori energetici che verranno.</span></li>
       </ul>
     </div>
-    <figure class="ph">
-      <figcaption>
-        <span class="tag">FOTO 02 · AZIENDA</span>
-        <strong>Il titolare o un autista davanti al mezzo</strong>
-        <span class="meta">1600×1200 · verticale o 4:3<br>è lo scatto che manca e che conta di più:<br>mette una faccia sull'azienda</span>
-      </figcaption>
-    </figure>
+    <figure class="ph"><picture><source type="image/webp" srcset="img/flotta-inverno-800.webp 800w, img/flotta-inverno-1200.webp 1200w, img/flotta-inverno-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/flotta-inverno-1600.jpg" srcset="img/flotta-inverno-800.jpg 800w, img/flotta-inverno-1200.jpg 1200w, img/flotta-inverno-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="La flotta schierata nel piazzale, con le Prealpi innevate sullo sfondo" width="1600" height="900" loading="lazy" decoding="async"></picture></figure>
   </div>
 </section>
 
@@ -277,17 +268,11 @@ footer a:hover{color:var(--amber)}
       <h2>I mezzi, davvero.</h2>
       <p>Niente rendering, niente foto d'archivio: le autocisterne che arrivano da voi sono queste.</p>
     </div>
-    <figure class="ph">
-      <figcaption>
-        <span class="tag">FOTO 03 · FLOTTA</span>
-        <strong>Mezzi schierati nel piazzale</strong>
-        <span class="meta">2000×860 · panoramica<br>ricrop stretto di fleet.jpg: togliere l'asfalto vuoto in basso</span>
-      </figcaption>
-    </figure>
+    <figure class="ph"><picture><source type="image/webp" srcset="img/flotta-tramonto-800.webp 800w, img/flotta-tramonto-1200.webp 1200w, img/flotta-tramonto-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/flotta-tramonto-1600.jpg" srcset="img/flotta-tramonto-800.jpg 800w, img/flotta-tramonto-1200.jpg 1200w, img/flotta-tramonto-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="I mezzi della flotta schierati nel piazzale al tramonto" width="1600" height="900" loading="lazy" decoding="async"></picture></figure>
     <div class="fleet-grid">
-      <figure class="ph"><figcaption><span class="tag">FOTO 04</span><strong>Manicotti e attacchi</strong><span class="meta">1200×900 · dettaglio<br>ricrop di operations.jpg, escludendo i marchi dei clienti</span></figcaption></figure>
-      <figure class="ph"><figcaption><span class="tag">FOTO 05</span><strong>Pannello ADR sul mezzo</strong><span class="meta">1200×900 · dettaglio ravvicinato<br>da scattare</span></figcaption></figure>
-      <figure class="ph"><figcaption><span class="tag">FOTO 06</span><strong>Cabina o mezzo su strada</strong><span class="meta">1200×900<br>da scattare</span></figcaption></figure>
+      <figure class="ph"><picture><source type="image/webp" srcset="img/cerchione-800.webp 800w, img/cerchione-1200.webp 1200w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/cerchione-1200.jpg" srcset="img/cerchione-800.jpg 800w, img/cerchione-1200.jpg 1200w" sizes="(max-width:900px) 100vw, 60vw" alt="Dettaglio di un cerchione in lega di un mezzo della flotta" width="1200" height="900" loading="lazy" decoding="async"></picture></figure>
+      <figure class="ph"><picture><source type="image/webp" srcset="img/adr-800.webp 800w, img/adr-1200.webp 1200w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/adr-1200.jpg" srcset="img/adr-800.jpg 800w, img/adr-1200.jpg 1200w" sizes="(max-width:900px) 100vw, 60vw" alt="Pannello ADR 30/1202 sul retro di una cisterna: gasolio, classe 3" width="1200" height="900" loading="lazy" decoding="async"></picture></figure>
+      <figure class="ph"><picture><source type="image/webp" srcset="img/piazzale-sera-800.webp 800w, img/piazzale-sera-1200.webp 1200w, img/piazzale-sera-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/piazzale-sera-1600.jpg" srcset="img/piazzale-sera-800.jpg 800w, img/piazzale-sera-1200.jpg 1200w, img/piazzale-sera-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="Autocisterna Bizzotto nel piazzale aziendale al tramonto" width="1600" height="900" loading="lazy" decoding="async"></picture></figure>
     </div>
   </div>
 </section>

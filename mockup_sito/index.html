@@ -37,7 +37,8 @@ main{padding:48px 0 84px}
 .card .who{margin:11px 0 0;color:var(--ink);font-size:14.5px}
 
 /* miniature schematiche */
-.wf{margin:18px 22px 0;border:1px solid var(--line);background:var(--mist);padding:8px;display:grid;gap:5px}
+.wf img{display:block;width:100%;height:100%;object-fit:cover;object-position:top center}
+.wf{margin:18px 22px 0;border:1px solid var(--line);border-radius:5px;overflow:hidden;background:#0f151c;line-height:0;aspect-ratio:4/3}
 .wf i{display:block;background:#c3cbd2;border-radius:1px}
 .wf .bar{height:8px;background:var(--graphite)}
 .wf .img{background:repeating-linear-gradient(135deg,rgba(244,178,35,.55) 0 5px,transparent 5px 10px),#aeb7bf}
@@ -78,7 +79,7 @@ ul.pts li b{color:var(--graphite);font-weight:700}
   <div class="wrap">
     <span class="lab">Autotrasporti Bizzotto · homepage</span>
     <h1>Otto direzioni, otto caratteri diversi</h1>
-    <p>Stesso contenuto e stessa palette di marca: cambiano struttura, tipografia e temperatura. Le prime tre sono impostazioni classiche, le altre cinque spingono di più. Gli spazi delle fotografie sono segnati con il retino ambra e dicono cosa scattare o ritagliare.</p>
+    <p>Stesso contenuto e stessa palette di marca: cambiano struttura, tipografia e temperatura. Le prime tre sono impostazioni classiche, le altre cinque spingono di più. Ora sono <b>complete</b>: marchio nuovo in testata e fotografie al posto dei riquadri a retino. Le immagini sono ritoccate e vanno sostituite con scatti veri prima di pubblicare.</p>
     <div class="legend">
       <span><b>Firma comune</b> · pannello ADR 30 / 1202, codice vero del gasolio</span>
       <span><b>Contatto unico</b> · modulo ed email, nessun numero</span>
@@ -96,14 +97,7 @@ ul.pts li b{color:var(--graphite);font-weight:700}
         <h2>A · Pannello</h2>
         <p class="who">Una cosa grande per schermata. La fotografia occupa tutta l'apertura, il titolo ci sta sopra.</p>
       </div>
-      <div class="wf" aria-hidden="true">
-        <i class="bar"></i><i class="img" style="height:74px"></i>
-        <i class="txt"></i><i class="txt2"></i><i class="amb" style="height:9px;width:36%"></i>
-        <div class="row r3"><i style="height:18px"></i><i style="height:18px"></i><i style="height:18px"></i></div>
-        <i style="height:10px"></i><i style="height:10px"></i>
-        <i class="img" style="height:30px"></i><i class="dark" style="height:22px"></i>
-      </div>
-      <ul class="pts">
+      <div class="wf"><img src="img/anteprime/a-pannello.jpg" alt="Anteprima della variante A · Pannello" loading="lazy" decoding="async" width="880" height="660"></div><ul class="pts">
         <li><b>Forte se</b> avete una gran foto d'apertura</li>
         <li><b>Preventivo</b> in fondo</li>
       </ul>
@@ -116,15 +110,7 @@ ul.pts li b{color:var(--graphite);font-weight:700}
         <h2>B · Banchina</h2>
         <p class="who">Schermata divisa, foto verticale a destra. Il modulo di richiesta arriva a metà pagina.</p>
       </div>
-      <div class="wf" aria-hidden="true">
-        <i class="bar"></i>
-        <div class="row split"><div class="row"><i class="txt"></i><i class="txt2"></i><i class="amb" style="height:9px;width:44%"></i></div><i class="img" style="height:62px"></i></div>
-        <div class="row r3"><i style="height:16px"></i><i style="height:16px"></i><i style="height:16px"></i></div>
-        <div class="row split"><i style="height:44px"></i><i class="amb" style="height:44px;opacity:.5"></i></div>
-        <div class="row r3"><i class="img" style="height:24px"></i><i class="img" style="height:24px"></i><i class="img" style="height:24px"></i></div>
-        <i class="dark" style="height:20px"></i>
-      </div>
-      <ul class="pts">
+      <div class="wf"><img src="img/anteprime/b-banchina.jpg" alt="Anteprima della variante B · Banchina" loading="lazy" decoding="async" width="880" height="660"></div><ul class="pts">
         <li><b>Forte se</b> volete più richieste</li>
         <li><b>Preventivo</b> a metà pagina</li>
       </ul>
@@ -137,15 +123,7 @@ ul.pts li b{color:var(--graphite);font-weight:700}
         <h2>C · Documento</h2>
         <p class="who">Impaginato come un documento di trasporto: scheda operativa e tabella dei prodotti.</p>
       </div>
-      <div class="wf" aria-hidden="true">
-        <i class="bar"></i><i class="dark" style="height:6px;opacity:.6"></i>
-        <div class="row split"><div class="row"><i style="height:26px"></i><i class="txt2"></i><i class="amb" style="height:8px;width:40%"></i></div><i style="height:52px;background:#fff;border:1px solid var(--line)"></i></div>
-        <i class="img" style="height:22px"></i>
-        <i style="height:34px;background:#fff;border:1px solid var(--line)"></i>
-        <div class="row split"><i style="height:30px"></i><i style="height:30px"></i></div>
-        <div class="row r3"><i class="img" style="height:28px"></i><i class="img" style="height:28px"></i><i class="img" style="height:28px"></i></div>
-      </div>
-      <ul class="pts">
+      <div class="wf"><img src="img/anteprime/c-documento.jpg" alt="Anteprima della variante C · Documento" loading="lazy" decoding="async" width="880" height="660"></div><ul class="pts">
         <li><b>Forte se</b> avete poche foto</li>
         <li><b>Preventivo</b> in fondo</li>
       </ul>
@@ -158,14 +136,7 @@ ul.pts li b{color:var(--graphite);font-weight:700}
         <h2>D · Tracciato</h2>
         <p class="who">Il viaggio raccontato tappa per tappa: una linea ambra si riempie mentre si scorre, come un carico che avanza.</p>
       </div>
-      <div class="wf" aria-hidden="true">
-        <i class="amb" style="height:4px"></i><i class="bar"></i>
-        <div class="row split"><div class="row"><i class="txt"></i><i class="txt2"></i><i class="amb" style="height:9px;width:40%"></i></div><i class="img" style="height:58px"></i></div>
-        <div class="rail row" style="gap:8px;margin-top:4px"><i style="height:14px"></i><i style="height:14px"></i><i style="height:14px"></i><i style="height:14px"></i></div>
-        <div class="row r4"><i style="height:16px"></i><i style="height:16px"></i><i style="height:16px"></i><i style="height:16px"></i></div>
-        <i class="amb" style="height:24px"></i>
-      </div>
-      <ul class="pts">
+      <div class="wf"><img src="img/anteprime/d-tracciato.jpg" alt="Anteprima della variante D · Tracciato" loading="lazy" decoding="async" width="880" height="660"></div><ul class="pts">
         <li><b>Sorprende:</b> animazione allo scorrimento</li>
         <li><b>Spiega</b> un mestiere che nessuno conosce</li>
       </ul>
@@ -178,15 +149,7 @@ ul.pts li b{color:var(--graphite);font-weight:700}
         <h2>E · Quadro comandi</h2>
         <p class="who">Tutto in carattere da macchina, come un pannello operativo. Prodotti, numeri ONU e classi in tabella già in apertura.</p>
       </div>
-      <div class="wf" aria-hidden="true">
-        <i class="bar"></i><i class="dark" style="height:7px;opacity:.7"></i>
-        <i class="txt"></i><i class="txt2"></i>
-        <i style="height:8px;background:#8d99a5"></i>
-        <i style="height:13px"></i><i style="height:13px"></i><i style="height:13px"></i><i style="height:13px"></i>
-        <div class="row r3" style="margin-top:4px"><i style="height:22px"></i><i style="height:22px"></i><i style="height:22px"></i></div>
-        <div class="row split"><i style="height:26px"></i><i style="height:26px;background:#8d99a5"></i></div>
-      </div>
-      <ul class="pts">
+      <div class="wf"><img src="img/anteprime/e-quadrocomandi.jpg" alt="Anteprima della variante E · Quadro comandi" loading="lazy" decoding="async" width="880" height="660"></div><ul class="pts">
         <li><b>Forte se</b> i clienti sono tecnici</li>
         <li><b>Nessun sito</b> del settore fa così</li>
       </ul>
@@ -199,15 +162,7 @@ ul.pts li b{color:var(--graphite);font-weight:700}
         <h2>F · Cartello</h2>
         <p class="who">Linguaggio della segnaletica di pericolo: nastri diagonali, riquadri spessi, il rombo di classe 3 in filigrana.</p>
       </div>
-      <div class="wf" aria-hidden="true">
-        <i class="bar"></i>
-        <i style="height:6px;background:repeating-linear-gradient(45deg,var(--graphite) 0 6px,var(--amber) 6px 12px)"></i>
-        <div class="row split"><div class="row"><i class="txt"></i><i class="amb" style="height:10px;width:52%"></i><i class="txt2"></i></div><i class="img" style="height:56px"></i></div>
-        <div class="row r3"><i style="height:26px;border:1px solid var(--graphite)"></i><i style="height:26px;border:1px solid var(--graphite)"></i><i style="height:26px;border:1px solid var(--graphite)"></i></div>
-        <i class="amb" style="height:20px"></i>
-        <i class="dark" style="height:18px"></i>
-      </div>
-      <ul class="pts">
+      <div class="wf"><img src="img/anteprime/f-cartello.jpg" alt="Anteprima della variante F · Cartello" loading="lazy" decoding="async" width="880" height="660"></div><ul class="pts">
         <li><b>Sorprende:</b> si riconosce da lontano</li>
         <li><b>Rischio:</b> tono molto marcato</li>
       </ul>
@@ -220,15 +175,7 @@ ul.pts li b{color:var(--graphite);font-weight:700}
         <h2>G · Bianco tecnico</h2>
         <p class="who">Molto spazio, griglia rigorosa, figure quotate come in un disegno tecnico. L'ambra compare pochissimo.</p>
       </div>
-      <div class="wf" aria-hidden="true">
-        <i class="bar" style="background:#e9edf0"></i>
-        <i style="height:22px;background:#dfe4e8"></i>
-        <div class="row split"><i class="txt"></i><i style="height:26px;background:#e9edf0"></i></div>
-        <i class="img" style="height:30px"></i>
-        <div class="row" style="grid-template-columns:.2fr 1fr"><i style="height:40px;background:#e9edf0"></i><div class="row"><i style="height:11px"></i><i style="height:11px"></i><i style="height:11px"></i></div></div>
-        <div class="row r3"><i class="img" style="height:26px"></i><i class="img" style="height:26px"></i><i class="img" style="height:26px"></i></div>
-      </div>
-      <ul class="pts">
+      <div class="wf"><img src="img/anteprime/g-biancotecnico.jpg" alt="Anteprima della variante G · Bianco tecnico" loading="lazy" decoding="async" width="880" height="660"></div><ul class="pts">
         <li><b>Forte se</b> puntate su clienti grandi</li>
         <li><b>Invecchia</b> meglio di tutte</li>
       </ul>
@@ -241,16 +188,9 @@ ul.pts li b{color:var(--graphite);font-weight:700}
         <h2>H · Notturno</h2>
         <p class="who">Fondo nero, titolo in carattere elegante, luce ambra: il turno che comincia prima dell'alba. Poche parole, molta atmosfera.</p>
       </div>
-      <div class="wf" aria-hidden="true">
-        <i class="dark" style="height:78px;background:repeating-linear-gradient(135deg,rgba(244,178,35,.35) 0 5px,transparent 5px 10px),#121820"></i>
-        <i style="height:12px"></i>
-        <i style="height:11px"></i><i style="height:11px"></i><i style="height:11px"></i>
-        <div class="row split"><i class="img" style="height:34px"></i><div class="row"><i class="img" style="height:15px"></i><i class="img" style="height:14px"></i></div></div>
-        <i class="dark" style="height:22px"></i>
-      </div>
-      <ul class="pts">
+      <div class="wf"><img src="img/anteprime/h-notturno.jpg" alt="Anteprima della variante H · Notturno" loading="lazy" decoding="async" width="880" height="660"></div><ul class="pts">
         <li><b>Sorprende:</b> sembra un manifesto, non un sito</li>
-        <li><b>Chiede</b> una foto notturna vera</li>
+        <li><b>Gira</b> su una versione notturna della foto</li>
       </ul>
       <div class="go"><a class="btn" href="variante-h-notturno.html">Apri H</a></div>
     </article>

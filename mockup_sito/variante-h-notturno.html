@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <title>Variante H — Notturno · Autotrasporti Bizzotto</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +25,8 @@ a{color:inherit}
 header{position:absolute;top:0;left:0;right:0;z-index:60;padding-top:26px}
 .head-in{display:flex;align-items:center;gap:30px}
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-.brand img{width:40px;height:40px}
+.brand img{height:38px;width:auto;display:block;filter:none}
+@media (max-width:560px){.brand img{height:28px}}
 .brand b{font:400 22px/1 var(--serif);letter-spacing:.01em}
 .brand i{display:block;font:400 8.5px/1.4 var(--mono);letter-spacing:.3em;color:var(--steel);font-style:normal;margin-top:2px}
 nav{display:flex;gap:28px;margin-left:auto;font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
@@ -37,7 +39,16 @@ nav a:hover{color:var(--warm)}
 /* hero notturna */
 .hero{position:relative;min-height:96vh;display:flex;align-items:flex-end;padding:150px 0 62px;overflow:hidden}
 .hero-bg{position:absolute;inset:0}
-.hero-bg .ph{height:100%;border:0;background:repeating-linear-gradient(135deg,rgba(244,178,35,.09) 0 18px,transparent 18px 36px),#10171f;align-items:flex-start;justify-content:flex-end}
+.hero-bg .ph{margin:0;position:relative;overflow:hidden;background:#0f151c;line-height:0}
+.ph picture{display:block;width:100%;height:100%}
+.ph img{display:block;width:100%;height:100%;object-fit:cover}
+.hero-media .ph,.hero-bg .ph{position:absolute;inset:0;height:100%;width:100%;overflow:hidden}
+.hero-media .ph{height:100%}
+
+.ph picture{display:block;width:100%;height:100%}
+.ph img{display:block;width:100%;height:100%;object-fit:cover}
+
+
 .hero-bg::after{content:"";position:absolute;inset:0;background:
    radial-gradient(ellipse 60% 50% at 76% 34%,rgba(255,190,80,.22),transparent 62%),
    linear-gradient(180deg,rgba(7,10,14,.72) 0%,rgba(7,10,14,.42) 40%,rgba(7,10,14,.95) 92%)}
@@ -54,13 +65,13 @@ h1 em{font-style:italic;color:var(--warm)}
 .hero-meta{font:400 12px/1.9 var(--mono);color:var(--steel);letter-spacing:.1em;text-align:right}
 .hero-meta b{color:var(--white);font-weight:500}
 
-.ph{margin:0;background:repeating-linear-gradient(135deg,rgba(244,178,35,.1) 0 16px,transparent 16px 32px),#111922;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;text-align:center}
-.ph figcaption{padding:24px;max-width:32ch}
-.ph .tag{display:inline-block;font:400 10px/1 var(--mono);letter-spacing:.2em;color:var(--amber);border-bottom:1px solid var(--amber);padding-bottom:5px}
-.ph strong{display:block;margin:13px 0 7px;font:400 20px/1.25 var(--serif)}
-.ph .meta{display:block;font:400 11.5px/1.65 var(--mono);color:var(--steel)}
-.hero-bg .ph figcaption{margin:120px 40px 0 0;background:rgba(7,10,14,.62);border:1px solid rgba(255,255,255,.12)}
-@media(max-width:900px){.hero-bg .ph figcaption{display:none}}
+.ph{margin:0;background:#0f151c;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;text-align:center}
+
+
+
+
+.hero-bg 
+@media(max-width:900px){.hero-bg }
 
 /* il turno */
 .shift{padding:104px 0;background:var(--deep)}
@@ -120,17 +131,11 @@ footer{border-top:1px solid rgba(255,255,255,.12);padding:52px 0 34px;color:var(
 
 <section class="hero">
   <div class="hero-bg">
-    <figure class="ph">
-      <figcaption>
-        <span class="tag">FOTO 01 · HERO</span>
-        <strong>Mezzo nel piazzale prima dell'alba</strong>
-        <span class="meta">2400×1600 · orizzontale<br>luce dei fari o del piazzale, cielo scuro<br>è lo scatto che regge tutta questa variante</span>
-      </figcaption>
-    </figure>
+    <figure class="ph"><picture><source type="image/webp" srcset="img/piazzale-notte-800.webp 800w, img/piazzale-notte-1200.webp 1200w, img/piazzale-notte-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/piazzale-notte-1600.jpg" srcset="img/piazzale-notte-800.jpg 800w, img/piazzale-notte-1200.jpg 1200w, img/piazzale-notte-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="Autocisterna Bizzotto nel piazzale prima dell&#39;alba" width="1600" height="900" loading="eager" fetchpriority="high"></picture></figure>
   </div>
   <header>
     <div class="wrap head-in">
-      <a class="brand" href="#"><img src="../materiali_sito/brand/logo-mark.svg" alt=""><span><b>Bizzotto</b><i>AUTOTRASPORTI</i></span></a>
+      <a class="brand" href="#" aria-label="Autotrasporti Bizzotto"><img src="img/logo-reverse.svg" alt="Autotrasporti Bizzotto"></a>
       <nav><a href="#turno">Il turno</a><a href="#mezzi">Mezzi</a><a href="#contatti">Contatti</a></nav>
       <a class="tel" href="#contatti">Scrivici</a>
     </div>
@@ -189,10 +194,10 @@ footer{border-top:1px solid rgba(255,255,255,.12);padding:52px 0 34px;color:var(
     <span class="lab">Mezzi</span>
     <h2>Le fotografie sono nostre</h2>
     <div class="gal-grid">
-      <figure class="ph"><figcaption><span class="tag">FOTO 02</span><strong>Flotta nel piazzale</strong><span class="meta">1600×1200<br>ricrop stretto di fleet.jpg<br>meglio con luce di sera</span></figcaption></figure>
+      <figure class="ph"><picture><source type="image/webp" srcset="img/flotta-tramonto-800.webp 800w, img/flotta-tramonto-1200.webp 1200w, img/flotta-tramonto-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/flotta-tramonto-1600.jpg" srcset="img/flotta-tramonto-800.jpg 800w, img/flotta-tramonto-1200.jpg 1200w, img/flotta-tramonto-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="I mezzi della flotta schierati nel piazzale al tramonto" width="1600" height="900" loading="lazy" decoding="async"></picture></figure>
       <div class="gal-col">
-        <figure class="ph"><figcaption><span class="tag">FOTO 03</span><strong>Manicotti in carico</strong><span class="meta">1000×620<br>ricrop di operations.jpg<br>senza marchi di terzi</span></figcaption></figure>
-        <figure class="ph"><figcaption><span class="tag">FOTO 04</span><strong>Autista al lavoro</strong><span class="meta">1000×620<br>da scattare, controluce dei fari</span></figcaption></figure>
+        <figure class="ph"><picture><source type="image/webp" srcset="img/carico-700.webp 700w, img/carico-1000.webp 1000w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/carico-1000.jpg" srcset="img/carico-700.jpg 700w, img/carico-1000.jpg 1000w" sizes="(max-width:900px) 100vw, 60vw" alt="Due autocisterne collegate ai manicotti durante le operazioni di carico" width="900" height="1200" loading="lazy" decoding="async"></picture></figure>
+        <figure class="ph"><picture><source type="image/webp" srcset="img/flotta-tramonto-800.webp 800w, img/flotta-tramonto-1200.webp 1200w, img/flotta-tramonto-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/flotta-tramonto-1600.jpg" srcset="img/flotta-tramonto-800.jpg 800w, img/flotta-tramonto-1200.jpg 1200w, img/flotta-tramonto-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="I mezzi della flotta schierati nel piazzale al tramonto" width="1600" height="900" loading="lazy" decoding="async"></picture></figure>
       </div>
     </div>
   </div>
