@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Far muovere una fotografia · Autotrasporti Bizzotto</title>
+<link rel="icon" href="../logo/svg/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--graphite:#121820;--amber:#F4B223;--mist:#F2F4F5;--ink:#59636E;--line:#d5dbe0;
+--body:"Manrope",system-ui,sans-serif;--mono:"IBM Plex Mono",monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--mist);color:var(--graphite);font:400 17px/1.65 var(--body);-webkit-font-smoothing:antialiased}
+img,video{max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--graphite);outline-offset:3px}
+.wrap{width:min(1000px,92vw);margin-inline:auto}
+header.top{background:var(--graphite);color:#fff;padding:62px 0 54px}
+.lab{font:500 10.5px/1 var(--mono);letter-spacing:.24em;text-transform:uppercase;color:var(--amber)}
+header.top h1{font:800 clamp(30px,4.4vw,46px)/1.08 var(--body);letter-spacing:-.032em;margin:16px 0 0}
+header.top p{color:#c9d1d8;margin:18px 0 0;max-width:62ch}
+main{padding:42px 0 80px}
+section{background:#fff;border:1px solid var(--line);margin-bottom:26px;overflow:hidden}
+.stage{position:relative;aspect-ratio:16/9;overflow:hidden;background:#0f151c}
+.stage img,.stage video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.stage .velo{position:absolute;inset:0;z-index:2;
+  background:linear-gradient(100deg,rgba(18,24,32,.92) 0%,rgba(18,24,32,.72) 44%,rgba(18,24,32,.25) 100%)}
+.stage .testo{position:absolute;z-index:3;left:clamp(20px,4vw,48px);bottom:clamp(20px,4vw,44px);color:#fff;max-width:22ch}
+.stage .testo b{display:block;font:800 clamp(22px,3.4vw,40px)/1.06 var(--body);letter-spacing:-.03em}
+.stage .testo em{display:block;font-style:normal;color:var(--amber)}
+.stage .testo span{display:block;margin-top:12px;font:500 10.5px/1 var(--mono);letter-spacing:.22em;color:#c9d1d8}
+
+/* 1 — avvicinamento lento */
+@keyframes avvicina{from{transform:scale(1)}to{transform:scale(1.16)}}
+.s1 img{animation:avvicina 26s ease-in-out infinite alternate;transform-origin:58% 62%}
+/* 2 — carrellata laterale */
+@keyframes carrella{from{transform:scale(1.18) translateX(-3.2%)}to{transform:scale(1.18) translateX(3.2%)}}
+.s2 img{animation:carrella 30s ease-in-out infinite alternate}
+/* 3 — alba: la luce che cresce mentre la foto si avvicina appena */
+@keyframes schiarisci{from{filter:brightness(.52) saturate(.72)}to{filter:brightness(1.02) saturate(1.06)}}
+@keyframes respira{from{transform:scale(1.02)}to{transform:scale(1.1)}}
+.s3 img{animation:schiarisci 18s ease-in-out infinite alternate,respira 24s ease-in-out infinite alternate}
+@media (prefers-reduced-motion:reduce){.stage img{animation:none!important}}
+
+.in{padding:26px 30px 30px}
+h2{font:800 23px/1.25 var(--body);letter-spacing:-.022em;margin:0}
+.tag{display:inline-block;font:500 10px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;
+  background:var(--amber);color:var(--graphite);padding:6px 9px;border-radius:3px;margin-bottom:12px}
+.in p{color:var(--ink);margin:10px 0 0;font-size:16px;max-width:70ch}
+.dati{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.dati span{font:500 12px/1 var(--mono);color:var(--ink);border:1px solid var(--line);border-radius:20px;padding:8px 13px}
+.dati .si{border-color:#8fbf7a;color:#3f6b2c}
+.dati .no{border-color:#d99a9a;color:#9b3b3b}
+.note{background:#fff;border:1px solid var(--line);border-left:4px solid var(--amber);padding:26px 30px;margin-top:8px}
+.note h3{font:800 19px/1.3 var(--body);margin:0 0 12px}
+.note ul{margin:0;padding-left:20px;display:grid;gap:10px;color:var(--ink);font-size:15.5px}
+.note b{color:var(--graphite)}
+footer{color:var(--ink);font:400 13px/1.7 var(--mono);padding-bottom:54px}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <span class="lab">Autotrasporti Bizzotto Srl · prova tecnica</span>
+    <h1>Far muovere una fotografia</h1>
+    <p>Stessa foto in tutti e quattro i riquadri: uno scatto <b>vero</b>, fatto nel vostro
+    piazzale, a 12 megapixel. Cambia solo il modo in cui la si fa muovere. Guardali per
+    qualche secondo ciascuno: il movimento è lento di proposito.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section>
+    <div class="stage s1">
+      <img src="m/reale-2400.jpg" alt="La flotta nel piazzale aziendale">
+      <div class="velo"></div>
+      <div class="testo"><b>Trasportiamo carburante.<em>Dal 1988.</em></b><span>1 · Avvicinamento</span></div>
+    </div>
+    <div class="in">
+      <span class="tag">Modo 1</span>
+      <h2>Avvicinamento lento</h2>
+      <p>La foto si ingrandisce pianissimo, di un sedicesimo in mezzo minuto. È il movimento
+      più usato dai siti industriali: si nota appena, ma toglie l'effetto «cartolina ferma».</p>
+      <div class="dati"><span class="si">Nessun file video</span><span class="si">Zero rischi sull'immagine</span>
+        <span class="si">Peso: solo la foto</span><span>Si ferma da solo se il visitatore ha ridotto le animazioni</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="stage s2">
+      <img src="m/reale-2400.jpg" alt="La flotta nel piazzale aziendale">
+      <div class="velo"></div>
+      <div class="testo"><b>Carburante in cisterna,<em>consegnato dove serve.</em></b><span>2 · Carrellata</span></div>
+    </div>
+    <div class="in">
+      <span class="tag">Modo 2</span>
+      <h2>Carrellata laterale</h2>
+      <p>La foto scorre lentamente di lato, come una macchina da presa su binario. Funziona
+      bene quando il soggetto è largo — una fila di mezzi — perché li fa scoprire uno a uno.</p>
+      <div class="dati"><span class="si">Nessun file video</span><span class="si">Zero rischi sull'immagine</span>
+        <span>Serve una foto larga: si perde qualcosa ai bordi</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="stage s3">
+      <img src="m/reale-2400.jpg" alt="La flotta nel piazzale aziendale">
+      <div class="velo"></div>
+      <div class="testo"><b>Quando voi aprite,<em>noi abbiamo già consegnato.</em></b><span>3 · L'alba</span></div>
+    </div>
+    <div class="in">
+      <span class="tag">Modo 3</span>
+      <h2>La luce che cresce</h2>
+      <p>La foto parte scura e si schiarisce, mentre si avvicina appena: il turno che comincia
+      col buio e finisce con la luce. È il movimento che racconta qualcosa, non solo che si
+      muove — ha senso solo se il sito parla del turno di notte.</p>
+      <div class="dati"><span class="si">Nessun file video</span><span class="si">Zero rischi sull'immagine</span>
+        <span>Ha senso solo con la proposta Notturno</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="stage">
+      <video autoplay muted loop playsinline preload="metadata" poster="m/poster.jpg">
+        <source src="m/movimento.webm" type="video/webm">
+        <source src="m/movimento.mp4" type="video/mp4">
+      </video>
+      <div class="velo"></div>
+      <div class="testo"><b>Da chi lo produce<em>a chi lo distribuisce.</em></b><span>4 · Video vero</span></div>
+    </div>
+    <div class="in">
+      <span class="tag">Modo 4</span>
+      <h2>Video vero, generato dalla foto</h2>
+      <p>Qui c'è un file video di 15 secondi, costruito dalla stessa foto: avvicinamento più
+      una leggerissima oscillazione, che con i primi tre non si può fare. In cambio pesa
+      <b>1 MB</b> e va scaricato prima di partire.</p>
+      <div class="dati"><span class="si">Movimenti più ricchi</span><span class="no">Pesa 1 MB</span>
+        <span class="no">Su rete lenta parte in ritardo</span><span>Nessun pixel inventato: è sempre la vostra foto</span></div>
+    </div>
+  </section>
+
+  <div class="note">
+    <h3>Quello che non ho fatto, e perché</h3>
+    <ul>
+      <li><b>Non ho usato l'intelligenza artificiale per animare la foto.</b> Strumenti come
+      Runway o Kling fanno muovere davvero le ruote e le nuvole, ma <b>inventano i pixel</b>:
+      sulle vostre foto deformerebbero targhe, pannelli arancioni e scritte sui mezzi. Lo
+      abbiamo già visto sulle immagini ritoccate, dove i numeri ADR sono diventati illeggibili.
+      Su un sito di trasporto merci pericolose è il dettaglio sbagliato da falsificare.</li>
+      <li><b>Il riferimento che mi hai dato non ha video.</b> Ho controllato il sito di Gruppo
+      Koala: nessun filmato, solo fotografie ferme. Il tema carica una libreria video che non
+      viene mai usata.</li>
+      <li><b>La cosa migliore resta un video vero.</b> Trenta secondi girati col telefono —
+      un mezzo che entra nel piazzale, i manicotti che si collegano — valgono più di qualsiasi
+      movimento applicato a una foto. Se lo giri, lo monto io.</li>
+    </ul>
+  </div>
+</main>
+
+<footer class="wrap">
+  Autotrasporti Bizzotto Srl · Via Asiago 33, 36022 Cassola (VI) · P. IVA 02020960247<br>
+  Pagina di lavoro, non destinata al pubblico. · <a href="../">Torna ai materiali</a>
+</footer>
+</body>
+</html>
