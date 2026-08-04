@@ -198,6 +198,18 @@ footer a{text-decoration:none}
 .pg-send:hover{filter:brightness(.94)}
 .pg-avviso{margin-top:16px;font:400 13.5px/1.6 "IBM Plex Mono",monospace;color:#5A646E}
 
+/*finitura*/
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.16,.6,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+a.btn::after{content:"\2192";display:inline-block;margin-left:10px;transition:transform .25s ease}
+a.btn:hover::after{transform:translateX(4px)}
+a.pg-send::after{content:"\2192";display:inline-block;margin-left:10px;transition:transform .25s ease}
+a.pg-send:hover::after{transform:translateX(4px)}
+header{transition:box-shadow .3s ease}
+header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
+@keyframes heroUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.js .rv{transform:translateY(14px)}
 </style>
 <meta name="description" content="Richiedi un trasporto di carburante: modulo con i dati del carico, risposta via email.">
 </head>
@@ -292,5 +304,6 @@ footer a{text-decoration:none}
   </div>
 </footer>
 <script src="../mobile-nav.js?v=2" defer></script>
+<script src="../reveal.js" defer></script>
 </body>
 </html>

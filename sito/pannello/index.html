@@ -236,6 +236,39 @@ footer a:hover{color:var(--amber)}
 .pg-send:hover{filter:brightness(.94)}
 .pg-avviso{margin-top:16px;font:400 13.5px/1.6 "IBM Plex Mono",ui-monospace,monospace;color:#59636E}
 
+/*finitura*/
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.16,.6,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+a.btn::after{content:"\2192";display:inline-block;margin-left:10px;transition:transform .25s ease}
+a.btn:hover::after{transform:translateX(4px)}
+a.pg-send::after{content:"\2192";display:inline-block;margin-left:10px;transition:transform .25s ease}
+a.pg-send:hover::after{transform:translateX(4px)}
+header{transition:box-shadow .3s ease}
+header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
+@keyframes heroUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+
+@media (prefers-reduced-motion:no-preference){
+.hero-in > *{animation:heroUp .85s cubic-bezier(.16,.6,.2,1) both}
+.hero-in > *:nth-child(2){animation-delay:.09s}
+.hero-in > *:nth-child(3){animation-delay:.18s}
+.hero-in > *:nth-child(4){animation-delay:.27s}
+.hero-in > *:nth-child(5){animation-delay:.38s}
+.js #servizi.rv .svc-row{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.js #servizi.rv.in .svc-row{opacity:1;transform:none}
+.js #servizi.rv.in .svc-row:nth-child(2){transition-delay:.12s}
+.js #servizi.rv.in .svc-row:nth-child(3){transition-delay:.24s}
+}
+.story .ph{box-shadow:20px 20px 0 var(--amber)}
+@media (max-width:900px){.story .ph{box-shadow:12px 12px 0 var(--amber)}}
+.fleet .ph{overflow:hidden}
+.fleet .ph img{transition:transform .7s cubic-bezier(.16,.6,.2,1)}
+.fleet .ph:hover img{transform:scale(1.045)}
+.banda{position:relative;padding:0;overflow:hidden;background:#0f151c}
+.banda img{display:block;width:100%;height:min(62vh,560px);object-fit:cover}
+.banda::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,24,32,.14) 0%,rgba(18,24,32,.72) 100%)}
+.banda p{position:absolute;z-index:2;left:0;right:0;bottom:clamp(28px,6vh,58px);margin:0;padding:0 6vw;text-align:center;color:#fff;font:800 clamp(22px,3.3vw,40px)/1.16 var(--display);letter-spacing:-.025em}
+.banda p em{font-style:normal;color:var(--amber)}
 </style>
 </head>
 <body>
@@ -344,6 +377,11 @@ footer a:hover{color:var(--amber)}
   </div>
 </section>
 
+<section class="banda">
+  <picture><source type="image/webp" srcset="../img/cielo-800.webp 800w, ../img/cielo-1200.webp 1200w, ../img/cielo-1600.webp 1600w" sizes="100vw"><img src="../img/cielo-1600.jpg" srcset="../img/cielo-800.jpg 800w, ../img/cielo-1200.jpg 1200w, ../img/cielo-1600.jpg 1600w" sizes="100vw" alt="Il cielo sulle Prealpi all&#39;ora dei primi giri" width="1600" height="571" loading="lazy" decoding="async"></picture>
+  <p>Le consegne cominciano <em>prima del giorno</em>.</p>
+</section>
+
 <section class="contact" id="contatti">
   <div class="wrap">
     <div class="sec-head">
@@ -398,5 +436,6 @@ footer a:hover{color:var(--amber)}
 </footer>
 
 <script src="../mobile-nav.js?v=2" defer></script>
+<script src="../reveal.js" defer></script>
 </body>
 </html>

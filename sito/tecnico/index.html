@@ -198,6 +198,30 @@ footer a{text-decoration:none}
 .pg-send:hover{filter:brightness(.94)}
 .pg-avviso{margin-top:16px;font:400 13.5px/1.6 "IBM Plex Mono",monospace;color:#5A646E}
 
+/*finitura*/
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s cubic-bezier(.16,.6,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+a.btn::after{content:"\2192";display:inline-block;margin-left:10px;transition:transform .25s ease}
+a.btn:hover::after{transform:translateX(4px)}
+a.pg-send::after{content:"\2192";display:inline-block;margin-left:10px;transition:transform .25s ease}
+a.pg-send:hover::after{transform:translateX(4px)}
+header{transition:box-shadow .3s ease}
+header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
+@keyframes heroUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+
+@media (prefers-reduced-motion:no-preference){
+.hero .wrap > *{animation:heroUp .8s cubic-bezier(.16,.6,.2,1) both}
+.hero .wrap > *:nth-child(2){animation-delay:.08s}
+.hero .wrap > *:nth-child(3){animation-delay:.16s}
+.hero .wrap > *:nth-child(4){animation-delay:.24s}
+.hero .wrap > *:nth-child(5){animation-delay:.32s}
+}
+.js .rv{transform:translateY(14px)}
+#azienda .ph{outline:1px solid var(--hair);outline-offset:13px;margin:14px}
+.banda{padding:0 0 72px}
+.banda img{display:block;width:100%;height:min(54vh,480px);object-fit:cover}
+.banda .cap{display:flex;justify-content:space-between;gap:20px;padding-top:14px;border-top:1px solid var(--hair);margin-top:0;font:400 11.5px/1.6 var(--mono);color:var(--ink);letter-spacing:.06em}
 </style>
 </head>
 <body>
@@ -305,6 +329,11 @@ footer a{text-decoration:none}
   </div>
 </section>
 
+<section class="banda">
+  <picture><source type="image/webp" srcset="../img/montagne-800.webp 800w, ../img/montagne-1200.webp 1200w, ../img/montagne-1600.webp 1600w" sizes="100vw"><img src="../img/montagne-1600.jpg" srcset="../img/montagne-800.jpg 800w, ../img/montagne-1200.jpg 1200w, ../img/montagne-1600.jpg 1600w" sizes="100vw" alt="La flotta nel piazzale, davanti alle Prealpi innevate" width="1600" height="698" loading="lazy" decoding="async"></picture>
+  <div class="wrap cap"><span>Cassola (VI)</span><span>Il piazzale, prima del primo giro</span></div>
+</section>
+
 <section class="pale" id="contatti">
   <div class="wrap sec-grid">
     <div class="sec-num">04<br>Contatti</div>
@@ -355,5 +384,6 @@ footer a{text-decoration:none}
 </footer>
 
 <script src="../mobile-nav.js?v=2" defer></script>
+<script src="../reveal.js" defer></script>
 </body>
 </html>
