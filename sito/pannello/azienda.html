@@ -247,6 +247,22 @@ a.pg-send:hover::after{transform:translateX(4px)}
 header{transition:box-shadow .3s ease}
 header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
 @keyframes heroUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+
+/*interni*/
+.pg-shot figcaption{color:#A7B0BA}
+.pg-open{margin:clamp(44px,5.5vw,70px) 0 0;box-shadow:14px 14px 0 var(--amber)}
+.pg-open img{aspect-ratio:12/5;width:100%;object-fit:cover}
+.pg-steps{background:transparent;border:0;gap:0;border-top:1px solid var(--line);margin-top:44px}
+.pg-steps li{background:transparent;padding:34px 0;border-bottom:1px solid var(--line);grid-template-columns:96px minmax(0,1fr)}
+.pg-steps b{background:transparent;border-radius:0;padding:0 0 6px;font:800 30px/1 var(--display);letter-spacing:0;color:var(--graphite);border-bottom:3px solid var(--amber)}
+.pg-steps h3{font:800 20px/1.35 var(--display);margin:0;letter-spacing:-.01em}
+.pg-steps p{max-width:64ch}
+.pg-cta{margin-top:clamp(56px,7vw,88px);background:var(--graphite);color:var(--white);padding:clamp(36px,4.5vw,58px) clamp(28px,4vw,56px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:center;border-radius:6px}
+.pg-cta-kick{margin:0 0 10px;font:500 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--amber)}
+.pg-cta-line{margin:0;font:800 clamp(22px,2.6vw,30px)/1.25 var(--display);letter-spacing:-.015em}
+@media (max-width:760px){.pg-cta{grid-template-columns:1fr}}
+button.pg-send{width:100%}
+.pg-form textarea{min-height:150px}
 </style>
 <meta name="description" content="Autotrasporti Bizzotto Srl: dal 1988 a Cassola (VI), struttura corta, mezzi omologati e autisti abilitati ADR.">
 </head>
@@ -269,6 +285,11 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
       <p>Bizzotto nasce a Cassola nel 1988 e da allora fa una cosa sola: trasportare
       carburante per chi lo distribuisce. Nessun cambio di mestiere, nessuna sede lontana.</p>
     </div>
+
+    <figure class="pg-shot pg-open">
+      <picture><source type="image/webp" srcset="../img/piazzale-sera-800.webp 800w ../img/piazzale-sera-1200.webp 1200w ../img/piazzale-sera-1600.webp 1600w" sizes="(max-width:900px) 100vw, 1160px"><img src="../img/piazzale-sera-1600.jpg" srcset="../img/piazzale-sera-800.jpg 800w ../img/piazzale-sera-1200.jpg 1200w ../img/piazzale-sera-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 1160px" alt="Il piazzale di Cassola alla sera, mezzi al rientro" width="1600" height="900" decoding="async"></picture>
+      <figcaption>Via Asiago 33, a fine giornata.</figcaption>
+    </figure>
 
     <div class="pg-cols" style="margin-top:clamp(44px,6vw,72px)">
       <div>
@@ -314,7 +335,11 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
     dice due cose a chi sa leggerlo: liquido infiammabile, gasolio. Chi lavora nel settore
     lo capisce a colpo d'occhio, ed è il motivo per cui lo abbiamo messo anche qui.</div>
 
-    <p style="margin-top:34px"><a class="pg-send" href="contatti.html">Richiedi un trasporto</a></p>
+    <div class="pg-cta">
+      <div><p class="pg-cta-kick">Lavorare insieme</p>
+      <p class="pg-cta-line">La prova migliore è un primo viaggio.</p></div>
+      <a class="pg-send" href="contatti.html">Richiedi un trasporto</a>
+    </div>
   </div>
 </section>
 
