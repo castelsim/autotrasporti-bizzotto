@@ -4,8 +4,17 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
 <title>Azienda · Autotrasporti Bizzotto Srl</title>
+<!--meta3-->
+<meta name="description" content="Autotrasporti Bizzotto Srl, Cassola (VI): dal 1988 una cosa sola, il trasporto di carburanti in cisterna per chi li distribuisce. Struttura corta, un solo interlocutore.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="it_IT">
+<meta property="og:site_name" content="Autotrasporti Bizzotto Srl">
+<meta property="og:title" content="Azienda · Autotrasporti Bizzotto Srl">
+<meta property="og:description" content="Autotrasporti Bizzotto Srl, Cassola (VI): dal 1988 una cosa sola, il trasporto di carburanti in cisterna per chi li distribuisce. Struttura corta, un solo interlocutore.">
+<meta property="og:image" content="https://castelsim.github.io/autotrasporti-bizzotto/sito/img/frontali-1600.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -208,6 +217,22 @@ a.pg-send:hover::after{transform:translateX(4px)}
 header{transition:box-shadow .3s ease}
 header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
 @keyframes heroUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+
+/*interni*/
+.pg-open{margin:clamp(44px,5.5vw,70px) 0 0;box-shadow:0 30px 70px rgba(0,0,0,.55)}
+.pg-open img{aspect-ratio:12/5;width:100%;object-fit:cover}
+.pg-steps{background:transparent;border:0;gap:0;border-top:1px solid rgba(255,255,255,.14);margin-top:44px}
+.pg-steps li{background:transparent;padding:34px 0;border-bottom:1px solid rgba(255,255,255,.14);grid-template-columns:96px minmax(0,1fr)}
+.pg-steps b{background:transparent;border-radius:0;padding:0;font:italic 400 38px/1 var(--serif);color:var(--warm)}
+.pg-steps h3{font:600 20px/1.35 var(--sans);margin:0}
+.pg-steps p{max-width:64ch}
+.pg-cta{margin-top:clamp(56px,7vw,88px);border:1px solid rgba(255,255,255,.14);background:var(--deep);padding:clamp(36px,4.5vw,58px) clamp(28px,4vw,56px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:center}
+.pg-cta-kick{margin:0 0 10px;font:500 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--amber)}
+.pg-cta-line{margin:0;font:400 clamp(26px,3vw,38px)/1.15 var(--serif);letter-spacing:-.01em}
+.pg-cta-line em{color:var(--warm)}
+@media (max-width:760px){.pg-cta{grid-template-columns:1fr}}
+button.pg-send{width:100%}
+.pg-form textarea{min-height:150px}
 </style>
 <meta name="description" content="Autotrasporti Bizzotto Srl: dal 1988 a Cassola (VI), struttura corta, mezzi omologati e autisti abilitati ADR.">
 </head>
@@ -228,6 +253,11 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
       <p>Bizzotto nasce a Cassola nel 1988 e da allora fa una cosa sola: trasportare
       carburante per chi lo distribuisce. Nessun cambio di mestiere, nessuna sede lontana.</p>
     </div>
+
+    <figure class="pg-shot pg-open">
+      <picture><source type="image/webp" srcset="../img/flotta-tramonto-800.webp 800w ../img/flotta-tramonto-1200.webp 1200w ../img/flotta-tramonto-1600.webp 1600w" sizes="(max-width:900px) 100vw, 1160px"><img src="../img/flotta-tramonto-1600.jpg" srcset="../img/flotta-tramonto-800.jpg 800w ../img/flotta-tramonto-1200.jpg 1200w ../img/flotta-tramonto-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 1160px" alt="La flotta al rientro, con l’ultima luce del giorno" width="1600" height="900" decoding="async"></picture>
+      <figcaption>Il rientro, con l’ultima luce.</figcaption>
+    </figure>
 
     <div class="pg-cols" style="margin-top:clamp(44px,6vw,72px)">
       <div>
@@ -273,7 +303,11 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
     dice due cose a chi sa leggerlo: liquido infiammabile, gasolio. Chi lavora nel settore
     lo capisce a colpo d'occhio, ed è il motivo per cui lo abbiamo messo anche qui.</div>
 
-    <p style="margin-top:34px"><a class="pg-send" href="contatti.html">Richiedi un trasporto</a></p>
+    <div class="pg-cta">
+      <div><p class="pg-cta-kick">Lavorare insieme</p>
+      <p class="pg-cta-line">La prova migliore è <em>un primo viaggio</em>.</p></div>
+      <a class="pg-send" href="contatti.html">Richiedi un trasporto</a>
+    </div>
   </div>
 </section>
 
