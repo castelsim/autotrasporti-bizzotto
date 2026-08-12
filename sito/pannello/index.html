@@ -5,14 +5,14 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
-<title>Autotrasporti Bizzotto Srl · Trasporto carburanti in cisterna, Cassola (VI)</title>
+<title>Trasporto carburanti in cisterna conto terzi · Bizzotto</title>
 <!--meta3-->
-<meta name="description" content="Trasporto di prodotti petroliferi in cisterna conto terzi da Cassola (VI): gasolio, benzina e merci ADR classe 3 per distributori, aziende agricole e depositi privati in Veneto e nel Nord Italia.">
+<meta name="description" content="Autotrasporti Bizzotto, Cassola (VI): gasolio, benzina e prodotti petroliferi in cisterna conto terzi, in ADR. Rispondiamo entro la giornata lavorativa.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Autotrasporti Bizzotto Srl">
-<meta property="og:title" content="Autotrasporti Bizzotto Srl · Trasporto carburanti in cisterna, Cassola (VI)">
-<meta property="og:description" content="Trasporto di prodotti petroliferi in cisterna conto terzi da Cassola (VI): gasolio, benzina e merci ADR classe 3 per distributori, aziende agricole e depositi privati in Veneto e nel Nord Italia.">
+<meta property="og:title" content="Trasporto carburanti in cisterna conto terzi · Bizzotto">
+<meta property="og:description" content="Autotrasporti Bizzotto, Cassola (VI): gasolio, benzina e prodotti petroliferi in cisterna conto terzi, in ADR. Rispondiamo entro la giornata lavorativa.">
 <meta property="og:image" content="https://castelsim.github.io/autotrasporti-bizzotto/sito/img/frontali-1600.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,7 +52,7 @@ a{color:inherit}
 .btn:hover{background:#dda01d}
 .btn--ghost{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.45)}
 .btn--ghost:hover{background:rgba(255,255,255,.12)}
-@media (max-width:940px){.nav{display:none}.head-cta .btn{display:none}}
+@media (max-width:960px){.nav{display:none}.head-cta .btn{display:none}}
 
 /* ---------- hero ---------- */
 .hero{position:relative;background:var(--graphite);color:var(--white);overflow:hidden}
@@ -289,10 +289,157 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
   letter-spacing:-.01em;transition:gap .2s ease}
 .more:hover{gap:19px}
 .more i{font-style:normal;font:500 14px/1 var(--mono)}
+
+/*fix4*/
+/* Anello di messa a fuoco visibile su qualunque fondo: ambra racchiusa da un alone
+   scuro, cosi resta distinguibile sia sul bianco sia sul grafite. */
+a:focus-visible,button:focus-visible,input:focus-visible,
+select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{
+  outline:3px solid #F4B223;outline-offset:2px;
+  box-shadow:0 0 0 6px rgba(18,24,32,.85);border-radius:2px}
+/* Salta al contenuto */
+.skip{position:absolute;left:-9999px;top:0;z-index:999;background:#F4B223;color:#121820;
+  font:800 15px/1 inherit;padding:14px 18px;text-decoration:none}
+.skip:focus{left:8px;top:8px}
+/* Bersagli tattili nel piede */
+footer a{display:inline-block;min-height:24px;padding:5px 0}
+/* La riga della nota non deve superare la misura leggibile */
+.pg-note{max-width:66ch}
+
+/*fix4*/
+/* Il modulo non e piu rientrato di 34px per una scatola che sul bianco non si vede. */
+.pg form{padding:0;background:none;border:0}
+/* Bordi dei campi distinguibili dal fondo (erano 1,37:1). */
+.pg-form input,.pg-form select,.pg-form textarea{border-color:#8A939C}
+/* L'asterisco degli obbligatori era ambra su bianco: illeggibile. */
+.req{color:#121820}
+/* La pagina in cui ti trovi si vede nel menu. */
+.nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -3px 0 #F4B223}
 </style>
+<!--dati5-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://autotrasportibizzotto.it/#azienda",
+      "name": "Autotrasporti Bizzotto Srl",
+      "legalName": "Autotrasporti Bizzotto S.r.l.",
+      "url": "https://autotrasportibizzotto.it/",
+      "image": "https://autotrasportibizzotto.it/img/frontali-1600.jpg",
+      "description": "Trasporto di carburanti e prodotti petroliferi in cisterna conto terzi, in regime ADR, con base a Cassola (VI).",
+      "isicV4": "4923",
+      "vatID": "IT02020960247",
+      "taxID": "02020960247",
+      "foundingDate": "1988",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "name": "Partita IVA",
+          "value": "02020960247"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "REA",
+          "value": "VI-200814"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Albo nazionale autotrasportatori",
+          "value": "VI/2955214/A"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Asiago 33",
+        "postalCode": "36022",
+        "addressLocality": "Cassola",
+        "addressRegion": "VI",
+        "addressCountry": "IT"
+      },
+      "email": "info@autotrasportibizzotto.it",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "email": "info@autotrasportibizzotto.it",
+        "availableLanguage": "it",
+        "areaServed": "IT"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Veneto"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Italia settentrionale"
+        }
+      ],
+      "knowsAbout": [
+        "Trasporto di carburanti in cisterna",
+        "Trasporto ADR di merci pericolose classe 3",
+        "UN 1202 gasolio",
+        "UN 1203 benzina",
+        "Autotrasporto conto terzi"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Trasporti in cisterna",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Trasporto di gasolio in cisterna (UN 1202)",
+              "serviceType": "Trasporto di prodotti petroliferi in cisterna",
+              "provider": {
+                "@id": "https://autotrasportibizzotto.it/#azienda"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Trasporto di benzina in cisterna (UN 1203)",
+              "serviceType": "Trasporto di prodotti petroliferi in cisterna",
+              "provider": {
+                "@id": "https://autotrasportibizzotto.it/#azienda"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Trasporto ADR di merci pericolose classe 3",
+              "serviceType": "Trasporto di merci pericolose ADR",
+              "provider": {
+                "@id": "https://autotrasportibizzotto.it/#azienda"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://autotrasportibizzotto.it/#sito",
+      "url": "https://autotrasportibizzotto.it/",
+      "name": "Autotrasporti Bizzotto Srl",
+      "inLanguage": "it-IT",
+      "publisher": {
+        "@id": "https://autotrasportibizzotto.it/#azienda"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
+<a class="skip" href="#main">Salta al contenuto</a>
 <header class="site-head">
   <div class="wrap head-in">
     <a class="brand" href="index.html" aria-label="Autotrasporti Bizzotto"><img src="../img/logo.svg" alt="Autotrasporti Bizzotto"></a>
@@ -304,7 +451,7 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
 </header>
 
 <main>
-<section class="hero" style="padding:0">
+<section class="hero" id="main" style="padding:0">
   <div class="hero-media">
     <figure class="ph"><picture><source type="image/webp" srcset="../img/piazzale-sera-800.webp 800w, ../img/piazzale-sera-1200.webp 1200w, ../img/piazzale-sera-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="../img/piazzale-sera-1600.jpg" srcset="../img/piazzale-sera-800.jpg 800w, ../img/piazzale-sera-1200.jpg 1200w, ../img/piazzale-sera-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="Autocisterna Bizzotto nel piazzale aziendale al tramonto" width="1600" height="900" loading="eager" fetchpriority="high"></picture></figure>
   </div>
@@ -420,21 +567,22 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
       </div>
       <form onsubmit="event.preventDefault();alert('Mockup: il modulo non invia nulla.')">
         <div class="f-row">
-          <div class="field"><label for="a1">Azienda</label><input id="a1" type="text"></div>
-          <div class="field"><label for="a2">Referente</label><input id="a2" type="text"></div>
+          <div class="field"><label for="a1">Azienda</label><input id="a1" name="azienda" autocomplete="organization" required type="text"></div>
+          <div class="field"><label for="a2">Referente</label><input id="a2" name="referente" autocomplete="name" required type="text"></div>
         </div>
         <div class="f-row">
-          <div class="field"><label for="a3">Email</label><input id="a3" type="email"></div>
-          <div class="field"><label for="a4">Telefono</label><input id="a4" type="tel"></div>
+          <div class="field"><label for="a3">Email</label><input id="a3" name="email" autocomplete="email" required type="email"></div>
+          <div class="field"><label for="a4">Telefono</label><input id="a4" name="telefono" autocomplete="tel" type="tel"></div>
         </div>
         <div class="field"><label for="a5">Prodotto da trasportare</label>
-          <select id="a5"><option>Gasolio</option><option>Benzina</option><option>Altro prodotto petrolifero</option><option>Da definire</option></select>
+          <select id="a5" name="prodotto" required><option>Gasolio</option><option>Benzina</option><option>Altro prodotto petrolifero</option><option>Da definire</option></select>
         </div>
         <div class="f-row">
-          <div class="field"><label for="a6">Ritiro</label><input id="a6" type="text" placeholder="Deposito, città"></div>
-          <div class="field"><label for="a7">Consegna</label><input id="a7" type="text" placeholder="Destinazione"></div>
+          <div class="field"><label for="a6">Ritiro</label><input id="a6" name="ritiro" type="text" placeholder="Deposito, città"></div>
+          <div class="field"><label for="a7">Consegna</label><input id="a7" name="consegna" required type="text" placeholder="Destinazione"></div>
         </div>
-        <div class="field"><label for="a8">Note</label><textarea id="a8" rows="3"></textarea></div>
+        <div class="field"><label for="a8">Note</label><textarea id="a8" name="note" rows="3"></textarea></div>
+        <p class="hp" aria-hidden="true"><label>Non compilare<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></p>
         <button class="btn" type="submit">Invia la richiesta</button>
         <p class="form-note">Rispondiamo entro la giornata lavorativa.</p>
       </form>
@@ -453,7 +601,7 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
       <div><h4>Servizi</h4><ul><li><a href="trasporti.html">Gasolio e prodotti petroliferi</a></li><li><a href="trasporti.html">Merci pericolose ADR</a></li><li><a href="trasporti.html">Tracciabilità</a></li></ul></div>
       <div><h4>Contatti</h4><ul><li><a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a></li><li>Via Asiago 33, Cassola (VI)</li></ul></div>
     </div>
-    <p class="legal">Autotrasporti Bizzotto Srl · Via Asiago 33, 36022 Cassola (VI) · P. IVA 02020960247 · REA VI-______ · Albo autotrasportatori VI/2955214/A<br>Privacy policy · Cookie policy</p>
+    <p class="legal">Autotrasporti Bizzotto Srl · Via Asiago 33, 36022 Cassola (VI) · P. IVA 02020960247 · REA VI-200814 · Albo autotrasportatori VI/2955214/A<br>Privacy policy · Cookie policy</p>
   </div>
 </footer>
 
