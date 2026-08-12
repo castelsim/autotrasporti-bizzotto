@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Migliorie proposte · Sito Autotrasporti Bizzotto</title>
+<link rel="icon" href="sito/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#121820; --ink2:#1b2430; --amber:#F4B223; --paper:#fff; --off:#F6F7F8;
+  --line:#d8dde1; --line2:#eceff1; --muted:#59636E; --ok:#1F7A4D; --warn:#B4451E;
+  --sans:"Archivo",system-ui,-apple-system,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--off);color:var(--ink);font:400 16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+h1,h2,h3,h4{margin:0;line-height:1.12;letter-spacing:-.02em}
+p{margin:0 0 14px}
+a{color:inherit}
+code{font:500 .92em var(--mono);background:#eceff1;padding:1px 5px;border-radius:3px}
+
+/* testata */
+.top{background:var(--ink);color:#fff;padding:52px 0 44px}
+.top .eyebrow{font:600 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--amber);margin-bottom:18px}
+.top h1{font-size:clamp(30px,5vw,46px);font-weight:900;margin-bottom:16px}
+.top p{color:#c3ccd4;max-width:60ch;font-size:17px}
+.top .rule{width:64px;height:3px;background:var(--amber);margin:22px 0 0}
+
+/* come si legge */
+.howto{background:#fff;border-bottom:1px solid var(--line);padding:26px 0}
+.howto ul{margin:0;padding-left:20px}
+.howto li{margin-bottom:6px}
+.howto strong{font-weight:800}
+
+section.blk{padding:52px 0 8px}
+.secnum{font:600 11px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.sech{font-size:clamp(24px,3.4vw,32px);font-weight:800;margin-bottom:10px}
+.secsub{color:var(--muted);max-width:66ch;margin-bottom:30px}
+
+/* schede mockup */
+.card{background:#fff;border:1px solid var(--line);border-radius:6px;margin-bottom:26px;overflow:hidden}
+.card > .hd{display:flex;flex-wrap:wrap;gap:12px;align-items:baseline;padding:16px 20px;border-bottom:1px solid var(--line2);background:#fbfcfc}
+.cod{font:700 12px/1 var(--mono);letter-spacing:.08em;background:var(--ink);color:var(--amber);padding:6px 9px;border-radius:3px;flex:none}
+.hd h3{font-size:18px;font-weight:800;flex:1 1 240px}
+.tag{font:600 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;padding:5px 8px;border-radius:3px;border:1px solid var(--line);color:var(--muted);flex:none}
+.tag.needs{border-color:#E6C36A;background:#FDF6E4;color:#7A5A12}
+.tag.free{border-color:#BBD9C7;background:#EDF6F1;color:var(--ok)}
+.card > .bd{padding:20px}
+.why{color:var(--muted);margin-bottom:18px;max-width:74ch}
+.why b{color:var(--ink);font-weight:700}
+.ask{font-size:14.5px;border-left:3px solid var(--amber);padding:2px 0 2px 14px;margin-top:18px;color:#4a545e}
+.ask b{color:var(--ink)}
+
+/* cornice del mockup */
+.demo{border:1px solid var(--line);border-radius:4px;background:#fff;position:relative;margin:0 0 4px}
+.demo::before{content:"come si vedrebbe";position:absolute;top:-1px;left:-1px;font:600 9px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;background:var(--line2);color:var(--muted);padding:5px 8px;border-radius:4px 0 4px 0}
+.demo .in{padding:44px 28px 30px}
+.demo.dark{background:var(--ink);border-color:var(--ink)}
+.demo.dark::before{background:#2b3542;color:#aab4bf}
+
+/* segnaposto dati mancanti */
+.gap{background:#FDF3D6;border-bottom:2px dotted #C79B23;padding:0 3px;font-weight:600;white-space:nowrap}
+
+/* ——— stili interni ai mockup ——— */
+.mk-eyebrow{font:600 10px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--amber)}
+.dark .mk-eyebrow{color:var(--amber)}
+.mk-h{font-size:26px;font-weight:800;letter-spacing:-.02em;margin:10px 0 8px}
+.dark .mk-h{color:#fff}
+.dark p{color:#c3ccd4}
+
+/* M1 numeri */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.nums > div{background:#fff;padding:20px 16px}
+.dark .nums{background:#2b3542;border-color:#2b3542}
+.dark .nums > div{background:var(--ink)}
+.nums .n{font-size:34px;font-weight:900;letter-spacing:-.03em;line-height:1}
+.dark .nums .n{color:#fff}
+.nums .l{font:600 10px/1.3 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:9px}
+.dark .nums .l{color:#8d97a2}
+
+/* M2 conformità */
+.conf{border-top:2px solid var(--ink)}
+.conf .row{display:grid;grid-template-columns:1fr auto;gap:16px;padding:13px 2px;border-bottom:1px solid var(--line2);align-items:baseline}
+.conf .k{font-weight:600}
+.conf .k small{display:block;font-weight:400;font-size:13px;color:var(--muted);letter-spacing:0;margin-top:3px}
+.conf .v{font:500 13px/1 var(--mono);text-align:right;color:var(--ink)}
+.conf .v.si{color:var(--ok)}
+
+/* M3 flotta */
+.fleet{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.fleet .u{border:1px solid var(--line);border-top:3px solid var(--amber);padding:16px}
+.fleet .u h5{margin:0 0 12px;font-size:15px;font-weight:800}
+.fleet dl{margin:0;font-size:13.5px}
+.fleet dt{font:500 10px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:9px}
+.fleet dd{margin:3px 0 0;font-weight:600}
+
+/* M4 giornata */
+.day .r{display:grid;grid-template-columns:78px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line2)}
+.day .t{font:600 15px/1.4 var(--mono);color:var(--amber)}
+.day .c b{display:block;font-weight:700;margin-bottom:3px}
+.day .c span{color:var(--muted);font-size:14.5px}
+
+/* M5 committenti */
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.who .w{border:1px solid var(--line);padding:18px;background:#fbfcfc}
+.who .w h5{margin:0 0 8px;font-size:15.5px;font-weight:800}
+.who .w p{font-size:14px;color:var(--muted);margin:0}
+.who .w .pin{font:600 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:10px}
+
+/* M6 emergenza */
+.emg{background:#FBF6EC;border-left:4px solid var(--amber);padding:20px 22px}
+.emg h5{margin:0 0 10px;font-size:17px;font-weight:800}
+.emg ol{margin:0;padding-left:19px}
+.emg li{margin-bottom:7px;font-size:14.5px}
+
+/* M7 scheda pdf */
+.pdf{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.pdf .sheet{width:140px;flex:none;border:1px solid var(--line);background:#fff;padding:12px 10px;box-shadow:3px 3px 0 rgba(18,24,32,.07)}
+.pdf .sheet .lg{height:8px;width:56px;background:var(--ink);margin-bottom:9px}
+.pdf .sheet .ln{height:3px;background:var(--line);margin-bottom:5px}
+.pdf .sheet .ln.s{width:62%}
+.pdf .sheet .ln.d{background:#c3cad1}
+.pdf .txt{flex:1 1 260px}
+.pdf .btn{display:inline-flex;align-items:center;gap:9px;background:var(--ink);color:var(--amber);font:700 13px/1 var(--sans);padding:13px 17px;border-radius:3px;margin-top:6px}
+
+/* M8 risposta */
+.resp{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line)}
+.resp > div{padding:18px 20px}
+.resp .a{border-right:1px solid var(--line);background:#fbfcfc}
+.resp .lbl{font:600 10px/1 var(--mono);letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-bottom:9px}
+.resp .big{font-size:19px;font-weight:800;line-height:1.3}
+
+/* M9 modulo */
+.frm{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.frm .f{display:flex;flex-direction:column}
+.frm .f.full{grid-column:1/-1}
+.frm label{font:600 10px/1 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.frm .in2{border:1px solid #8A939C;border-radius:3px;height:40px;background:#fff}
+.frm .in2.tall{height:66px}
+.frm .hint{grid-column:1/-1;font-size:13px;color:var(--muted);margin-top:2px}
+.frm .sub{grid-column:1/-1;background:var(--amber);color:var(--ink);font-weight:800;text-align:center;padding:13px;border-radius:3px;margin-top:4px}
+
+/* bivi / decisioni */
+.forks .fork{background:#fff;border:1px solid var(--line);border-radius:6px;padding:22px;margin-bottom:20px}
+.forks h3{font-size:19px;font-weight:800;margin-bottom:6px}
+.forks .q{color:var(--muted);margin-bottom:18px;max-width:72ch}
+.opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.opt{border:1px solid var(--line);border-radius:4px;padding:15px;background:#fbfcfc}
+.opt .oc{font:700 11px/1 var(--mono);letter-spacing:.1em;color:var(--ink);background:var(--amber);display:inline-block;padding:5px 8px;border-radius:3px;margin-bottom:10px}
+.opt h4{font-size:15px;font-weight:800;margin-bottom:7px}
+.opt p{font-size:13.5px;color:var(--muted);margin:0}
+.opt .pro{font-size:13px;color:var(--ok);margin-top:9px;font-weight:600}
+.opt .con{font-size:13px;color:var(--warn);margin-top:4px;font-weight:600}
+
+/* tabella correzioni */
+.fixes{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);font-size:14.5px}
+.fixes th{text-align:left;font:600 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:12px;border-bottom:2px solid var(--ink);background:#fbfcfc;white-space:nowrap}
+.fixes td{padding:12px;border-bottom:1px solid var(--line2);vertical-align:top}
+.fixes tr:last-child td{border-bottom:0}
+.fixes .g{font:700 10px/1 var(--mono);letter-spacing:.1em;padding:4px 7px;border-radius:3px;white-space:nowrap}
+.fixes .g.alta{background:#FBE7E0;color:var(--warn)}
+.fixes .g.media{background:#FDF3D6;color:#7A5A12}
+.fixes .g.bassa{background:#EDF1F4;color:var(--muted)}
+.tblwrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+/* chiusura */
+.end{background:var(--ink);color:#fff;margin-top:56px;padding:44px 0}
+.end h2{font-size:26px;font-weight:800;margin-bottom:14px}
+.end p{color:#c3ccd4;max-width:64ch}
+.end .codes{font:600 14px/1.9 var(--mono);color:var(--amber);margin-top:16px}
+.foot{padding:26px 0 40px;font-size:13px;color:var(--muted)}
+
+@media(max-width:820px){
+  .nums{grid-template-columns:repeat(2,1fr)}
+  .fleet,.who{grid-template-columns:1fr}
+  .resp{grid-template-columns:1fr}
+  .resp .a{border-right:0;border-bottom:1px solid var(--line)}
+  .frm{grid-template-columns:1fr}
+  .day .r{grid-template-columns:64px 1fr;gap:14px}
+  .demo .in{padding:40px 18px 24px}
+  .conf .row{grid-template-columns:1fr}
+  .conf .v{text-align:left;margin-top:8px;line-height:1.5}
+  .gap{white-space:normal}
+}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <div class="wrap">
+    <div class="eyebrow">Autotrasporti Bizzotto · 12 agosto 2026</div>
+    <h1>Migliorie proposte al sito</h1>
+    <p>Quattro analisi in parallelo: 28 siti di concorrenti e operatori europei del trasporto in cisterna, la critica visiva delle tre varianti, i testi e il lato tecnico. Qui c'è quello che ne è uscito, in forma di blocchi da guardare e scegliere.</p>
+    <div class="rule"></div>
+  </div>
+</div>
+
+<div class="howto">
+  <div class="wrap">
+    <ul>
+      <li>Ogni blocco ha un <strong>codice</strong> (M1, M2…). Per sceglierli basta che mi scriviate i codici.</li>
+      <li>I mockup sono resi nei colori della variante <strong>Pannello</strong> solo per leggibilità: si adattano a qualunque variante scelga il titolare.</li>
+      <li>Il giallo tratteggiato — <span class="gap">così</span> — segna i <strong>dati che non abbiamo</strong> e che vanno chiesti al titolare.</li>
+      <li>In fondo ci sono le <strong>correzioni tecniche</strong> da fare comunque, indipendenti dalla scelta.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="wrap">
+
+<!-- ══════════ PARTE 1 ══════════ -->
+<section class="blk forks">
+  <div class="secnum">Parte 1</div>
+  <h2 class="sech">Tre bivi da sciogliere prima</h2>
+  <p class="secsub">Non sono questioni di grafica: cambiano cosa il sito può dire. Le decido con voi, non da solo.</p>
+
+  <div class="fork">
+    <h3>Bivio 1 · Il telefono</h3>
+    <p class="q">Oggi il sito non pubblica nessun numero, ed è una scelta motivata: le richieste restano scritte. Ma è anche il punto in cui vi allontanate da tutto il settore. Dei 28 siti esaminati, il telefono in evidenza c'è praticamente ovunque, e i tre operatori europei migliori mettono <b>una persona con nome, ruolo e recapito diretto</b> sulla pagina del servizio. Nessuno dei siti italiani lo fa: è il vuoto più grande del settore. C'è anche una conseguenza tecnica: senza telefono la scheda Google dell'azienda difficilmente entra nel riquadro delle mappe, dove il tasto «Chiama» è il segnale forte.</p>
+    <div class="opts">
+      <div class="opt">
+        <span class="oc">1A</span>
+        <h4>Resta com'è</h4>
+        <p>Nessun numero. Solo modulo ed email.</p>
+        <div class="pro">Le richieste restano scritte e complete</div>
+        <div class="con">Fuori dal riquadro mappe; chi ha fretta va altrove</div>
+      </div>
+      <div class="opt">
+        <span class="oc">1B</span>
+        <h4>Una persona, senza centralino</h4>
+        <p>Nome, ruolo e email diretta di chi risponde davvero. Nessun numero, ma un volto.</p>
+        <div class="pro">Prende il pattern europeo senza il telefono</div>
+        <div class="con">Serve che quella persona risponda sul serio</div>
+      </div>
+      <div class="opt">
+        <span class="oc">1C</span>
+        <h4>Numero con una regola</h4>
+        <p>«Per le urgenze <span class="gap">nome</span> risponde al <span class="gap">numero</span>, dalle <span class="gap">7</span> alle <span class="gap">18</span>.» Il modulo resta il canale principale.</p>
+        <div class="pro">Recupera le mappe e le urgenze</div>
+        <div class="con">Telefonate anche fuori orario</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fork">
+    <h3>Bivio 2 · Quanto scendere nei dati</h3>
+    <p class="q">Il sito oggi non contiene un solo numero verificabile: né mezzi, né litri, né anni senza incidenti, né massimali. È la differenza fra un sito che si legge e un sito che convince. Ma i dati devono arrivare dal titolare, e ogni dato pubblicato è un impegno.</p>
+    <div class="opts">
+      <div class="opt">
+        <span class="oc">2A</span>
+        <h4>Come ora</h4>
+        <p>Nessun numero. Si parla di come si lavora, non di quanto.</p>
+        <div class="pro">Zero lavoro, zero impegni</div>
+        <div class="con">Indistinguibile da chiunque altro</div>
+      </div>
+      <div class="opt">
+        <span class="oc">2B</span>
+        <h4>I dati che non scadono</h4>
+        <p>Anni, mezzi, capacità delle cisterne, aree servite, patentini. Cose che restano vere per anni.</p>
+        <div class="pro">Mezz'ora col titolare e il sito cambia peso</div>
+        <div class="con">—</div>
+      </div>
+      <div class="opt">
+        <span class="oc">2C</span>
+        <h4>Tutto, compresa la conformità</h4>
+        <p>Aggiunge certificati ADR, prove cisterna, consulente DGSA, massimale assicurativo, numero di Albo.</p>
+        <div class="pro">Nessun concorrente italiano lo fa</div>
+        <div class="con">Va tenuto aggiornato alle scadenze</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fork">
+    <h3>Bivio 3 · Quante pagine</h3>
+    <p class="q">Oggi sono quattro. La pagina «Trasporti» cerca di essere insieme gasolio, benzina, ADR, procedura e zone servite: così non vince nessuna ricerca. Chi cerca «trasporto ADR merci pericolose» e chi cerca «trasporto carburanti Vicenza» sono due persone diverse con due domande diverse.</p>
+    <div class="opts">
+      <div class="opt">
+        <span class="oc">3A</span>
+        <h4>Restano quattro</h4>
+        <p>Home, Trasporti, Azienda, Contatti.</p>
+        <div class="pro">Sito corto, si mantiene da solo</div>
+        <div class="con">Una sola pagina per quattro domande diverse</div>
+      </div>
+      <div class="opt">
+        <span class="oc">3B</span>
+        <h4>Sei pagine</h4>
+        <p>Si aggiungono <code>/trasporto-adr/</code> e <code>/aree-servite/</code>, con contenuto vero, non copiato.</p>
+        <div class="pro">Intercetta le ricerche che oggi passano oltre</div>
+        <div class="con">Due pagine in più da scrivere</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PARTE 2 ══════════ -->
+<section class="blk">
+  <div class="secnum">Parte 2</div>
+  <h2 class="sech">I blocchi nuovi</h2>
+  <p class="secsub">Undici blocchi che oggi non esistono. Quasi tutti nascono da vuoti veri del settore: cose che i vostri concorrenti non scrivono, e che chi compra trasporto vorrebbe leggere prima di affidarvi un carico.</p>
+
+  <!-- M1 -->
+  <div class="card">
+    <div class="hd"><span class="cod">M1</span><h3>Tre numeri nella prima schermata</h3><span class="tag needs">servono dati</span></div>
+    <div class="bd">
+      <p class="why">Nel settore è il pattern che funziona meglio e costa meno: i due concorrenti più credibili aprono con i numeri, non con gli aggettivi. Oggi la vostra prima schermata dice «Trasportiamo carburante. Dal 1988», che è giusto ma è <b>una sola prova</b>. Tre numeri veri valgono dieci aggettivi, e nessun concorrente può copiarli.</p>
+      <div class="demo dark"><div class="in">
+        <div class="mk-eyebrow">In cifre</div>
+        <div class="nums" style="margin-top:16px">
+          <div><div class="n">38</div><div class="l">anni di attività</div></div>
+          <div><div class="n"><span class="gap">?</span></div><div class="l">autocisterne</div></div>
+          <div><div class="n"><span class="gap">?</span></div><div class="l">milioni di litri all'anno</div></div>
+          <div><div class="n"><span class="gap">?</span></div><div class="l">anni senza sversamenti</div></div>
+        </div>
+      </div></div>
+      <div class="ask"><b>Serve dal titolare:</b> quante cisterne, quanti litri o quante consegne in un anno, e — se il dato regge — da quanti anni senza incidenti né sversamenti. Quest'ultimo, se è vero, è il contenuto più forte dell'intero sito.</div>
+    </div>
+  </div>
+
+  <!-- M2 -->
+  <div class="card">
+    <div class="hd"><span class="cod">M2</span><h3>Conformità: il blocco che non ha nessuno</h3><span class="tag needs">servono dati</span></div>
+    <div class="bd">
+      <p class="why">Questa è la scoperta più utile delle ricerche. Chi trasporta carburante <b>deve per legge</b> avere il certificato di approvazione ADR del veicolo, le prove periodiche della cisterna, un consulente DGSA nominato e un piano di sicurezza per le merci ad alto rischio. Sono obblighi, non meriti — ma <b>nessuno dei dodici siti italiani esaminati ne scrive uno</b>. Scriverli non costa niente e vi mette in una categoria a parte agli occhi di chi deve firmare l'affidamento. Il contrario di quello che fanno gli altri: due siti esibiscono ancora una ISO scaduta nel 2018 come se fosse un vanto.</p>
+      <p class="why" style="background:#FBF6EC;border-left:4px solid var(--amber);padding:14px 16px;margin-bottom:20px"><b>E c'è un dettaglio che fa quasi ridere:</b> il numero di iscrizione all'Albo — <code>VI/2955214/A</code> — è uno dei dati che quasi nessun concorrente pubblica, e <b>voi ce l'avete già sul sito</b>. È nel piede, in corpo 12, in mezzo alla riga legale, dove non lo legge nessuno. Non va aggiunto: va spostato.</p>
+      <div class="demo"><div class="in">
+        <div class="mk-eyebrow" style="color:#59636E">Conformità</div>
+        <div class="mk-h">Quello che siamo tenuti ad avere,<br>e che potete verificare.</div>
+        <p style="color:#59636E;max-width:58ch;margin-bottom:22px">Trasportare merce di classe 3 comporta obblighi precisi. Li elenchiamo perché siano controllabili, non perché siano un merito.</p>
+        <div class="conf">
+          <div class="row"><div class="k">Certificato di approvazione ADR dei veicoli<small>Rilasciato per ogni cisterna, con validità annuale</small></div><div class="v si">in corso di validità</div></div>
+          <div class="row"><div class="k">Prova periodica delle cisterne<small>Intermedia ogni 3 anni, completa ogni 6</small></div><div class="v">ultima <span class="gap">mese/anno</span></div></div>
+          <div class="row"><div class="k">Patentino ADR degli autisti<small>Estensione cisterne, classe 3 liquidi infiammabili</small></div><div class="v si">tutti gli autisti</div></div>
+          <div class="row"><div class="k">Consulente per la sicurezza (DGSA)<small>Nominato come previsto per chi trasporta merci pericolose</small></div><div class="v"><span class="gap">nome o studio</span></div></div>
+          <div class="row"><div class="k">Piano di sicurezza ADR 1.10.3<small>Obbligatorio per i liquidi infiammabili oltre 3.000 litri</small></div><div class="v si">adottato</div></div>
+          <div class="row"><div class="k">Albo nazionale autotrasportatori<small>Iscrizione e licenza comunitaria</small></div><div class="v">VI/2955214/A</div></div>
+          <div class="row"><div class="k">Responsabilità civile del vettore<small>Con estensione al danno ambientale da sversamento</small></div><div class="v">massimale <span class="gap">€ ?</span></div></div>
+          <div class="row"><div class="k">Gestione e-DAS<small>Documento elettronico per le accise</small></div><div class="v si">operativa</div></div>
+        </div>
+      </div></div>
+      <div class="ask"><b>Serve dal titolare:</b> data dell'ultima prova cisterna, nome del consulente DGSA, massimale della polizza. Il resto lo sappiamo già o è verificabile. <b>Regola:</b> se un dato non arriva, la riga si toglie — mai riempirla a occhio.</div>
+    </div>
+  </div>
+
+  <!-- M3 -->
+  <div class="card">
+    <div class="hd"><span class="cod">M3</span><h3>La flotta come scheda tecnica, non come galleria</h3><span class="tag needs">servono dati</span></div>
+    <div class="bd">
+      <p class="why">Oggi la sezione flotta è solo fotografie, sotto il titolo «I mezzi, davvero». Belle, ma non rispondono alla domanda che si fa chi legge: <b>«il vostro mezzo entra nel mio piazzale? porta la quantità che mi serve? separa due prodotti in un viaggio solo?»</b>. Nel settore solo due siti su dodici pubblicano le capacità in litri e solo due il numero di scomparti: chi lo fa risponde a una domanda vera prima ancora che venga posta. Le foto restano, sotto.</p>
+      <div class="demo"><div class="in">
+        <div class="mk-eyebrow" style="color:#59636E">La flotta</div>
+        <div class="mk-h" style="margin-bottom:22px">Quattro mezzi, quattro impieghi.</div>
+        <div class="fleet">
+          <div class="u"><h5>Autocisterna multiscomparto</h5><dl>
+            <dt>Capacità</dt><dd><span class="gap">?</span> litri</dd>
+            <dt>Scomparti</dt><dd><span class="gap">?</span>, separati</dd>
+            <dt>Scarico</dt><dd>pompa e contalitri</dd>
+            <dt>Motorizzazione</dt><dd>Euro <span class="gap">?</span></dd></dl></div>
+          <div class="u"><h5>Autocisterna monoscomparto</h5><dl>
+            <dt>Capacità</dt><dd><span class="gap">?</span> litri</dd>
+            <dt>Impiego</dt><dd>carichi pieni a deposito</dd>
+            <dt>Scarico</dt><dd>a gravità o con pompa</dd>
+            <dt>Motorizzazione</dt><dd>Euro <span class="gap">?</span></dd></dl></div>
+          <div class="u"><h5>Mezzo per accessi stretti</h5><dl>
+            <dt>Capacità</dt><dd><span class="gap">?</span> litri</dd>
+            <dt>Impiego</dt><dd>cortili, cantieri, aziende agricole</dd>
+            <dt>Scarico</dt><dd>tubo da <span class="gap">?</span> metri</dd>
+            <dt>Motorizzazione</dt><dd>Euro <span class="gap">?</span></dd></dl></div>
+        </div>
+      </div></div>
+      <div class="ask"><b>Serve dal titolare:</b> per ogni mezzo, capacità in litri, numero di scomparti, classe Euro, se ha contalitri e quanto è lungo il tubo di scarico. Niente targhe: non vanno pubblicate.</div>
+    </div>
+  </div>
+
+  <!-- M4 -->
+  <div class="card">
+    <div class="hd"><span class="cod">M4</span><h3>La giornata, ora per ora</h3><span class="tag free">gratis, già scritta</span></div>
+    <div class="bd">
+      <p class="why">Questo blocco <b>esiste già</b>, ma solo nella variante Notturno — ed è la cosa più forte di tutte e tre. Nessuno dei 28 siti esaminati racconta la giornata di lavoro con gli orari veri. Va portato in qualunque variante venga scelta, e completato con i due passaggi che oggi mancano e che valgono più di tutti: <b>il documento delle accise</b> e <b>la quantità misurata allo scarico</b>. Sono i due momenti in cui un committente rischia soldi.</p>
+      <div class="demo"><div class="in">
+        <div class="mk-eyebrow" style="color:#59636E">Una giornata</div>
+        <div class="mk-h" style="margin-bottom:22px">Il lavoro comincia quando è ancora buio.</div>
+        <div class="day">
+          <div class="r"><div class="t">04:30</div><div class="c"><b>Controllo del mezzo</b><span>Verifiche prima della partenza, documenti, dotazioni di sicurezza. Nessun mezzo esce senza controllo.</span></div></div>
+          <div class="r"><div class="t">05:15</div><div class="c"><b>Carico al deposito</b><span>Prodotto e quantità verificati, pannelli arancioni esposti con il codice della merce caricata. <b style="display:inline;font-weight:700">Il documento delle accise viaggia con il carico.</b></span></div></div>
+          <div class="r"><div class="t">07:00</div><div class="c"><b>Prima consegna</b><span>Collegamento, messa a terra, travaso presidiato. L'autista resta sul posto fino alla fine.</span></div></div>
+          <div class="r"><div class="t">07:40</div><div class="c"><b>Quantità misurata</b><span>Lo scarico passa dal contalitri: sul documento finisce il numero misurato, non quello previsto. <span class="gap">verificato ogni ? anni</span></span></div></div>
+          <div class="r"><div class="t">13:30</div><div class="c"><b>Documenti chiusi</b><span>Documento di trasporto firmato e riconsegnato al committente. Il giro si chiude quando la carta è in ordine.</span></div></div>
+        </div>
+      </div></div>
+      <div class="ask"><b>Serve dal titolare:</b> conferma che gli orari siano quelli veri, e ogni quanto viene verificato il contalitri.</div>
+    </div>
+  </div>
+
+  <!-- M5 -->
+  <div class="card">
+    <div class="hd"><span class="cod">M5</span><h3>Chi siete voi, non cosa facciamo noi</h3><span class="tag free">gratis</span></div>
+    <div class="bd">
+      <p class="why">Oggi i servizi sono divisi per prodotto (gasolio, ADR, tracciabilità). Ma chi legge non pensa «io sono un gasolio»: pensa «io sono un distributore» oppure «io ho un serbatoio in azienda». Dividere per tipo di cliente fa sì che ognuno trovi <b>il proprio problema</b> scritto, e mostra che quel problema lo conoscete. Non serve nessun dato nuovo, solo riscrivere.</p>
+      <div class="demo"><div class="in">
+        <div class="mk-eyebrow" style="color:#59636E">Per chi lavoriamo</div>
+        <div class="mk-h" style="margin-bottom:22px">Tre mestieri, tre problemi diversi.</div>
+        <div class="who">
+          <div class="w"><div class="pin">01</div><h5>Distributori stradali</h5><p>Il rifornimento va fatto senza chiudere l'impianto e senza sforare le fasce di traffico. Scarichiamo con contalitri, così la quantità sul documento è quella misurata, e concordiamo la finestra oraria prima, non il giorno stesso.</p></div>
+          <div class="w"><div class="pin">02</div><h5>Aziende con serbatoio proprio</h5><p>Spesso il serbatoio è in fondo a un cortile o dietro un capannone. Prima del primo viaggio guardiamo l'accesso e vi diciamo con quale mezzo si entra — o se non si entra affatto.</p></div>
+          <div class="w"><div class="pin">03</div><h5>Consorzi e aziende agricole</h5><p>Il fabbisogno si concentra in poche settimane, fra semina e raccolta. Nei picchi servono date fissate in anticipo: preferiamo dire di no a settembre piuttosto che mancare una consegna a ottobre.</p></div>
+        </div>
+      </div></div>
+      <div class="ask"><b>Da confermare col titolare:</b> che queste tre categorie siano davvero le vostre, e che le promesse scritte qui sopra siano mantenibili.</div>
+    </div>
+  </div>
+
+  <!-- M6 -->
+  <div class="card">
+    <div class="hd"><span class="cod">M6</span><h3>Cosa succede se qualcosa va storto</h3><span class="tag needs">servono dati</span></div>
+    <div class="bd">
+      <p class="why">È l'obiezione che nessun committente pronuncia ad alta voce e che tutti hanno in testa: <b>uno sversamento a casa mia, di chi è il problema?</b> Nei 28 siti esaminati la risposta non c'è mai: solo due dichiarano di avere una polizza, uno solo scrive il massimale. Rispondere per iscritto, con la procedura, è il modo più diretto di dire «ci abbiamo già pensato».</p>
+      <div class="demo"><div class="in">
+        <div class="emg">
+          <h5>Se succede qualcosa</h5>
+          <ol>
+            <li>Ogni mezzo porta a bordo il kit di primo contenimento, e l'autista è formato per usarlo.</li>
+            <li>L'autista interrompe il travaso e mette in sicurezza l'area prima di qualsiasi altra cosa.</li>
+            <li>Avvisa <span class="gap">chi</span> in azienda, che segue il caso fino alla chiusura. Un solo interlocutore, anche in questa situazione.</li>
+            <li>La responsabilità civile del vettore copre fino a <span class="gap">€ ?</span>, con estensione al danno ambientale.</li>
+            <li>L'evento viene annotato e comunicato come previsto per le merci pericolose.</li>
+          </ol>
+        </div>
+      </div></div>
+      <div class="ask"><b>Serve dal titolare:</b> il massimale della polizza e se copre il danno ambientale; chi è il riferimento in caso di emergenza. Se la polizza non ha l'estensione ambientale, la riga si toglie — non si scrive a metà.</div>
+    </div>
+  </div>
+
+  <!-- M7 -->
+  <div class="card">
+    <div class="hd"><span class="cod">M7</span><h3>Il tempo di risposta, dichiarato</h3><span class="tag free">gratis</span></div>
+    <div class="bd">
+      <p class="why">Dato notevole: <b>su dodici siti italiani del settore, zero</b> dichiarano un tempo di risposta o un orario. Voi lo scrivete già — «rispondiamo entro la giornata lavorativa» — ma è nascosto in mezzo a un paragrafo. Vale la pena metterlo in evidenza: è una promessa che nessun concorrente sta facendo, e costa solo mantenerla.</p>
+      <div class="demo"><div class="in">
+        <div class="resp">
+          <div class="a"><div class="lbl">Quando rispondiamo</div><div class="big">Entro la giornata lavorativa,<br>sempre per iscritto.</div></div>
+          <div><div class="lbl">Quando siamo in strada</div><div class="big">Dal lunedì al venerdì,<br>dalle <span class="gap">?</span> alle <span class="gap">?</span>.</div></div>
+        </div>
+      </div></div>
+      <div class="ask"><b>Serve dal titolare:</b> gli orari veri. Servono anche per la scheda Google dell'azienda, dove oggi mancano.</div>
+    </div>
+  </div>
+
+  <!-- M8 -->
+  <div class="card">
+    <div class="hd"><span class="cod">M8</span><h3>Scheda fornitore da scaricare</h3><span class="tag needs">servono dati</span></div>
+    <div class="bd">
+      <p class="why">Quando un ufficio acquisti decide di provarvi, la prima cosa che vi chiede è la documentazione per iscrivervi all'albo fornitori: ragione sociale, partita IVA, iscrizione all'Albo, estremi assicurativi, elenco mezzi. Preparare quel foglio in anticipo <b>gli risparmia una mail e a voi due giorni</b>. E chi lo scarica ha già deciso di valutarvi: è il segnale più utile che il sito possa darvi.</p>
+      <div class="demo"><div class="in">
+        <div class="pdf">
+          <div class="sheet">
+            <div class="lg"></div>
+            <div class="ln d" style="width:80%"></div><div class="ln s"></div><div class="ln"></div><div class="ln s"></div>
+            <div class="ln d" style="width:70%;margin-top:10px"></div><div class="ln"></div><div class="ln s"></div><div class="ln"></div>
+          </div>
+          <div class="txt">
+            <h4 style="font-size:18px;font-weight:800;margin-bottom:8px">Scheda fornitore</h4>
+            <p style="color:#59636E;font-size:14.5px;margin-bottom:4px">Una pagina con tutti i dati che serve allegare per aprire una posizione: anagrafica, Albo, licenza comunitaria, assicurazione, mezzi, referente.</p>
+            <span class="btn">Scarica il PDF · 1 pagina</span>
+          </div>
+        </div>
+      </div></div>
+      <div class="ask"><b>Serve dal titolare:</b> tutti i dati anagrafici e assicurativi. È lo stesso elenco del blocco M2, quindi i due si preparano insieme.</div>
+    </div>
+  </div>
+
+  <!-- M9 -->
+  <div class="card">
+    <div class="hd"><span class="cod">M9</span><h3>Il modulo, rifatto</h3><span class="tag free">gratis</span></div>
+    <div class="bd">
+      <p class="why">Tre problemi. Il primo è tecnico e va risolto comunque: <b>i campi del modulo in home non hanno un nome interno</b>, quindi il giorno che lo colleghiamo arriverebbe una mail vuota. Il secondo: il campo «Luogo di ritiro» <b>non è obbligatorio</b>, ma senza quello un preventivo non esiste — e «Prodotto» è a scelta singola, mentre un distributore ne ordina tre insieme. Il terzo: mancano le domande che evitano <b>il viaggio andato a vuoto</b>, cioè come si scarica e se il mezzo entra davvero. E dopo l'invio non succede niente di visibile: in un sito senza telefono, il modulo è l'unico canale e deve dire cosa succede dopo.</p>
+      <div class="demo"><div class="in">
+        <div class="frm">
+          <div class="f"><label>Azienda *</label><div class="in2"></div></div>
+          <div class="f"><label>Referente *</label><div class="in2"></div></div>
+          <div class="f"><label>Email *</label><div class="in2"></div></div>
+          <div class="f"><label>Telefono — se preferite che vi richiamiamo</label><div class="in2"></div></div>
+          <div class="f full"><label>Prodotto * — se ne servono più d'uno, sceglieteli tutti</label><div class="in2"></div></div>
+          <div class="f"><label>Litri per viaggio</label><div class="in2"></div></div>
+          <div class="f"><label>Ogni quanto — una volta sola, ricorrente, stagionale</label><div class="in2"></div></div>
+          <div class="f"><label>Luogo di ritiro * — o «indicatecelo voi»</label><div class="in2"></div></div>
+          <div class="f"><label>Provincia di consegna *</label><div class="in2"></div></div>
+          <div class="f"><label>Come si scarica — a gravità, con pompa, non so</label><div class="in2"></div></div>
+          <div class="f"><label>Che mezzo entra — autoarticolato, autotreno, solo motrice corta</label><div class="in2"></div></div>
+          <div class="f full"><label>Note — orari dell'impianto, manovra, vincoli</label><div class="in2 tall"></div></div>
+          <div class="hint" style="margin-bottom:2px">Rispondiamo entro la giornata lavorativa con tre cose: se possiamo farlo, in che giorno, a che prezzo. Se non rientra in quello che sappiamo fare bene, ve lo diciamo nella stessa risposta e vi diciamo perché.</div>
+          <div class="sub">Invia la richiesta</div>
+        </div>
+      </div></div>
+      <div class="ask"><b>Nessun dato serve.</b> Da decidere: se il campo Telefono resta facoltativo con la spiegazione accanto (proposta qui) o sparisce; e se la provincia diventa una tendina con le vostre province — che qualifica in un clic e permette di dire no subito e con garbo.</div>
+    </div>
+  </div>
+  <!-- M10 -->
+  <div class="card">
+    <div class="hd"><span class="cod">M10</span><h3>Le province, non «il Nord Italia»</h3><span class="tag needs">servono dati</span></div>
+    <div class="bd">
+      <p class="why">«Serviamo il Veneto e il Nord Italia» non è una risposta per chi sta a Trento, a Brescia o a Udine: non sa se scrivervi. Un elenco di province vero fa due cose insieme — chi c'è dentro scrive con più fiducia, chi è fuori non vi fa perdere tempo. È anche <b>l'unico modo di comparire nelle ricerche geografiche</b>, che in questo mestiere sono la metà del traffico. Un operatore olandese fra i migliori arriva a elencare i sedici paesi serviti per <em>tipo di cisterna</em>: la precisione qui è credibilità, non pedanteria.</p>
+      <div class="demo"><div class="in">
+        <div class="mk-eyebrow" style="color:#59636E">Dove arriviamo</div>
+        <div class="mk-h" style="margin-bottom:8px">Giri regolari, non «tutta Italia».</div>
+        <p style="color:#59636E;max-width:60ch;margin-bottom:20px">Queste sono le province che serviamo con continuità. Fuori da qui valutiamo caso per caso, in base al punto di ritiro: se non riusciamo a stare nei tempi, ve lo diciamo nella risposta al preventivo.</p>
+        <div class="conf">
+          <div class="row"><div class="k">Giri regolari<small>Consegne programmate ogni settimana</small></div><div class="v"><span class="gap">Vicenza · Treviso · Padova · …</span></div></div>
+          <div class="row"><div class="k">Su richiesta<small>Compatibilmente col ritiro e coi tempi</small></div><div class="v"><span class="gap">Verona · Trento · Brescia · …</span></div></div>
+          <div class="row"><div class="k">Depositi da cui carichiamo abitualmente<small>Il ritiro più vicino accorcia il viaggio e il prezzo</small></div><div class="v"><span class="gap">da elencare</span></div></div>
+        </div>
+      </div></div>
+      <div class="ask"><b>Serve dal titolare:</b> l'elenco vero delle province con giri regolari, quelle su richiesta, e da quali depositi caricate di solito.</div>
+    </div>
+  </div>
+
+  <!-- M11 -->
+  <div class="card">
+    <div class="hd"><span class="cod">M11</span><h3>Chi risponde quando non ci siete</h3><span class="tag needs">una decisione</span></div>
+    <div class="bd">
+      <p class="why">Il sito insiste — giustamente — sulla «struttura corta»: chi legge le richieste è la stessa persona che conosce i mezzi. Ma quel vantaggio ha un rovescio che il lettore pensa da solo: <b>se è una persona sola, prima o poi quella persona non c'è.</b> Ferie, malattia, una settimana difficile. Non dirlo lo fa sembrare un rischio più grande di quello che è. Chi lo scrive per primo lo disinnesca, e in più dimostra di aver pensato al problema.</p>
+      <div class="demo"><div class="in">
+        <div class="mk-eyebrow" style="color:#59636E">Continuità</div>
+        <div class="mk-h" style="margin-bottom:14px">Una struttura corta, con un secondo nome.</div>
+        <p style="color:#4a545e;max-width:66ch;margin-bottom:0">Chi legge le vostre richieste è <span class="gap">nome</span>, e conosce mezzi, autisti e tempi reali del giro. Quando non c'è — ferie, o semplicemente una giornata in strada — risponde <span class="gap">nome</span>, che vede le stesse richieste e gli stessi impegni. Non c'è un ufficio commerciale che promette e un reparto operativo che poi corregge: ci sono due persone che sanno le stesse cose.</p>
+      </div></div>
+      <div class="ask"><b>Serve dal titolare:</b> chi risponde di norma, e chi risponde quando l'altro manca. Se davvero non c'è un secondo, meglio non aggiungere questo blocco: si scriverebbe una cosa non vera, ed è il tipo di promessa che si rompe al primo agosto.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PARTE 3 ══════════ -->
+<section class="blk">
+  <div class="secnum">Parte 3</div>
+  <h2 class="sech">Come stanno davvero le tre varianti</h2>
+  <p class="secsub">La critica visiva ha guardato una per una le nove pagine interne, a schermo grande e a 390 pixel. Il verdetto non è quello che mi aspettavo, e vale la pena saperlo mentre il titolare sceglie.</p>
+
+  <div class="card"><div class="bd">
+    <p class="why" style="font-size:16px"><b>La scoperta di fondo: le tre varianti non sono tre progetti, sono un progetto con tre pelli.</b> Confrontando i file, il corpo della pagina Contatti è <b>identico carattere per carattere</b> in tutte e tre; in Trasporti e Azienda cambiano solo le fotografie. Tutta la differenza vive nei colori, nei caratteri e in poche righe finali. Non è un male in sé — ma spiega perché scorrendole si somigliano più di quanto sembri dalle anteprime, e perché i difetti sotto sono quasi sempre gli stessi tre moltiplicati per tre.</p>
+
+    <div style="border-top:2px solid var(--ink);margin-top:22px">
+      <div class="conf">
+        <div class="row"><div class="k">Tecnico — <b>quella che regge meglio</b><small>È l'unica senza un difetto strutturale sotto: la testata funziona, il fondo bianco non tradisce nessuna regola ereditata dalla home, e la griglia numerata a margine somiglia a un documento di trasporto, che è il mestiere. Paga in personalità: tolti i numerini, è un modello come tanti.</small></div><div class="v si">più solida</div></div>
+        <div class="row"><div class="k">Notturno — <b>quella con il potenziale più alto</b><small>È l'unica con una voce riconoscibile, ed è l'unica coerente col mestiere vero: chi trasporta carburante parte prima dell'alba. Ma oggi è anche la più rotta — la testata si sovrappone al contenuto nelle pagine interne (su telefono il titolo finisce a nove pixel dal logo), i titoli si spezzano male, ci sono due tramonti quasi identici di fila, il piede resta monco. Sono quattro correzioni da mezz'ora, non un rifacimento.</small></div><div class="v">da sistemare</div></div>
+        <div class="row"><div class="k">Pannello — <b>quella che scarterei</b><small>Non perché sia brutta: perché non porta niente che le altre due non abbiano. Il fondo bianco è del Tecnico, l'ambra è di tutte, e la sua unica idea grafica — il blocco ambra sfalsato dietro la foto — è proprio quella che si rompe di più, con una crosta gialla che spunta sotto le didascalie. In più si porta dietro un modulo rientrato di 34 pixel per una scatola invisibile e una fascia di larghezze in cui si vedono due menu insieme. È quella che costa di più da sistemare per il guadagno minore.</small></div><div class="v">sconsigliata</div></div>
+      </div>
+    </div>
+    <div class="ask" style="margin-top:22px"><b>Come lo userei:</b> il titolare sceglie quello che gli piace, non quello che è più facile da riparare — è giusto così. Ma se dovesse esitare fra due, questo dice quale conviene spingere. E se sceglie il Pannello, sappiamo in partenza che c'è mezza giornata di lavoro in più.</div>
+  </div></div>
+
+  <div class="card">
+    <div class="hd"><span class="cod">V1</span><h3>Il difetto che vale per tutte e nove le pagine interne</h3></div>
+    <div class="bd">
+      <p class="why">Le home hanno sei sezioni con fondi che si alternano — chiaro, nebbia, grafite — e cambiano respiro mentre scorri. <b>Le pagine interne sono un'unica sezione su fondo unico</b>, separata solo da filetti grigi. È la ragione meccanica per cui sembrano tutte uguali: non c'è mai un momento in cui la pagina cambia tono. In un punto ci sono perfino due filetti a sessanta pixel di distanza, che sembrano un refuso.</p>
+      <p class="why">Insieme a questo, tre cose che si vedono a occhio nudo: <b>la riga di testo più importante del sito</b> — quella che spiega il pannello arancione e il numero ONU — è lunga 180 caratteri, il doppio del leggibile; <b>la tabella dei prodotti su telefono perde le intestazioni</b> e resta un elenco di parole senza sapere più quale è la classe e quale la destinazione; e i titoli si spezzano lasciando parole orfane a fine riga («Come funziona una / consegna»), perché una misura pensata per la home cola sulle interne.</p>
+      <div class="ask"><b>Nessuna decisione vostra:</b> lo sistemo io sulla variante scelta. Lo segnalo perché è la differenza fra «tre pagine in più» e «un sito».</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PARTE 4 ══════════ -->
+<section class="blk">
+  <div class="secnum">Parte 4</div>
+  <h2 class="sech">Correzioni da fare comunque</h2>
+  <p class="secsub">Non dipendono dalla variante scelta né da dati del titolare. Le faccio io, salvo che me lo impediate.</p>
+  <div class="tblwrap">
+  <table class="fixes">
+    <thead><tr><th>Cosa</th><th>Dove</th><th>Grav.</th></tr></thead>
+    <tbody>
+      <tr><td><b>Il segnaposto <code>REA VI-______</code> è visibile online</b> nel piede, con i trattini bassi. Serve il numero dalla visura, oppure si toglie la voce.</td><td>12 pagine</td><td><span class="g alta">alta</span></td></tr>
+      <tr><td><b>«Privacy policy · Cookie policy» è testo, non un link</b>, e le due pagine non esistono. Con un modulo che raccoglie dati aziendali l'informativa è obbligatoria.</td><td>12 pagine</td><td><span class="g alta">alta</span></td></tr>
+      <tr><td><b>Doppia descrizione nella testa della pagina</b>: ce ne sono due, una vecchia e una nuova. Google ne sceglie una a caso.</td><td>9 pagine interne</td><td><span class="g alta">alta</span></td></tr>
+      <tr><td><b>I titoli delle pagine interne non contengono le parole che la gente cerca.</b> «Trasporti · Autotrasporti Bizzotto Srl» non è una ricerca che qualcuno digita; il titolo della home è troppo lungo e viene tagliato.</td><td>12 pagine</td><td><span class="g alta">alta</span></td></tr>
+      <tr><td><b>Manca la scheda dell'azienda leggibile dai motori</b> (indirizzo, zone servite, servizi, in formato macchina). Oggi né Google né gli assistenti sanno cosa fate e dove.</td><td>tutte</td><td><span class="g alta">alta</span></td></tr>
+      <tr><td><b>Fra 961 e 980 pixel di larghezza il menu sparisce del tutto</b> nella variante Notturno, e nel Pannello se ne vedono due insieme. È la larghezza di un tablet in verticale.</td><td>menu</td><td><span class="g alta">alta</span></td></tr>
+      <tr><td><b>Sette immagini pesanti servite senza la versione compressa</b> che è già nella cartella. La pagina Contatti pesa 222 KB per una sola foto: scenderebbe a circa 75.</td><td>7 immagini</td><td><span class="g alta">alta</span></td></tr>
+      <tr><td><b>Chi naviga da tastiera non vede dove si trova</b>: il contorno di selezione è grigio scuro su fondo scuro, quindi invisibile, e sui campi dei moduli è stato tolto.</td><td>3 varianti</td><td><span class="g alta">alta</span></td></tr>
+      <tr><td><b>Il menu mobile non trattiene il cursore</b>: da tastiera si attraversa tutta la pagina dietro prima di raggiungerlo.</td><td>menu</td><td><span class="g media">media</span></td></tr>
+      <tr><td><b>Manca il contenitore principale della pagina</b> nelle nove pagine interne: chi usa un lettore di schermo non ha modo di saltare direttamente al contenuto.</td><td>9 pagine</td><td><span class="g media">media</span></td></tr>
+      <tr><td><b>Bordi dei campi dei moduli troppo chiari</b> per essere distinti dallo sfondo, e l'asterisco degli obbligatori è ambra su bianco: praticamente invisibile.</td><td>3 varianti</td><td><span class="g media">media</span></td></tr>
+      <tr><td><b>«Le fotografie sono nostre» come titolo di sezione</b> parla a chi ha commissionato il sito, non a chi lo legge.</td><td>Notturno</td><td><span class="g bassa">bassa</span></td></tr>
+      <tr><td><b>I due loghi pesano 21 KB l'uno</b> e stanno in ogni pagina: comprimendoli scendono a un terzo.</td><td>logo</td><td><span class="g bassa">bassa</span></td></tr>
+      <tr><td><b>Font caricati da Google su ogni visita.</b> Portandoli dentro il sito si guadagna velocità e si evita di passare a un terzo l'indirizzo di chi visita — il che semplifica anche l'informativa e toglie il bisogno del banner cookie.</td><td>tutte</td><td><span class="g media">media</span></td></tr>
+      <tr><td><b>Nel Notturno la testata si sovrappone al contenuto</b> in tutte le pagine interne: su telefono il titolo della pagina finisce a nove pixel dal logo, e i due filetti ambra sembrano lo stesso elemento ripetuto per sbaglio.</td><td>Notturno, 3 pagine</td><td><span class="g alta">alta</span></td></tr>
+      <tr><td><b>Su telefono la tabella dei prodotti perde le intestazioni</b> e resta un elenco di parole: non si capisce più quale riga è la classe di pericolo e quale la destinazione.</td><td>3 varianti</td><td><span class="g alta">alta</span></td></tr>
+      <tr><td><b>Su telefono i numeri dei passi si tengono una colonna da 96 pixel</b>, e il testo si spreme in un quarto di schermo con un canale vuoto sotto la cifra.</td><td>9 pagine</td><td><span class="g media">media</span></td></tr>
+      <tr><td><b>Nel Pannello il modulo è rientrato di 34 pixel</b> rispetto al proprio titolo, per una scatola trasparente ereditata dalla home che su fondo bianco non si vede — restano solo i margini.</td><td>Pannello, contatti</td><td><span class="g media">media</span></td></tr>
+      <tr><td><b>Una foto verticale sfonda la colonna</b> nella pagina Contatti di tutte e tre le varianti, lasciando un rettangolo vuoto accanto.</td><td>3 varianti</td><td><span class="g media">media</span></td></tr>
+      <tr><td><b>La voce di menu della pagina in cui ti trovi non è evidenziata</b> in nessuna variante, benché il segnale sia già scritto nel codice: manca solo il colore.</td><td>12 pagine</td><td><span class="g bassa">bassa</span></td></tr>
+      <tr><td><b>Foto che non aggiungono niente</b>: un piazzale vuoto senza mezzi, un secondo tramonto identico al primo a quattrocento pixel di distanza, una foto schiacciata che taglia a metà i due camion esterni.</td><td>3 pagine</td><td><span class="g bassa">bassa</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ══════════ PARTE 5 ══════════ -->
+<section class="blk">
+  <div class="secnum">Parte 5</div>
+  <h2 class="sech">Le domande per il titolare</h2>
+  <p class="secsub">Tutti i blocchi con l'etichetta gialla dipendono da queste risposte. Si risponde in una riga ciascuna: è una telefonata di venti minuti.</p>
+  <div class="card"><div class="bd">
+    <ol style="margin:0;padding-left:20px;font-size:15.5px">
+      <li style="margin-bottom:9px">Quante autocisterne avete, e di che capacità in litri ciascuna?</li>
+      <li style="margin-bottom:9px">Quante hanno più scomparti, e quanti?</li>
+      <li style="margin-bottom:9px">Che classe Euro sono i mezzi, e di che anno è il più recente?</li>
+      <li style="margin-bottom:9px">Avete un mezzo che entra in cortili stretti? Quanto è lungo il tubo di scarico?</li>
+      <li style="margin-bottom:9px">Quanti litri, o quante consegne, in un anno?</li>
+      <li style="margin-bottom:9px">Da quanti anni siete senza sversamenti o incidenti col carico?</li>
+      <li style="margin-bottom:9px">Chi è il consulente per la sicurezza dei trasporti (DGSA)?</li>
+      <li style="margin-bottom:9px">Qual è il massimale della polizza sul prodotto trasportato, e copre il danno ambientale?</li>
+      <li style="margin-bottom:9px">Quando è stata l'ultima prova delle cisterne?</li>
+      <li style="margin-bottom:9px">Ogni quanto viene verificato il contalitri?</li>
+      <li style="margin-bottom:9px">In quali province consegnate abitualmente, e da quali depositi caricate?</li>
+      <li style="margin-bottom:9px">Che orari fate, e chi risponde alle richieste?</li>
+      <li style="margin-bottom:9px">Da quanti anni lavorate col cliente più vecchio? (Serve il settore, non il nome: «lo stesso consorzio agricolo dal 2004» si può scrivere senza chiedere permessi.)</li>
+      <li style="margin-bottom:9px">Numero REA dalla visura — e conferma che l'attività parta davvero dal 1988.</li>
+      <li style="margin-bottom:9px">Quanti autisti, e da quanti anni sono con voi in media?</li>
+      <li style="margin-bottom:9px">Lo scarico è a gravità, con pompa a bordo, o dipende dal mezzo?</li>
+      <li style="margin-bottom:9px">I mezzi che caricano benzina hanno il recupero dei vapori? (Senza, certi impianti non possono ricevere lo scarico.)</li>
+      <li style="margin-bottom:9px">Da richiesta accettata a consegna, quanti giorni passano di norma? E nel periodo di punta?</li>
+      <li style="margin-bottom:9px">Ci sono mesi di picco, e su quale tipo di cliente?</li>
+      <li style="margin-bottom:9px">Chiedete un minimo di litri per viaggio?</li>
+      <li>Chi risponde alle richieste quando voi non ci siete?</li>
+    </ol>
+  </div></div>
+</section>
+
+</div>
+
+<div class="end">
+  <div class="wrap">
+    <h2>Come rispondermi</h2>
+    <p>Per i bivi basta la lettera (1B, 2C, 3A…). Per i blocchi basta l'elenco dei codici che volete. Quelli che non nominate li lascio fuori.</p>
+    <div class="codes">Bivi: 1A · 1B · 1C — 2A · 2B · 2C — 3A · 3B<br>Blocchi: M1 · M2 · M3 · M4 · M5 · M6 · M7 · M8 · M9 · M10 · M11</div>
+    <p style="margin-top:18px">Le correzioni della Parte 4 le do per approvate salvo vostro stop: non cambiano l'aspetto del sito, riparano cose rotte.</p>
+  </div>
+</div>
+
+<div class="wrap foot">
+  Pagina di lavoro, non compare sui motori di ricerca. Le tre proposte di sito stanno su <a href="sito/">/sito/</a>; i materiali di lavorazione su <a href="materiali.html">/materiali.html</a>.
+</div>
+
+</body>
+</html>
