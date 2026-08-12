@@ -5,14 +5,14 @@
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
-<title>Richiedi un preventivo di trasporto carburanti</title>
+<title>Cookie · Autotrasporti Bizzotto</title>
 <!--meta3-->
-<meta name="description" content="Chiedete un preventivo per un trasporto di carburante: prodotto, luogo di ritiro e di consegna. Rispondiamo via email entro la giornata lavorativa.">
+<meta name="description" content="Questo sito non usa cookie di profilazione né strumenti di statistica. Ecco i pochi servizi esterni che entrano in gioco e perché.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Autotrasporti Bizzotto Srl">
-<meta property="og:title" content="Richiedi un preventivo di trasporto carburanti">
-<meta property="og:description" content="Chiedete un preventivo per un trasporto di carburante: prodotto, luogo di ritiro e di consegna. Rispondiamo via email entro la giornata lavorativa.">
+<meta property="og:title" content="Cookie · Autotrasporti Bizzotto">
+<meta property="og:description" content="Questo sito non usa cookie di profilazione né strumenti di statistica. Ecco i pochi servizi esterni che entrano in gioco e perché.">
 <meta property="og:image" content="https://castelsim.github.io/autotrasporti-bizzotto/sito/img/frontali-1600.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -277,145 +277,45 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
   .pg-tab td{padding-top:10px}
 }
 
-/*hp*/
-.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+/*blocchi6*/
+.cnf{border-top:2px solid currentColor;margin-top:30px}
+.cnf > div{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:baseline;
+  padding:15px 2px;border-bottom:1px solid var(--linea-cnf,#d8dde1)}
+.cnf dt{font-weight:600;margin:0}
+.cnf dt small{display:block;font-weight:400;font-size:13.5px;opacity:.66;margin-top:4px;letter-spacing:0}
+.cnf dd{margin:0;text-align:right;font:500 13.5px/1.45 var(--mono,ui-monospace,monospace)}
+.cnf-fonte{font-size:14px;opacity:.72;margin-top:16px;max-width:66ch}
+.chi{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
+.chi article{border-top:3px solid var(--bordo-chi,#F4B223);padding-top:16px}
+.chi h3{margin:0 0 9px;font-size:17px}
+.chi p{margin:0;font-size:15px;opacity:.82;max-width:42ch}
+@media (max-width:820px){
+  .chi{grid-template-columns:1fr;gap:26px}
+  .cnf > div{grid-template-columns:1fr}
+  .cnf dd{text-align:left;margin-top:7px}
+}
 
-/*modulo8*/
-.form-esito{margin:16px 0 0;padding:13px 15px;border-left:3px solid currentColor;
-  font-size:14.5px;line-height:1.6;max-width:60ch}
-.form-esito:empty{display:none}
-.form-esito[data-tipo="ok"]{border-color:#1F7A4D;background:rgba(31,122,77,.09)}
-.form-esito[data-tipo="errore"]{border-color:#B4451E;background:rgba(180,69,30,.09)}
-.form-esito[data-tipo="attesa"]{border-color:#F4B223;background:rgba(244,178,35,.10)}
-.form-priv{margin:14px 0 0;font-size:13px;line-height:1.6;opacity:.8;max-width:56ch}
+/*legali7*/
+.leg{max-width:70ch}
+.leg h2{margin:clamp(34px,4vw,52px) 0 12px;font-size:clamp(19px,2.2vw,24px)}
+.leg h3{margin:26px 0 8px;font-size:17px}
+.leg p,.leg li{font-size:16px;line-height:1.72}
+.leg ul,.leg ol{padding-left:20px}
+.leg li{margin-bottom:8px}
+.leg table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}
+.leg th,.leg td{text-align:left;padding:11px 14px 11px 0;border-bottom:1px solid var(--linea-leg,#d8dde1);vertical-align:top}
+.leg th{font-weight:700;width:34%}
+.leg .agg{font-size:14px;opacity:.7;margin-top:34px}
+.leg address{font-style:normal;line-height:1.7}
 </style>
 <!--dati5-->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "@id": "https://autotrasportibizzotto.it/#azienda",
-      "name": "Autotrasporti Bizzotto Srl",
-      "legalName": "Autotrasporti Bizzotto S.r.l.",
-      "url": "https://autotrasportibizzotto.it/",
-      "image": "https://autotrasportibizzotto.it/img/frontali-1600.jpg",
-      "description": "Trasporto di carburanti e prodotti petroliferi in cisterna conto terzi, in regime ADR, con base a Cassola (VI).",
-      "isicV4": "4923",
-      "vatID": "IT02020960247",
-      "taxID": "02020960247",
-      "foundingDate": "1988",
-      "identifier": [
-        {
-          "@type": "PropertyValue",
-          "name": "Partita IVA",
-          "value": "02020960247"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "REA",
-          "value": "VI-200814"
-        },
-        {
-          "@type": "PropertyValue",
-          "name": "Albo nazionale autotrasportatori",
-          "value": "VI/2955214/A"
-        }
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Via Asiago 33",
-        "postalCode": "36022",
-        "addressLocality": "Cassola",
-        "addressRegion": "VI",
-        "addressCountry": "IT"
-      },
-      "email": "info@autotrasportibizzotto.it",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "sales",
-        "email": "info@autotrasportibizzotto.it",
-        "availableLanguage": "it",
-        "areaServed": "IT"
-      },
-      "areaServed": [
-        {
-          "@type": "AdministrativeArea",
-          "name": "Veneto"
-        },
-        {
-          "@type": "AdministrativeArea",
-          "name": "Italia settentrionale"
-        }
-      ],
-      "knowsAbout": [
-        "Trasporto di carburanti in cisterna",
-        "Trasporto ADR di merci pericolose classe 3",
-        "UN 1202 gasolio",
-        "UN 1203 benzina",
-        "Autotrasporto conto terzi"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Trasporti in cisterna",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Trasporto di gasolio in cisterna (UN 1202)",
-              "serviceType": "Trasporto di prodotti petroliferi in cisterna",
-              "provider": {
-                "@id": "https://autotrasportibizzotto.it/#azienda"
-              }
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Trasporto di benzina in cisterna (UN 1203)",
-              "serviceType": "Trasporto di prodotti petroliferi in cisterna",
-              "provider": {
-                "@id": "https://autotrasportibizzotto.it/#azienda"
-              }
-            }
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Trasporto ADR di merci pericolose classe 3",
-              "serviceType": "Trasporto di merci pericolose ADR",
-              "provider": {
-                "@id": "https://autotrasportibizzotto.it/#azienda"
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://autotrasportibizzotto.it/#sito",
-      "url": "https://autotrasportibizzotto.it/",
-      "name": "Autotrasporti Bizzotto Srl",
-      "inLanguage": "it-IT",
-      "publisher": {
-        "@id": "https://autotrasportibizzotto.it/#azienda"
-      }
-    }
-  ]
-}
-</script>
 </head>
 <body>
 <a class="skip" href="#main">Salta al contenuto</a>
 <header>
   <div class="wrap head-in">
     <a class="brand" href="index.html" aria-label="Autotrasporti Bizzotto"><img src="../img/logo.svg" alt="Autotrasporti Bizzotto"></a>
-    <nav><a href="trasporti.html">Trasporti</a><a href="azienda.html">Azienda</a><a href="contatti.html" aria-current="page">Contatti</a></nav>
+    <nav><a href="trasporti.html">Trasporti</a><a href="azienda.html">Azienda</a><a href="contatti.html">Contatti</a></nav>
     <a class="tel" href="contatti.html">info@autotrasportibizzotto.it</a>
   </div>
 </header>
@@ -424,78 +324,59 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
 <section class="pg">
   <div class="wrap">
     <div class="pg-head">
-      <span class="pg-lab">Contatti</span>
-      <h1>Richiedi un trasporto.</h1>
-      <p>Compilate il modulo con i dati del carico: rispondiamo via email con disponibilità,
-      tempi e prezzo. Se il viaggio non rientra in quello che sappiamo fare bene, ve lo
-      diciamo subito.</p>
+      <span class="pg-lab">Cookie</span>
+      <h1>Questo sito<br>non vi segue.</h1>
+      <p>Non usiamo cookie di profilazione né strumenti di statistica. Per questo non
+      troverete la finestra che chiede il consenso: non c'è niente da consentire.</p>
     </div>
 
-    <div class="pg-cols" style="margin-top:clamp(40px,5vw,64px)">
-      <div>
-        <h2>Il modulo</h2>
-        <form class="pg-form" data-modulo="preventivo">
-          <input type="hidden" name="_subject" value="Richiesta di trasporto dal sito">
-          <input type="hidden" name="_language" value="it">
-          <div class="full"><label for="az">Azienda <span class="req">*</span></label>
-            <input id="az" name="azienda" type="text" autocomplete="organization" required></div>
-          <div><label for="rf">Referente <span class="req">*</span></label>
-            <input id="rf" name="referente" type="text" autocomplete="name" required></div>
-          <div><label for="em">Email <span class="req">*</span></label>
-            <input id="em" name="email" data-replyto="1" type="email" autocomplete="email" required></div>
-          <div><label for="tl">Telefono</label>
-            <input id="tl" name="telefono" type="tel" autocomplete="tel"></div>
-          <div><label for="pr">Prodotto <span class="req">*</span></label>
-            <select id="pr" name="prodotto" required>
-              <option value="">Scegliete il prodotto</option>
-              <option>Gasolio per autotrazione (UN 1202)</option>
-              <option>Gasolio da riscaldamento (UN 1202)</option>
-              <option>Benzina (UN 1203)</option>
-              <option>Altro prodotto petrolifero</option>
-            </select></div>
-          <div><label for="qt">Quantità per viaggio</label>
-            <input id="qt" name="quantita" type="text" placeholder="litri"></div>
-          <div><label for="rt">Luogo di ritiro</label>
-            <input id="rt" name="ritiro" type="text" placeholder="deposito o raffineria"></div>
-          <div><label for="cn">Luogo di consegna <span class="req">*</span></label>
-            <input id="cn" name="consegna" type="text" required></div>
-          <div><label for="dt">Data o frequenza</label>
-            <input id="dt" name="quando" type="text" placeholder="una data, oppure «ogni settimana»"></div>
-          <div class="full"><label for="nt">Note</label>
-            <textarea id="nt" name="note" placeholder="Tipo di scarico, vincoli di orario, tutto quello che ci serve sapere prima di rispondere."></textarea></div>
-          <div class="full">
-            <p class="hp" aria-hidden="true"><label>Non compilare<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></p>
-            <button class="pg-send" type="submit">Invia la richiesta</button>
-        <noscript><p class="form-note">Per inviare la richiesta da questa pagina serve JavaScript. Se preferite tenerlo disattivato, scriveteci a <a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a>: bastano il prodotto, il luogo di ritiro e quello di consegna.</p></noscript>
-            <p class="form-note">La richiesta arriva a info@autotrasportibizzotto.it. Rispondiamo entro la giornata lavorativa.</p>
-        <p class="form-priv">Inviando la richiesta dichiarate di aver letto l'<a href="privacy.html">informativa privacy</a>. Usiamo questi dati solo per rispondervi.</p>
-          </div>
-        </form>
-      </div>
+    <div class="leg">
+      <h2>Che cosa sono i cookie</h2>
+      <p>Sono piccoli file che un sito salva sul vostro dispositivo per riconoscervi alla
+      visita successiva. Alcuni servono a far funzionare il sito, altri a misurare quante
+      persone lo visitano, altri ancora a costruire un profilo dei vostri interessi per
+      mostrarvi pubblicità. La legge chiede il consenso preventivo per gli ultimi due tipi.</p>
 
-      <div>
-        <h2>Dove siamo</h2>
-        <ul class="pg-facts" style="margin-top:26px">
-          <li><span>Ragione sociale</span><b>Autotrasporti Bizzotto Srl</b></li>
-          <li><span>Sede</span><b>Via Asiago 33<br>36022 Cassola (VI)</b></li>
-          <li><span>Email</span><b><a href="mailto:info@autotrasportibizzotto.it"
-            style="color:inherit">info@autotrasportibizzotto.it</a></b></li>
-          <li><span>Partita IVA</span><b>02020960247</b></li>
-          <li><span>Attività dal</span><b>1988</b></li>
-        </ul>
-        <div class="pg-note">Non pubblichiamo un numero di telefono, ed è una scelta.
-        Le richieste passano dal modulo perché così restano scritte: prodotto, quantità e
-        indirizzi non si perdono in una telefonata, e <b>chi risponde ha già tutto sotto
-        gli occhi</b>.</div>
-        <figure class="pg-shot" style="margin-top:32px">
-          <picture><source type="image/webp" srcset="../img/carico-700.webp 700w, ../img/carico-1000.webp 1000w" sizes="(max-width:900px) 100vw, 560px"><img src="../img/carico-1000.jpg" srcset="../img/carico-700.jpg 700w, ../img/carico-1000.jpg 1000w" sizes="(max-width:900px) 100vw, 560px" alt="Due autocisterne collegate ai manicotti durante le operazioni di carico" width="900" height="1200" loading="lazy" decoding="async"></picture>
-          <figcaption>Operazioni di carico presidiate</figcaption>
-        </figure>
-      </div>
+      <h2>Quali usiamo noi</h2>
+      <p><strong>Nessuno.</strong> Questo sito non installa cookie propri, non usa Google
+      Analytics né altri sistemi di misurazione, non ha pulsanti di condivisione dei social
+      network e non ospita pubblicità.</p>
+
+      <h2>I servizi esterni che il sito usa</h2>
+      <p>Anche senza cookie, aprire una pagina significa che qualche fornitore vede il vostro
+      indirizzo IP. Ecco chi, e perché.</p>
+      <table>
+        <tr><th>Chi ospita il sito</th>
+            <td>Le pagine sono servite da GitHub Pages (GitHub, Inc.). Come ogni server, per
+            consegnarvi la pagina riceve il vostro indirizzo IP e lo conserva nei registri
+            tecnici per sicurezza.</td></tr>
+        <tr><th>I caratteri tipografici</th>
+            <td>I caratteri con cui è scritto il sito sono caricati da Google Fonts (Google
+            Ireland Limited), che nel momento del caricamento riceve il vostro indirizzo IP.
+            Google dichiara di non usare questi dati per la pubblicità e di non impostare
+            cookie sul servizio dei caratteri.</td></tr>
+        <tr><th>L'invio del modulo</th>
+            <td>Solo se premete «Invia la richiesta», i dati del modulo passano da Formspree,
+            Inc. (Stati Uniti), che li consegna alla nostra casella di posta. Se non inviate
+            nulla, questo servizio non entra mai in funzione. I dettagli sono
+            nell'<a href="privacy.html">informativa privacy</a>.</td></tr>
+      </table>
+
+      <h2>Come regolare il vostro browser</h2>
+      <p>Anche se qui non ci sono cookie da bloccare, ogni browser permette di gestirli o
+      cancellarli per tutti i siti: di solito la voce si trova sotto «Impostazioni», poi
+      «Privacy e sicurezza». Se preferite non caricare risorse da fornitori esterni potete
+      usare le estensioni che bloccano le richieste verso altri domini: il sito resterà
+      leggibile, cambieranno soltanto i caratteri.</p>
+
+      <h2>Se qualcosa cambierà</h2>
+      <p>Se in futuro dovessimo aggiungere uno strumento di misurazione, lo scriveremo qui e
+      chiederemo il consenso prima di attivarlo.</p>
+
+      <p class="agg">Ultimo aggiornamento: 12 agosto 2026.</p>
     </div>
   </div>
 </section>
-
 </main>
 <footer>
   <div class="wrap">
@@ -509,6 +390,5 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
 </footer>
 <script src="../mobile-nav.js?v=2" defer></script>
 <script src="../reveal.js" defer></script>
-<script src="../modulo.js" defer></script>
 </body>
 </html>
