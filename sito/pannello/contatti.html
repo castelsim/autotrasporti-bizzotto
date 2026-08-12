@@ -52,7 +52,7 @@ a{color:inherit}
 .btn:hover{background:#dda01d}
 .btn--ghost{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.45)}
 .btn--ghost:hover{background:rgba(255,255,255,.12)}
-@media (max-width:940px){.nav{display:none}.head-cta .btn{display:none}}
+@media (max-width:960px){.nav{display:none}.head-cta .btn{display:none}}
 
 /* ---------- hero ---------- */
 .hero{position:relative;background:var(--graphite);color:var(--white);overflow:hidden}
@@ -272,10 +272,57 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
 @media (max-width:760px){.pg-cta{grid-template-columns:1fr}}
 button.pg-send{width:100%}
 .pg-form textarea{min-height:150px}
+
+/*fix4*/
+/* Anello di messa a fuoco visibile su qualunque fondo: ambra racchiusa da un alone
+   scuro, cosi resta distinguibile sia sul bianco sia sul grafite. */
+a:focus-visible,button:focus-visible,input:focus-visible,
+select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{
+  outline:3px solid #F4B223;outline-offset:2px;
+  box-shadow:0 0 0 6px rgba(18,24,32,.85);border-radius:2px}
+/* Salta al contenuto */
+.skip{position:absolute;left:-9999px;top:0;z-index:999;background:#F4B223;color:#121820;
+  font:800 15px/1 inherit;padding:14px 18px;text-decoration:none}
+.skip:focus{left:8px;top:8px}
+/* Bersagli tattili nel piede */
+footer a{display:inline-block;min-height:24px;padding:5px 0}
+/* La riga della nota non deve superare la misura leggibile */
+.pg-note{max-width:66ch}
+
+/*fix4*/
+/* Il modulo non e piu rientrato di 34px per una scatola che sul bianco non si vede. */
+.pg form{padding:0;background:none;border:0}
+/* Bordi dei campi distinguibili dal fondo (erano 1,37:1). */
+.pg-form input,.pg-form select,.pg-form textarea{border-color:#8A939C}
+/* L'asterisco degli obbligatori era ambra su bianco: illeggibile. */
+.req{color:#121820}
+/* La pagina in cui ti trovi si vede nel menu. */
+.nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -3px 0 #F4B223}
+
+/*fix4*/
+/* Le misure in ch pensate per la prima schermata non devono colare sulle interne:
+   producevano titoli con la seconda riga di una parola sola. */
+.pg h1,.pg h2,.pg h3{max-width:none}
+/* Il numero del passo non si tiene una colonna da 96px sul telefono. */
+@media (max-width:640px){
+  .pg-steps li{grid-template-columns:1fr;gap:4px}
+  .pg-steps li > *:first-child{margin-bottom:2px}
+}
+/* La tabella dei prodotti impilata recupera le intestazioni. */
+@media (max-width:760px){
+  .pg-tab td::before{content:attr(data-l);display:block;
+    font:600 10px/1 var(--mono,monospace);letter-spacing:.14em;text-transform:uppercase;
+    opacity:.62;margin-bottom:4px}
+  .pg-tab td{padding-top:10px}
+}
+
+/*hp*/
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 </style>
 <meta name="description" content="Richiedi un trasporto di carburante: modulo con i dati del carico, risposta via email.">
 </head>
 <body>
+<a class="skip" href="#main">Salta al contenuto</a>
 <header class="site-head">
   <div class="wrap head-in">
     <a class="brand" href="index.html" aria-label="Autotrasporti Bizzotto"><img src="../img/logo.svg" alt="Autotrasporti Bizzotto"></a>
@@ -286,6 +333,7 @@ button.pg-send{width:100%}
   </div>
 </header>
 
+<main id="main">
 <section class="pg">
   <div class="wrap">
     <div class="pg-head">
@@ -327,6 +375,7 @@ button.pg-send{width:100%}
           <div class="full"><label for="nt">Note</label>
             <textarea id="nt" name="note" placeholder="Tipo di scarico, vincoli di orario, tutto quello che ci serve sapere prima di rispondere."></textarea></div>
           <div class="full">
+            <p class="hp" aria-hidden="true"><label>Non compilare<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></p>
             <button class="pg-send" type="submit">Invia la richiesta</button>
             <p class="pg-avviso">Modello di lavoro: il modulo non invia ancora nulla.
             Nel sito pubblicato la richiesta arriverà a info@autotrasportibizzotto.it.</p>
@@ -349,7 +398,7 @@ button.pg-send{width:100%}
         indirizzi non si perdono in una telefonata, e <b>chi risponde ha già tutto sotto
         gli occhi</b>.</div>
         <figure class="pg-shot" style="margin-top:32px">
-          <img src="../img/carico-1000.jpg" alt="Due autocisterne collegate ai manicotti durante le operazioni di carico" width="900" height="1200" loading="lazy" decoding="async">
+          <picture><source type="image/webp" srcset="../img/carico-700.webp 700w, ../img/carico-1000.webp 1000w" sizes="(max-width:900px) 100vw, 560px"><img src="../img/carico-1000.jpg" srcset="../img/carico-700.jpg 700w, ../img/carico-1000.jpg 1000w" sizes="(max-width:900px) 100vw, 560px" alt="Due autocisterne collegate ai manicotti durante le operazioni di carico" width="900" height="1200" loading="lazy" decoding="async"></picture>
           <figcaption>Operazioni di carico presidiate</figcaption>
         </figure>
       </div>
@@ -357,6 +406,7 @@ button.pg-send{width:100%}
   </div>
 </section>
 
+</main>
 <footer>
   <div class="wrap">
     <div class="foot-grid">

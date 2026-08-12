@@ -43,7 +43,7 @@ nav a{text-decoration:none;color:var(--steel)}
 nav a:hover{color:var(--warm)}
 .tel{font:500 14px/1 var(--mono);text-decoration:none;color:var(--white);border:1px solid rgba(255,255,255,.28);padding:12px 16px}
 .tel:hover{border-color:var(--amber);color:var(--amber)}
-@media(max-width:980px){nav{display:none}}
+@media(max-width:960px){nav{display:none}}
 
 /* hero notturna */
 .hero{position:relative;min-height:96vh;display:flex;align-items:flex-end;padding:150px 0 62px;overflow:hidden}
@@ -244,11 +244,34 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
 .gal-col{grid-template-rows:1fr 1fr}
 .gal-col .ph{aspect-ratio:auto;height:100%}
 @media(max-width:900px){.gal-grid > .ph{aspect-ratio:4/3;min-height:0}.gal-col .ph{aspect-ratio:16/10}}
+
+/*fix4*/
+/* Anello di messa a fuoco visibile su qualunque fondo: ambra racchiusa da un alone
+   scuro, cosi resta distinguibile sia sul bianco sia sul grafite. */
+a:focus-visible,button:focus-visible,input:focus-visible,
+select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{
+  outline:3px solid #F4B223;outline-offset:2px;
+  box-shadow:0 0 0 6px rgba(18,24,32,.85);border-radius:2px}
+/* Salta al contenuto */
+.skip{position:absolute;left:-9999px;top:0;z-index:999;background:#F4B223;color:#121820;
+  font:800 15px/1 inherit;padding:14px 18px;text-decoration:none}
+.skip:focus{left:8px;top:8px}
+/* Bersagli tattili nel piede */
+footer a{display:inline-block;min-height:24px;padding:5px 0}
+/* La riga della nota non deve superare la misura leggibile */
+.pg-note{max-width:66ch}
+
+/*fix4*/
+.pg-form input,.pg-form select,.pg-form textarea{border-color:rgba(255,255,255,.42)}
+input:focus,select:focus,textarea:focus{outline:3px solid #F4B223;outline-offset:1px}
+.req{color:#FFD37A}
+nav a[aria-current="page"]{color:#F5F7F9;box-shadow:inset 0 -2px 0 #F4B223}
 </style>
 </head>
 <body>
 
-<section class="hero">
+<a class="skip" href="#main">Salta al contenuto</a>
+<section class="hero" id="main">
   <div class="hero-bg">
     <figure class="ph"><picture><source type="image/webp" srcset="../img/piazzale-notte-800.webp 800w, ../img/piazzale-notte-1200.webp 1200w, ../img/piazzale-notte-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="../img/piazzale-notte-1600.jpg" srcset="../img/piazzale-notte-800.jpg 800w, ../img/piazzale-notte-1200.jpg 1200w, ../img/piazzale-notte-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="Autocisterna Bizzotto nel piazzale, prima dell&#39;alba" width="1600" height="900" loading="eager" fetchpriority="high"></picture></figure>
   </div>
@@ -312,7 +335,7 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
 <section class="gal" id="mezzi">
   <div class="wrap">
     <span class="lab">Mezzi</span>
-    <h2>Le fotografie sono nostre</h2>
+    <h2>I mezzi che arrivano da voi</h2>
     <div class="gal-grid">
       <figure class="ph"><picture><source type="image/webp" srcset="../img/frontali-800.webp 800w, ../img/frontali-1200.webp 1200w, ../img/frontali-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="../img/frontali-1600.jpg" srcset="../img/frontali-800.jpg 800w, ../img/frontali-1200.jpg 1200w, ../img/frontali-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="I frontali dei mezzi allineati, con il cielo al tramonto" width="1600" height="459" loading="lazy" decoding="async"></picture></figure>
       <div class="gal-col">
@@ -350,18 +373,19 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
       </div>
       <form onsubmit="event.preventDefault();alert('Mockup: il modulo non invia nulla.')">
         <div class="f2">
-          <div class="field"><label for="h1">Azienda</label><input id="h1" type="text"></div>
-          <div class="field"><label for="h2f">Referente</label><input id="h2f" type="text"></div>
+          <div class="field"><label for="h1">Azienda</label><input id="h1" type="text" name="azienda" autocomplete="organization" required></div>
+          <div class="field"><label for="h2f">Referente</label><input id="h2f" type="text" name="referente" autocomplete="name" required></div>
         </div>
         <div class="f2">
-          <div class="field"><label for="h3">Email</label><input id="h3" type="email"></div>
-          <div class="field"><label for="h4">Telefono</label><input id="h4" type="tel"></div>
+          <div class="field"><label for="h3">Email</label><input id="h3" type="email" name="email" autocomplete="email" required></div>
+          <div class="field"><label for="h4">Telefono</label><input id="h4" type="tel" name="telefono" autocomplete="tel"></div>
         </div>
-        <div class="field"><label for="h5">Prodotto</label><select id="h5"><option>Gasolio</option><option>Benzina</option><option>Altro prodotto petrolifero</option></select></div>
+        <div class="field"><label for="h5">Prodotto</label><select id="h5" name="prodotto" required><option>Gasolio</option><option>Benzina</option><option>Altro prodotto petrolifero</option></select></div>
         <div class="f2">
-          <div class="field"><label for="h6">Ritiro</label><input id="h6" type="text"></div>
-          <div class="field"><label for="h7">Consegna</label><input id="h7" type="text"></div>
+          <div class="field"><label for="h6">Ritiro</label><input id="h6" type="text" name="ritiro" required></div>
+          <div class="field"><label for="h7">Consegna</label><input id="h7" type="text" name="consegna" required></div>
         </div>
+        <p class="hp" aria-hidden="true"><label>Non compilare<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></p>
         <button class="btn" type="submit">Invia la richiesta</button>
         <p class="note">Una richiesta scritta è già metà del preventivo.</p>
       </form>

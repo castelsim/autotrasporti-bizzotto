@@ -248,10 +248,35 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
   .two > div{align-self:center}
   .two .ph{aspect-ratio:auto;height:100%;min-height:330px}
 }
+
+/*fix4*/
+/* Anello di messa a fuoco visibile su qualunque fondo: ambra racchiusa da un alone
+   scuro, cosi resta distinguibile sia sul bianco sia sul grafite. */
+a:focus-visible,button:focus-visible,input:focus-visible,
+select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{
+  outline:3px solid #F4B223;outline-offset:2px;
+  box-shadow:0 0 0 6px rgba(18,24,32,.85);border-radius:2px}
+/* Salta al contenuto */
+.skip{position:absolute;left:-9999px;top:0;z-index:999;background:#F4B223;color:#121820;
+  font:800 15px/1 inherit;padding:14px 18px;text-decoration:none}
+.skip:focus{left:8px;top:8px}
+/* Bersagli tattili nel piede */
+footer a{display:inline-block;min-height:24px;padding:5px 0}
+/* La riga della nota non deve superare la misura leggibile */
+.pg-note{max-width:66ch}
+
+/*fix4*/
+.pg-form input,.pg-form select,.pg-form textarea{border-color:#8A939C}
+input:focus,select:focus,textarea:focus{outline:3px solid #F4B223;outline-offset:1px}
+.req{color:#121820}
+nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
+/* La nota si stacca dal fondo pagina: 4 valori RGB non bastavano. */
+.pg-note{background:#F1F4F6}
 </style>
 </head>
 <body>
 
+<a class="skip" href="#main">Salta al contenuto</a>
 <header>
   <div class="wrap head-in">
     <a class="brand" href="index.html" aria-label="Autotrasporti Bizzotto"><img src="../img/logo.svg" alt="Autotrasporti Bizzotto"></a>
@@ -261,7 +286,7 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
 </header>
 
 <main>
-<section class="hero" style="padding-bottom:0">
+<section class="hero" id="main" style="padding-bottom:0">
   <div class="wrap">
     <div class="quota">
       <span class="lab">Autotrasporti Bizzotto Srl · Cassola (VI)</span>
@@ -378,20 +403,21 @@ header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
         </div>
         <form onsubmit="event.preventDefault();alert('Mockup: il modulo non invia nulla.')">
           <div class="f2">
-            <div class="field"><label for="g1">Azienda</label><input id="g1" type="text"></div>
-            <div class="field"><label for="g2">Referente</label><input id="g2" type="text"></div>
+            <div class="field"><label for="g1">Azienda</label><input id="g1" type="text" name="azienda" autocomplete="organization" required></div>
+            <div class="field"><label for="g2">Referente</label><input id="g2" type="text" name="referente" autocomplete="name" required></div>
           </div>
           <div class="f2">
-            <div class="field"><label for="g3">Email</label><input id="g3" type="email"></div>
-            <div class="field"><label for="g4">Telefono</label><input id="g4" type="tel"></div>
+            <div class="field"><label for="g3">Email</label><input id="g3" type="email" name="email" autocomplete="email" required></div>
+            <div class="field"><label for="g4">Telefono</label><input id="g4" type="tel" name="telefono" autocomplete="tel"></div>
           </div>
-          <div class="field"><label for="g5">Prodotto</label><select id="g5"><option>Gasolio per autotrazione</option><option>Gasolio da riscaldamento</option><option>Benzina</option><option>Altro</option></select></div>
+          <div class="field"><label for="g5">Prodotto</label><select id="g5" name="prodotto" required><option>Gasolio per autotrazione</option><option>Gasolio da riscaldamento</option><option>Benzina</option><option>Altro</option></select></div>
           <div class="f2">
-            <div class="field"><label for="g6">Luogo di ritiro</label><input id="g6" type="text"></div>
-            <div class="field"><label for="g7">Luogo di consegna</label><input id="g7" type="text"></div>
+            <div class="field"><label for="g6">Luogo di ritiro</label><input id="g6" type="text" name="ritiro" required></div>
+            <div class="field"><label for="g7">Luogo di consegna</label><input id="g7" type="text" name="consegna" required></div>
           </div>
-          <div class="field"><label for="g8">Note</label><textarea id="g8" rows="2"></textarea></div>
-          <button class="btn" type="submit">Invia la richiesta</button>
+          <div class="field"><label for="g8">Note</label><textarea id="g8" rows="2" name="note"></textarea></div>
+          <p class="hp" aria-hidden="true"><label>Non compilare<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></p>
+        <button class="btn" type="submit">Invia la richiesta</button>
           <p class="note">Rispondiamo entro la giornata lavorativa.</p>
         </form>
       </div>
