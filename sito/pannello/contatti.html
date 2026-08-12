@@ -318,6 +318,15 @@ footer a{display:inline-block;min-height:24px;padding:5px 0}
 
 /*hp*/
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/*modulo8*/
+.form-esito{margin:16px 0 0;padding:13px 15px;border-left:3px solid currentColor;
+  font-size:14.5px;line-height:1.6;max-width:60ch}
+.form-esito:empty{display:none}
+.form-esito[data-tipo="ok"]{border-color:#1F7A4D;background:rgba(31,122,77,.09)}
+.form-esito[data-tipo="errore"]{border-color:#B4451E;background:rgba(180,69,30,.09)}
+.form-esito[data-tipo="attesa"]{border-color:#F4B223;background:rgba(244,178,35,.10)}
+.form-priv{margin:14px 0 0;font-size:13px;line-height:1.6;opacity:.8;max-width:56ch}
 </style>
 <!--dati5-->
 <script type="application/ld+json">
@@ -466,13 +475,15 @@ footer a{display:inline-block;min-height:24px;padding:5px 0}
     <div class="pg-cols" style="margin-top:clamp(40px,5vw,64px)">
       <div>
         <h2>Il modulo</h2>
-        <form class="pg-form" onsubmit="return false" novalidate>
+        <form class="pg-form" data-modulo="preventivo">
+          <input type="hidden" name="_subject" value="Richiesta di trasporto dal sito">
+          <input type="hidden" name="_language" value="it">
           <div class="full"><label for="az">Azienda <span class="req">*</span></label>
             <input id="az" name="azienda" type="text" autocomplete="organization" required></div>
           <div><label for="rf">Referente <span class="req">*</span></label>
             <input id="rf" name="referente" type="text" autocomplete="name" required></div>
           <div><label for="em">Email <span class="req">*</span></label>
-            <input id="em" name="email" type="email" autocomplete="email" required></div>
+            <input id="em" name="email" data-replyto="1" type="email" autocomplete="email" required></div>
           <div><label for="tl">Telefono</label>
             <input id="tl" name="telefono" type="tel" autocomplete="tel"></div>
           <div><label for="pr">Prodotto <span class="req">*</span></label>
@@ -496,8 +507,9 @@ footer a{display:inline-block;min-height:24px;padding:5px 0}
           <div class="full">
             <p class="hp" aria-hidden="true"><label>Non compilare<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></p>
             <button class="pg-send" type="submit">Invia la richiesta</button>
-            <p class="pg-avviso">Modello di lavoro: il modulo non invia ancora nulla.
-            Nel sito pubblicato la richiesta arriverà a info@autotrasportibizzotto.it.</p>
+        <noscript><p class="form-note">Per inviare la richiesta da questa pagina serve JavaScript. Se preferite tenerlo disattivato, scriveteci a <a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a>: bastano il prodotto, il luogo di ritiro e quello di consegna.</p></noscript>
+            <p class="form-note">La richiesta arriva a info@autotrasportibizzotto.it. Rispondiamo entro la giornata lavorativa.</p>
+        <p class="form-priv">Inviando la richiesta dichiarate di aver letto l'<a href="privacy.html">informativa privacy</a>. Usiamo questi dati solo per rispondervi.</p>
           </div>
         </form>
       </div>
@@ -536,10 +548,11 @@ footer a{display:inline-block;min-height:24px;padding:5px 0}
       <div><h4>Servizi</h4><ul><li><a href="trasporti.html">Gasolio e prodotti petroliferi</a></li><li><a href="trasporti.html">Merci pericolose ADR</a></li><li><a href="trasporti.html">Tracciabilità</a></li></ul></div>
       <div><h4>Contatti</h4><ul><li><a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a></li><li>Via Asiago 33, Cassola (VI)</li></ul></div>
     </div>
-    <p class="legal">Autotrasporti Bizzotto Srl · Via Asiago 33, 36022 Cassola (VI) · P. IVA 02020960247 · REA VI-200814 · Albo autotrasportatori VI/2955214/A<br>Privacy policy · Cookie policy</p>
+    <p class="legal">Autotrasporti Bizzotto Srl · Via Asiago 33, 36022 Cassola (VI) · P. IVA 02020960247 · REA VI-200814 · Albo autotrasportatori VI/2955214/A<br><a href="privacy.html">Privacy policy</a> · <a href="cookie.html">Cookie policy</a></p>
   </div>
 </footer>
 <script src="../mobile-nav.js?v=2" defer></script>
 <script src="../reveal.js" defer></script>
+<script src="../modulo.js" defer></script>
 </body>
 </html>
