@@ -1,2 +1,5 @@
 User-agent: *
-Disallow: /
+Allow: /
+Disallow: /archivio/
+
+Sitemap: https://autotrasportibizzotto.it/sitemap.xml

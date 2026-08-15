@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../../img/favicon.svg" type="image/svg+xml">
 <title>Autotrasporti Bizzotto: cisterne ADR a Cassola (VI)</title>
 <!--meta3-->
 <meta name="description" content="Dal 1988 a Cassola, in provincia di Vicenza: solo trasporto di carburanti in cisterna, conto terzi. Un solo interlocutore dalla richiesta alla consegna.">
@@ -17,56 +17,38 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Barlow:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --graphite:#121820; --amber:#F4B223; --ink:#5A646E; --hair:#E3E7EA;
-  --white:#fff; --paper:#FBFCFC;
-  --sans:"Schibsted Grotesk",system-ui,sans-serif; --mono:"IBM Plex Mono",monospace;
+  --night:#070A0E; --deep:#0D131A; --amber:#F4B223; --warm:#FFD37A;
+  --steel:#98A3AE; --white:#F5F7F9;
+  --serif:"Instrument Serif",Georgia,serif; --sans:"Barlow",system-ui,sans-serif; --mono:"IBM Plex Mono",monospace;
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--white);color:var(--graphite);font:400 17px/1.68 var(--sans);-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--night);color:var(--white);font:400 17px/1.7 var(--sans);-webkit-font-smoothing:antialiased}
 a{color:inherit}
-:focus-visible{outline:2px solid var(--graphite);outline-offset:4px}
-.wrap{width:min(1220px,90vw);margin-inline:auto}
-.lab{font:400 10.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+:focus-visible{outline:2px solid var(--amber);outline-offset:4px}
+.wrap{width:min(1280px,92vw);margin-inline:auto}
+.lab{font:400 10.5px/1 var(--mono);letter-spacing:.26em;text-transform:uppercase;color:var(--amber)}
 
-header{border-bottom:1px solid var(--hair);position:sticky;top:0;background:rgba(255,255,255,.93);backdrop-filter:blur(8px);z-index:70}
-.head-in{display:flex;align-items:center;gap:34px;height:82px}
-.brand{display:flex;align-items:center;gap:13px;text-decoration:none}
+header{position:absolute;top:0;left:0;right:0;z-index:60;padding-top:26px}
+.head-in{display:flex;align-items:center;gap:30px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .brand img{height:38px;width:auto;display:block;filter:none}
 @media (max-width:560px){.brand img{height:28px}}
-.brand b{font:700 18px/1 var(--sans);letter-spacing:.02em}
-.brand i{display:block;font:400 9px/1.4 var(--mono);letter-spacing:.26em;color:var(--ink);font-style:normal;margin-top:3px}
-nav{display:flex;gap:30px;margin-left:auto;font:500 14.5px/1 var(--sans)}
-nav a{text-decoration:none;color:var(--ink)}
-nav a:hover{color:var(--graphite)}
-.tel{font:500 15px/1 var(--mono);text-decoration:none;padding-left:28px;border-left:1px solid var(--hair)}
+.brand b{font:400 22px/1 var(--serif);letter-spacing:.01em}
+.brand i{display:block;font:400 8.5px/1.4 var(--mono);letter-spacing:.3em;color:var(--steel);font-style:normal;margin-top:2px}
+nav{display:flex;gap:28px;margin-left:auto;font:500 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase}
+nav a{text-decoration:none;color:var(--steel)}
+nav a:hover{color:var(--warm)}
+.tel{font:500 14px/1 var(--mono);text-decoration:none;color:var(--white);border:1px solid rgba(255,255,255,.28);padding:12px 16px}
+.tel:hover{border-color:var(--amber);color:var(--amber)}
 @media(max-width:960px){nav{display:none}}
 
-/* hero quotata come un disegno tecnico */
-.hero{padding:96px 0 0;position:relative}
-.quota{position:relative;padding-left:34px}
-.quota::before{content:"";position:absolute;left:0;top:6px;bottom:6px;width:1px;background:var(--amber)}
-.quota::after{content:"";position:absolute;left:-3px;top:6px;width:7px;height:1px;background:var(--amber);box-shadow:0 var(--qh,180px) 0 0 var(--amber)}
-h1{font:700 clamp(40px,5.6vw,74px)/1.04 var(--sans);letter-spacing:-.035em;margin:20px 0 0;max-width:17ch}
-h1 b{font-weight:700;color:var(--amber)}
-.hero-lead{font-size:19.5px;color:var(--ink);max-width:48ch;margin:26px 0 0}
-.hero-row{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:end;margin-top:54px}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;background:var(--graphite);color:var(--white);font:600 15.5px/1 var(--sans);text-decoration:none;border:0;border-radius:2px;cursor:pointer}
-.btn:hover{background:#000}
-.btn--line{background:none;color:var(--graphite);border:1px solid var(--graphite)}
-.btn--line:hover{background:var(--graphite);color:var(--white)}
-.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
-.specs{border-top:1px solid var(--graphite);padding-top:18px}
-.specs dl{margin:0;display:grid;gap:14px}
-.specs div{display:flex;justify-content:space-between;gap:20px;padding-bottom:13px;border-bottom:1px solid var(--hair)}
-.specs dt{font:400 11px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--ink)}
-.specs dd{margin:0;font:500 15px/1.4 var(--mono)}
-@media(max-width:920px){.hero-row{grid-template-columns:1fr;gap:40px;align-items:start}}
-
-/* figura misurata */
-.ph{margin:0;position:relative;overflow:hidden;background:#0f151c;line-height:0}
+/* hero notturna */
+.hero{position:relative;min-height:96vh;display:flex;align-items:flex-end;padding:150px 0 62px;overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-bg .ph{margin:0;position:relative;overflow:hidden;background:#0f151c;line-height:0}
 .ph picture{display:block;width:100%;height:100%}
 .ph img{display:block;width:100%;height:100%;object-fit:cover}
 .hero-media .ph,.hero-bg .ph{position:absolute;inset:0;height:100%;width:100%;overflow:hidden}
@@ -76,124 +58,141 @@ h1 b{font-weight:700;color:var(--amber)}
 .ph img{display:block;width:100%;height:100%;object-fit:cover}
 
 
-.ph::before{content:"";position:absolute;inset:9px;border:1px dashed #cfd6db;pointer-events:none}
+.hero-bg::after{content:"";position:absolute;inset:0;background:
+   radial-gradient(ellipse 60% 50% at 76% 34%,rgba(255,190,80,.22),transparent 62%),
+   linear-gradient(180deg,rgba(7,10,14,.72) 0%,rgba(7,10,14,.42) 40%,rgba(7,10,14,.95) 92%)}
+.hero-in{position:relative;z-index:3}
+h1{font:400 clamp(50px,8.2vw,124px)/0.92 var(--serif);letter-spacing:-.022em;margin:22px 0 0;max-width:15ch}
+h1 em{font-style:italic;color:var(--warm)}
+.hero p{font-size:19px;color:#c8d1da;max-width:44ch;margin:26px 0 0}
+.hero-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-top:44px;padding-top:26px;border-top:1px solid rgba(255,255,255,.16);flex-wrap:wrap}
+.hero-foot .cta{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;background:var(--amber);color:#0b0f14;font:600 15.5px/1 var(--sans);text-decoration:none;border:0;border-radius:2px;cursor:pointer}
+.btn:hover{background:var(--warm)}
+.btn--line{background:none;color:var(--white);border:1px solid rgba(255,255,255,.35)}
+.btn--line:hover{border-color:var(--amber);color:var(--amber)}
+.hero-meta{font:400 12px/1.9 var(--mono);color:var(--steel);letter-spacing:.1em;text-align:right}
+.hero-meta b{color:var(--white);font-weight:500}
+
+.ph{margin:0;background:#0f151c;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;text-align:center}
 
 
 
 
-.figure-wide{margin-top:64px}
-.figure-wide .ph{aspect-ratio:21/8}
-.figcap{display:flex;justify-content:space-between;gap:20px;margin-top:11px;font:400 11px/1.5 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink)}
+.hero-bg 
+@media(max-width:900px){.hero-bg }
 
-/* sezioni numerate a margine */
-section{padding:104px 0}
-.sec-grid{display:grid;grid-template-columns:120px 1fr;gap:40px}
-.sec-num{font:400 11px/1.5 var(--mono);letter-spacing:.2em;color:var(--ink);border-top:1px solid var(--graphite);padding-top:14px}
-h2{font:700 clamp(28px,3.4vw,42px)/1.1 var(--sans);letter-spacing:-.03em;margin:0;max-width:20ch}
-.sec-grid > div > p{color:var(--ink);max-width:56ch;margin:20px 0 0;font-size:17.5px}
-.rows{margin-top:52px;border-top:1px solid var(--hair)}
-.rows article{display:grid;grid-template-columns:.9fr 1.4fr .7fr;gap:36px;padding:30px 0;border-bottom:1px solid var(--hair);align-items:baseline}
-.rows h3{font:600 21px/1.3 var(--sans);margin:0;letter-spacing:-.015em}
-.rows p{margin:0;color:var(--ink);font-size:16px}
-.rows .un{font:400 12px/1 var(--mono);letter-spacing:.14em;color:var(--graphite);justify-self:end;white-space:nowrap;border-bottom:2px solid var(--amber);padding-bottom:5px}
-@media(max-width:860px){.sec-grid{grid-template-columns:1fr;gap:16px}.rows article{grid-template-columns:1fr;gap:10px}.rows .un{justify-self:start}}
+/* il turno */
+.shift{padding:104px 0;background:var(--deep)}
+h2{font:400 clamp(34px,4.6vw,62px)/1.05 var(--serif);letter-spacing:-.02em;margin:18px 0 0;max-width:18ch}
+h2 em{font-style:italic;color:var(--warm)}
+.shift > .wrap > p{color:var(--steel);max-width:56ch;margin:22px 0 0}
+.hours{margin-top:56px;border-top:1px solid rgba(255,255,255,.14)}
+.hours article{display:grid;grid-template-columns:130px 1fr 1.1fr;gap:38px;padding:30px 0;border-bottom:1px solid rgba(255,255,255,.14);align-items:baseline;transition:background .2s}
+.hours article:hover{background:rgba(255,255,255,.025)}
+.hours time{font:400 30px/1 var(--serif);color:var(--warm)}
+.hours h3{font:600 18px/1.35 var(--sans);margin:0;letter-spacing:.005em}
+.hours p{margin:0;color:var(--steel);font-size:16px}
+@media(max-width:880px){.hours article{grid-template-columns:1fr;gap:9px}}
 
-.pale{background:var(--paper);border-block:1px solid var(--hair)}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;margin-top:44px}
-.two .ph{aspect-ratio:4/3}
-.two p{color:var(--ink);margin:0 0 16px}
-@media(max-width:900px){.two{grid-template-columns:1fr;gap:38px}}
+/* galleria notturna */
+.gal{padding:104px 0}
+.gal-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:20px;margin-top:52px}
+.gal-grid .ph{aspect-ratio:4/3;min-width:0}
+.gal-col{display:grid;gap:20px;min-width:0}
+.gal-col .ph{aspect-ratio:16/10}
+@media(max-width:900px){.gal-grid{grid-template-columns:minmax(0,1fr)}}
 
-.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:52px}
-.trio .ph{aspect-ratio:3/4}
-@media(max-width:860px){.trio{grid-template-columns:1fr}}
+/* citazione */
+.quote{padding:104px 0;background:var(--deep);text-align:center}
+.quote blockquote{margin:0 auto;max-width:22ch;font:400 clamp(30px,4.4vw,58px)/1.14 var(--serif);letter-spacing:-.02em}
+.quote blockquote em{font-style:italic;color:var(--warm)}
+.quote .lab{display:block;margin-top:30px}
 
 /* contatti */
-.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;margin-top:48px;align-items:start}
-.contact-grid dl{margin:0;display:grid;gap:24px}
-.contact-grid dt{font:400 10.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
-.contact-grid dd{margin:9px 0 0;font:500 19px/1.4 var(--sans)}
-.contact-grid dd a{text-decoration:none;border-bottom:1px solid var(--amber);padding-bottom:2px}
-form{border:1px solid var(--hair);padding:34px;background:var(--white)}
+.contact{padding:104px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:46px;align-items:start}
+.contact dl{margin:0;display:grid;gap:26px}
+.contact dt{font:400 10.5px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--steel)}
+.contact dd{margin:10px 0 0;font:400 28px/1.2 var(--serif)}
+.contact dd a{text-decoration:none;border-bottom:1px solid var(--amber)}
+.contact dd.small{font:400 17px/1.6 var(--sans);color:#c8d1da}
+form{border:1px solid rgba(255,255,255,.15);padding:34px;background:rgba(255,255,255,.02)}
 .f2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .field{display:flex;flex-direction:column;margin-bottom:18px}
-.field label{font:400 10.5px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--ink);margin-bottom:9px}
-.field input,.field select,.field textarea{border:0;border-bottom:1px solid var(--graphite);padding:11px 2px;font:400 16px var(--sans);background:none;border-radius:0}
-.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-bottom-color:var(--amber);border-bottom-width:2px}
+.field label{font:400 10.5px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--steel);margin-bottom:9px}
+.field input,.field select,.field textarea{background:none;border:0;border-bottom:1px solid rgba(255,255,255,.28);color:var(--white);padding:11px 2px;font:400 16px var(--sans);border-radius:0}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-bottom-color:var(--amber)}
+.field select option{background:var(--deep)}
 form .btn{width:100%;margin-top:10px}
-.note{margin:14px 0 0;font:400 12.5px/1.6 var(--mono);color:var(--ink)}
-@media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:38px}.f2{grid-template-columns:1fr}}
+.note{margin:14px 0 0;font:400 12.5px/1.6 var(--mono);color:var(--steel)}
+@media(max-width:900px){.contact-grid{grid-template-columns:1fr;gap:40px}.f2{grid-template-columns:1fr}}
 
-footer{border-top:1px solid var(--hair);padding:56px 0 36px;color:var(--ink);font-size:14.5px}
-.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:40px}
-footer h4{font:400 10.5px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--graphite);margin:0 0 16px}
-footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-footer a{text-decoration:none}
-.legal{margin-top:40px;padding-top:22px;border-top:1px solid var(--hair);font:400 12px/1.85 var(--mono)}
-@media(max-width:860px){.foot{grid-template-columns:1fr;gap:28px}}
-.mockbar{background:var(--graphite);color:var(--white);font:400 12.5px/1.5 var(--mono);padding:11px 0;text-align:center;letter-spacing:.06em}
-.mockbar a{color:var(--amber)}
+footer{border-top:1px solid rgba(255,255,255,.12);padding:52px 0 34px;color:var(--steel);font-size:14.5px}
+.legal{margin-top:30px;font:400 12px/1.9 var(--mono)}
+.mockbar{background:var(--amber);color:#0b0f14;font:500 13px/1.5 var(--mono);padding:11px 0;text-align:center;position:relative;z-index:90}
+.mockbar a{color:#0b0f14}
 
 /* ---------- pagine interne ---------- */
 .pg{padding:clamp(56px,7vw,104px) 0}
 .pg-head{max-width:62ch}
 .pg-lab{display:inline-flex;align-items:center;gap:12px;font:500 11px/1 "IBM Plex Mono",monospace;
-  letter-spacing:.26em;text-transform:uppercase;color:#5A646E}
+  letter-spacing:.26em;text-transform:uppercase;color:#98A3AE}
 .pg-lab::before{content:"";width:30px;height:2px;background:#F4B223}
-.pg h1{font:800 clamp(36px,5.4vw,66px)/1.06 "Schibsted Grotesk",system-ui,sans-serif;letter-spacing:-.028em;margin:22px 0 0}
-.pg-head p{color:#5A646E;font-size:clamp(17px,1.6vw,19px);margin:20px 0 0;max-width:58ch}
-.pg h2{font:800 clamp(26px,3.2vw,40px)/1.15 "Schibsted Grotesk",system-ui,sans-serif;letter-spacing:-.028em;margin:0}
-.pg h3{font:800 20px/1.3 "Schibsted Grotesk",system-ui,sans-serif;margin:0;letter-spacing:-.01em}
-.pg-sep{border:0;border-top:1px solid #E3E7EA;margin:clamp(46px,6vw,76px) 0}
+.pg h1{font:400 clamp(36px,5.4vw,66px)/1.06 "Instrument Serif",Georgia,serif;letter-spacing:-.005em;margin:22px 0 0}
+.pg-head p{color:#98A3AE;font-size:clamp(17px,1.6vw,19px);margin:20px 0 0;max-width:58ch}
+.pg h2{font:400 clamp(26px,3.2vw,40px)/1.15 "Instrument Serif",Georgia,serif;letter-spacing:-.005em;margin:0}
+.pg h3{font:800 20px/1.3 "Barlow",system-ui,sans-serif;margin:0;letter-spacing:-.01em}
+.pg-sep{border:0;border-top:1px solid rgba(255,255,255,.14);margin:clamp(46px,6vw,76px) 0}
 
 .pg-tab{width:100%;border-collapse:collapse;margin-top:34px;font-size:16px}
 .pg-tab th{text-align:left;font:500 10.5px/1 "IBM Plex Mono",monospace;letter-spacing:.22em;
-  text-transform:uppercase;color:#5A646E;padding:0 16px 14px 0;border-bottom:1px solid #E3E7EA}
-.pg-tab td{padding:20px 16px 20px 0;border-bottom:1px solid #E3E7EA;vertical-align:top}
+  text-transform:uppercase;color:#98A3AE;padding:0 16px 14px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+.pg-tab td{padding:20px 16px 20px 0;border-bottom:1px solid rgba(255,255,255,.14);vertical-align:top}
 .pg-tab td:first-child{font-weight:700}
-.pg-tab .un{font:600 13px/1 "IBM Plex Mono",monospace;color:#121820;border-bottom:2px solid #F4B223;
+.pg-tab .un{font:600 13px/1 "IBM Plex Mono",monospace;color:#F5F7F9;border-bottom:2px solid #F4B223;
   padding-bottom:3px;white-space:nowrap}
 @media (max-width:760px){.pg-tab,.pg-tab tbody,.pg-tab tr,.pg-tab td{display:block;width:100%}
-  .pg-tab thead{display:none}.pg-tab tr{padding:18px 0;border-bottom:1px solid #E3E7EA}
+  .pg-tab thead{display:none}.pg-tab tr{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.14)}
   .pg-tab td{border:0;padding:3px 0}}
 
-.pg-steps{list-style:none;margin:38px 0 0;padding:0;display:grid;gap:1px;background:#E3E7EA;
-  border:1px solid #E3E7EA}
-.pg-steps li{background:#fff;padding:28px 30px;display:grid;
+.pg-steps{list-style:none;margin:38px 0 0;padding:0;display:grid;gap:1px;background:rgba(255,255,255,.14);
+  border:1px solid rgba(255,255,255,.14)}
+.pg-steps li{background:#070A0E;padding:28px 30px;display:grid;
   grid-template-columns:64px minmax(0,1fr);gap:22px;align-items:start}
-.pg-steps b{font:600 12px/1 "IBM Plex Mono",monospace;letter-spacing:.14em;color:#121820;
+.pg-steps b{font:600 12px/1 "IBM Plex Mono",monospace;letter-spacing:.14em;color:#F5F7F9;
   background:#F4B223;padding:8px 9px;border-radius:3px;justify-self:start}
-.pg-steps p{margin:8px 0 0;color:#5A646E;font-size:16px}
+.pg-steps p{margin:8px 0 0;color:#98A3AE;font-size:16px}
 @media (max-width:640px){.pg-steps li{grid-template-columns:1fr;gap:12px}}
 
 .pg-cols{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(34px,5vw,72px);
   align-items:start;margin-top:40px}
-.pg-cols p{color:#5A646E;margin:0 0 16px}
-.pg-cols p strong{color:#121820;font-weight:700}
+.pg-cols p{color:#98A3AE;margin:0 0 16px}
+.pg-cols p strong{color:#F5F7F9;font-weight:700}
 @media (max-width:880px){.pg-cols{grid-template-columns:1fr}}
 
-.pg-facts{list-style:none;margin:0;padding:0;border-top:1px solid #E3E7EA}
-.pg-facts li{padding:18px 0;border-bottom:1px solid #E3E7EA;display:grid;
+.pg-facts{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.14)}
+.pg-facts li{padding:18px 0;border-bottom:1px solid rgba(255,255,255,.14);display:grid;
   grid-template-columns:minmax(0,1fr) auto;gap:20px;align-items:baseline}
 .pg-facts dt,.pg-facts span:first-child{font:500 10.5px/1.4 "IBM Plex Mono",monospace;letter-spacing:.2em;
-  text-transform:uppercase;color:#5A646E}
-.pg-facts b{font:700 17px/1.3 "Schibsted Grotesk",system-ui,sans-serif;text-align:right}
+  text-transform:uppercase;color:#98A3AE}
+.pg-facts b{font:700 17px/1.3 "Barlow",system-ui,sans-serif;text-align:right}
 
-.pg-note{background:#FBFCFC;border-left:3px solid #F4B223;padding:26px 30px;
-  margin-top:38px;color:#5A646E;font-size:16px}
-.pg-note b{color:#121820}
+.pg-note{background:#0D131A;border-left:3px solid #F4B223;padding:26px 30px;
+  margin-top:38px;color:#98A3AE;font-size:16px}
+.pg-note b{color:#F5F7F9}
 
 .pg-shot{margin:0;overflow:hidden;background:#0f151c;line-height:0}
 .pg-shot img{display:block;width:100%;height:100%;object-fit:cover}
-.pg-shot figcaption{font:400 11.5px/1.5 "IBM Plex Mono",monospace;color:#5A646E;padding:12px 2px 0;
+.pg-shot figcaption{font:400 11.5px/1.5 "IBM Plex Mono",monospace;color:#98A3AE;padding:12px 2px 0;
   letter-spacing:.06em;line-height:1.5}
 
 .pg-form{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:36px}
 .pg-form .full{grid-column:1/-1}
 .pg-form label{display:block;font:500 10.5px/1 "IBM Plex Mono",monospace;letter-spacing:.2em;
-  text-transform:uppercase;color:#5A646E;margin-bottom:9px}
-.pg-form input,.pg-form select,.pg-form textarea{width:100%;font:400 16px/1.5 "Schibsted Grotesk",system-ui,sans-serif;
-  color:#121820;background:#fff;border:1px solid #E3E7EA;border-radius:4px;
+  text-transform:uppercase;color:#98A3AE;margin-bottom:9px}
+.pg-form input,.pg-form select,.pg-form textarea{width:100%;font:400 16px/1.5 "Barlow",system-ui,sans-serif;
+  color:#F5F7F9;background:#070A0E;border:1px solid rgba(255,255,255,.14);border-radius:4px;
   padding:14px 15px;min-height:52px}
 .pg-form textarea{min-height:132px;resize:vertical}
 .pg-form input:focus,.pg-form select:focus,.pg-form textarea:focus{outline:2px solid #F4B223;
@@ -203,9 +202,9 @@ footer a{text-decoration:none}
 
 .pg-send{display:inline-flex;align-items:center;justify-content:center;min-height:54px;
   padding:0 30px;border:0;border-radius:5px;background:#F4B223;color:#121820;
-  font:800 15.5px/1 "Schibsted Grotesk",system-ui,sans-serif;cursor:pointer}
+  font:800 15.5px/1 "Barlow",system-ui,sans-serif;cursor:pointer}
 .pg-send:hover{filter:brightness(.94)}
-.pg-avviso{margin-top:16px;font:400 13.5px/1.6 "IBM Plex Mono",monospace;color:#5A646E}
+.pg-avviso{margin-top:16px;font:400 13.5px/1.6 "IBM Plex Mono",monospace;color:#98A3AE}
 
 /*finitura*/
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
@@ -218,20 +217,19 @@ a.pg-send:hover::after{transform:translateX(4px)}
 header{transition:box-shadow .3s ease}
 header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
 @keyframes heroUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
-.js .rv{transform:translateY(14px)}
 
 /*interni*/
-.pg-shot figcaption{color:#A7B0BA}
-.pg-open{margin:clamp(44px,5.5vw,70px) 0 0;outline:1px solid var(--hair);outline-offset:12px}
+.pg-open{margin:clamp(44px,5.5vw,70px) 0 0;box-shadow:0 30px 70px rgba(0,0,0,.55)}
 .pg-open img{aspect-ratio:12/5;width:100%;object-fit:cover}
-.pg-steps{background:transparent;border:0;gap:0;border-top:1px solid var(--graphite);margin-top:44px}
-.pg-steps li{background:transparent;padding:34px 0;border-bottom:1px solid var(--hair);grid-template-columns:96px minmax(0,1fr)}
-.pg-steps b{background:transparent;border-radius:0;padding:0 0 5px;font:500 24px/1 var(--mono);letter-spacing:.08em;color:var(--graphite);border-bottom:2px solid var(--amber)}
-.pg-steps h3{font:700 20px/1.35 var(--sans);margin:0}
+.pg-steps{background:transparent;border:0;gap:0;border-top:1px solid rgba(255,255,255,.14);margin-top:44px}
+.pg-steps li{background:transparent;padding:34px 0;border-bottom:1px solid rgba(255,255,255,.14);grid-template-columns:96px minmax(0,1fr)}
+.pg-steps b{background:transparent;border-radius:0;padding:0;font:italic 400 38px/1 var(--serif);color:var(--warm)}
+.pg-steps h3{font:600 20px/1.35 var(--sans);margin:0}
 .pg-steps p{max-width:64ch}
-.pg-cta{margin-top:clamp(56px,7vw,88px);border-top:1px solid var(--graphite);border-bottom:1px solid var(--hair);padding:clamp(36px,4.5vw,54px) 0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:center}
-.pg-cta-kick{margin:0 0 10px;font:500 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--ink)}
-.pg-cta-line{margin:0;font:700 clamp(22px,2.6vw,30px)/1.3 var(--sans);letter-spacing:-.01em}
+.pg-cta{margin-top:clamp(56px,7vw,88px);border:1px solid rgba(255,255,255,.14);background:var(--deep);padding:clamp(36px,4.5vw,58px) clamp(28px,4vw,56px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:center}
+.pg-cta-kick{margin:0 0 10px;font:500 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--amber)}
+.pg-cta-line{margin:0;font:400 clamp(26px,3vw,38px)/1.15 var(--serif);letter-spacing:-.01em}
+.pg-cta-line em{color:var(--warm)}
 @media (max-width:760px){.pg-cta{grid-template-columns:1fr}}
 button.pg-send{width:100%}
 .pg-form textarea{min-height:150px}
@@ -253,12 +251,10 @@ footer a{display:inline-block;min-height:24px;padding:5px 0}
 .pg-note{max-width:66ch}
 
 /*fix4*/
-.pg-form input,.pg-form select,.pg-form textarea{border-color:#8A939C}
+.pg-form input,.pg-form select,.pg-form textarea{border-color:rgba(255,255,255,.42)}
 input:focus,select:focus,textarea:focus{outline:3px solid #F4B223;outline-offset:1px}
-.req{color:#121820}
-nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
-/* La nota si stacca dal fondo pagina: 4 valori RGB non bastavano. */
-.pg-note{background:#F1F4F6}
+.req{color:#FFD37A}
+nav a[aria-current="page"]{color:#F5F7F9;box-shadow:inset 0 -2px 0 #F4B223}
 
 /*fix4*/
 /* Le misure in ch pensate per la prima schermata non devono colare sulle interne:
@@ -277,6 +273,10 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
   .pg-tab td{padding-top:10px}
 }
 
+/*fix4*/
+header{position:static}
+.pg{padding-top:clamp(28px,4vw,52px)}
+
 /*blocchi6*/
 .cnf{border-top:2px solid currentColor;margin-top:30px}
 .cnf > div{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:baseline;
@@ -294,6 +294,9 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
   .cnf > div{grid-template-columns:1fr}
   .cnf dd{text-align:left;margin-top:7px}
 }
+
+/*blocchi6*/
+.cnf{--linea-cnf:rgba(255,255,255,.14)}
 </style>
 <!--dati5-->
 <script type="application/ld+json">
@@ -419,12 +422,12 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
 <body>
 <a class="skip" href="#main">Salta al contenuto</a>
 <header>
-  <div class="wrap head-in">
-    <a class="brand" href="index.html" aria-label="Autotrasporti Bizzotto"><img src="../img/logo.svg" alt="Autotrasporti Bizzotto"></a>
-    <nav><a href="trasporti.html">Trasporti</a><a href="azienda.html" aria-current="page">Azienda</a><a href="contatti.html">Contatti</a></nav>
-    <a class="tel" href="contatti.html">info@autotrasportibizzotto.it</a>
-  </div>
-</header>
+    <div class="wrap head-in">
+      <a class="brand" href="index.html" aria-label="Autotrasporti Bizzotto"><img src="../../img/logo-reverse.svg" alt="Autotrasporti Bizzotto"></a>
+      <nav><a href="trasporti.html">Trasporti</a><a href="azienda.html" aria-current="page">Azienda</a><a href="contatti.html">Contatti</a></nav>
+      <a class="tel" href="contatti.html">Scrivici</a>
+    </div>
+  </header>
 
 <main id="main">
 <section class="pg">
@@ -437,8 +440,8 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
     </div>
 
     <figure class="pg-shot pg-open">
-      <picture><source type="image/webp" srcset="../img/frontali-800.webp 800w, ../img/frontali-1200.webp 1200w, ../img/frontali-1600.webp 1600w" sizes="(max-width:900px) 100vw, 1160px"><img src="../img/frontali-1600.jpg" srcset="../img/frontali-800.jpg 800w, ../img/frontali-1200.jpg 1200w, ../img/frontali-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 1160px" alt="I frontali dei mezzi allineati nel piazzale" width="1600" height="459" decoding="async" style="aspect-ratio:1600/459"></picture>
-      <figcaption>I mezzi, allineati per il giorno dopo.</figcaption>
+      <picture><source type="image/webp" srcset="../../img/flotta-tramonto-800.webp 800w, ../../img/flotta-tramonto-1200.webp 1200w, ../../img/flotta-tramonto-1600.webp 1600w" sizes="(max-width:900px) 100vw, 1160px"><img src="../../img/flotta-tramonto-1600.jpg" srcset="../../img/flotta-tramonto-800.jpg 800w, ../../img/flotta-tramonto-1200.jpg 1200w, ../../img/flotta-tramonto-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 1160px" alt="La flotta al rientro, con l’ultima luce del giorno" width="1600" height="900" decoding="async"></picture>
+      <figcaption>Il rientro, con l’ultima luce.</figcaption>
     </figure>
 
     <div class="pg-cols" style="margin-top:clamp(44px,6vw,72px)">
@@ -453,8 +456,8 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
         interno. Tornano perché il servizio è costante, non perché è il più economico.</p>
       </div>
       <figure class="pg-shot">
-        <picture><source type="image/webp" srcset="../img/montagne-800.webp 800w, ../img/montagne-1200.webp 1200w, ../img/montagne-1600.webp 1600w" sizes="(max-width:900px) 100vw, 560px"><img src="../img/montagne-1600.jpg" srcset="../img/montagne-800.jpg 800w, ../img/montagne-1200.jpg 1200w, ../img/montagne-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 560px" alt="La flotta nel piazzale, davanti alle Prealpi innevate" width="1600" height="698" loading="lazy" decoding="async"></picture>
-        <figcaption>La flotta davanti alle Prealpi</figcaption>
+        <picture><source type="image/webp" srcset="../../img/piazzale-vuoto-notte-800.webp 800w, ../../img/piazzale-vuoto-notte-1200.webp 1200w" sizes="(max-width:900px) 100vw, 560px"><img src="../../img/piazzale-vuoto-notte-1200.jpg" srcset="../../img/piazzale-vuoto-notte-800.jpg 800w, ../../img/piazzale-vuoto-notte-1200.jpg 1200w" sizes="(max-width:900px) 100vw, 560px" alt="Il piazzale aziendale di Cassola prima dell&#39;alba" width="1200" height="675" loading="lazy" decoding="async"></picture>
+        <figcaption>Il piazzale, prima che comincino i giri</figcaption>
       </figure>
     </div>
 
@@ -514,7 +517,7 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
 
     <div class="pg-cta">
       <div><p class="pg-cta-kick">Lavorare insieme</p>
-      <p class="pg-cta-line">La prova migliore è un primo viaggio.</p></div>
+      <p class="pg-cta-line">La prova migliore è <em>un primo viaggio</em>.</p></div>
       <a class="pg-send" href="contatti.html">Richiedi un trasporto</a>
     </div>
   </div>
@@ -523,15 +526,13 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
 </main>
 <footer>
   <div class="wrap">
-    <div class="foot">
-      <div><h4>Autotrasporti Bizzotto Srl</h4><p style="margin:0;max-width:34ch">Trasporto di carburanti e prodotti petroliferi in cisterna, conto terzi.</p></div>
-      <div><h4>Trasporti</h4><ul><li><a href="trasporti.html">Gasolio</a></li><li><a href="trasporti.html">Benzina</a></li><li><a href="trasporti.html">Altri prodotti</a></li></ul></div>
-      <div><h4>Contatti</h4><ul><li><a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a></li><li>Via Asiago 33, Cassola (VI)</li></ul></div>
-    </div>
-    <p class="legal">P. IVA 02020960247 · REA VI-200814 · Albo autotrasportatori VI/2955214/A · <a href="privacy.html">Privacy policy</a> · <a href="cookie.html">Cookie policy</a></p>
+    <span class="lab">Autotrasporti Bizzotto Srl</span>
+    <p style="margin:14px 0 0;max-width:42ch">Trasporto di carburanti e prodotti petroliferi in cisterna, conto terzi. Cassola, provincia di Vicenza.</p>
+    <p style="margin:16px 0 0;font-weight:600"><a href="mailto:info@autotrasportibizzotto.it" style="color:inherit;text-decoration:none;border-bottom:2px solid #F4B223;padding-bottom:2px">info@autotrasportibizzotto.it</a></p>
+    <p class="legal">Via Asiago 33, 36022 Cassola (VI) · P. IVA 02020960247 · REA VI-200814 · Albo autotrasportatori VI/2955214/A · <a href="privacy.html">Privacy</a> · <a href="cookie.html">Cookie</a></p>
   </div>
 </footer>
-<script src="../mobile-nav.js?v=2" defer></script>
-<script src="../reveal.js" defer></script>
+<script src="../../mobile-nav.js?v=2" defer></script>
+<script src="../../reveal.js" defer></script>
 </body>
 </html>
