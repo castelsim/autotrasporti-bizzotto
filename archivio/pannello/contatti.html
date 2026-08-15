@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
-<title>Trasporto carburanti in cisterna conto terzi · Bizzotto</title>
+<link rel="icon" href="../../img/favicon.svg" type="image/svg+xml">
+<title>Richiedi un preventivo di trasporto carburanti</title>
 <!--meta3-->
-<meta name="description" content="Autotrasporti Bizzotto, Cassola (VI): gasolio, benzina e prodotti petroliferi in cisterna conto terzi, in ADR. Rispondiamo entro la giornata lavorativa.">
+<meta name="description" content="Chiedete un preventivo per un trasporto di carburante: prodotto, luogo di ritiro e di consegna. Rispondiamo via email entro la giornata lavorativa.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Autotrasporti Bizzotto Srl">
-<meta property="og:title" content="Trasporto carburanti in cisterna conto terzi · Bizzotto">
-<meta property="og:description" content="Autotrasporti Bizzotto, Cassola (VI): gasolio, benzina e prodotti petroliferi in cisterna conto terzi, in ADR. Rispondiamo entro la giornata lavorativa.">
+<meta property="og:title" content="Richiedi un preventivo di trasporto carburanti">
+<meta property="og:description" content="Chiedete un preventivo per un trasporto di carburante: prodotto, luogo di ritiro e di consegna. Rispondiamo via email entro la giornata lavorativa.">
 <meta property="og:image" content="https://castelsim.github.io/autotrasporti-bizzotto/sito/img/frontali-1600.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -257,38 +257,21 @@ header{transition:box-shadow .3s ease}
 header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
 @keyframes heroUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
 
-@media (prefers-reduced-motion:no-preference){
-.hero-in > *{animation:heroUp .85s cubic-bezier(.16,.6,.2,1) both}
-.hero-in > *:nth-child(2){animation-delay:.09s}
-.hero-in > *:nth-child(3){animation-delay:.18s}
-.hero-in > *:nth-child(4){animation-delay:.27s}
-.hero-in > *:nth-child(5){animation-delay:.38s}
-.js #servizi.rv .svc-row{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
-.js #servizi.rv.in .svc-row{opacity:1;transform:none}
-.js #servizi.rv.in .svc-row:nth-child(2){transition-delay:.12s}
-.js #servizi.rv.in .svc-row:nth-child(3){transition-delay:.24s}
-}
-.story .ph{box-shadow:20px 20px 0 var(--amber)}
-@media (max-width:900px){.story .ph{box-shadow:12px 12px 0 var(--amber)}}
-.fleet .ph{overflow:hidden}
-.fleet .ph img{transition:transform .7s cubic-bezier(.16,.6,.2,1)}
-.fleet .ph:hover img{transform:scale(1.045)}
-.banda{position:relative;padding:0;overflow:hidden;background:#0f151c}
-.banda img{display:block;width:100%;height:min(62vh,560px);object-fit:cover}
-.banda::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,24,32,.14) 0%,rgba(18,24,32,.72) 100%)}
-.banda p{position:absolute;z-index:2;left:0;right:0;bottom:clamp(28px,6vh,58px);margin:0;padding:0 6vw;text-align:center;color:#fff;font:800 clamp(22px,3.3vw,40px)/1.16 var(--display);letter-spacing:-.025em}
-.banda p em{font-style:normal;color:var(--amber)}
-
 /*interni*/
-.svc-row > p{font-size:17.5px;line-height:1.78}
-.svc-row h3 + p{font-size:16px}
-
-/*rifinitura3*/
-.more{display:inline-flex;align-items:center;gap:12px;margin-top:36px;font:800 17px/1 var(--display);
-  color:var(--graphite);text-decoration:none;border-bottom:3px solid var(--amber);padding-bottom:8px;
-  letter-spacing:-.01em;transition:gap .2s ease}
-.more:hover{gap:19px}
-.more i{font-style:normal;font:500 14px/1 var(--mono)}
+.pg-shot figcaption{color:#A7B0BA}
+.pg-open{margin:clamp(44px,5.5vw,70px) 0 0;box-shadow:14px 14px 0 var(--amber)}
+.pg-open img{aspect-ratio:12/5;width:100%;object-fit:cover}
+.pg-steps{background:transparent;border:0;gap:0;border-top:1px solid var(--line);margin-top:44px}
+.pg-steps li{background:transparent;padding:34px 0;border-bottom:1px solid var(--line);grid-template-columns:96px minmax(0,1fr)}
+.pg-steps b{background:transparent;border-radius:0;padding:0 0 6px;font:800 30px/1 var(--display);letter-spacing:0;color:var(--graphite);border-bottom:3px solid var(--amber)}
+.pg-steps h3{font:800 20px/1.35 var(--display);margin:0;letter-spacing:-.01em}
+.pg-steps p{max-width:64ch}
+.pg-cta{margin-top:clamp(56px,7vw,88px);background:var(--graphite);color:var(--white);padding:clamp(36px,4.5vw,58px) clamp(28px,4vw,56px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:center;border-radius:6px}
+.pg-cta-kick{margin:0 0 10px;font:500 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--amber)}
+.pg-cta-line{margin:0;font:800 clamp(22px,2.6vw,30px)/1.25 var(--display);letter-spacing:-.015em}
+@media (max-width:760px){.pg-cta{grid-template-columns:1fr}}
+button.pg-send{width:100%}
+.pg-form textarea{min-height:150px}
 
 /*fix4*/
 /* Anello di messa a fuoco visibile su qualunque fondo: ambra racchiusa da un alone
@@ -315,6 +298,26 @@ footer a{display:inline-block;min-height:24px;padding:5px 0}
 .req{color:#121820}
 /* La pagina in cui ti trovi si vede nel menu. */
 .nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -3px 0 #F4B223}
+
+/*fix4*/
+/* Le misure in ch pensate per la prima schermata non devono colare sulle interne:
+   producevano titoli con la seconda riga di una parola sola. */
+.pg h1,.pg h2,.pg h3{max-width:none}
+/* Il numero del passo non si tiene una colonna da 96px sul telefono. */
+@media (max-width:640px){
+  .pg-steps li{grid-template-columns:1fr;gap:4px}
+  .pg-steps li > *:first-child{margin-bottom:2px}
+}
+/* La tabella dei prodotti impilata recupera le intestazioni. */
+@media (max-width:760px){
+  .pg-tab td::before{content:attr(data-l);display:block;
+    font:600 10px/1 var(--mono,monospace);letter-spacing:.14em;text-transform:uppercase;
+    opacity:.62;margin-bottom:4px}
+  .pg-tab td{padding-top:10px}
+}
+
+/*hp*/
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
 /*modulo8*/
 .form-esito{margin:16px 0 0;padding:13px 15px;border-left:3px solid currentColor;
@@ -447,163 +450,94 @@ footer a{display:inline-block;min-height:24px;padding:5px 0}
 </script>
 </head>
 <body>
-
 <a class="skip" href="#main">Salta al contenuto</a>
 <header class="site-head">
   <div class="wrap head-in">
-    <a class="brand" href="index.html" aria-label="Autotrasporti Bizzotto"><img src="../img/logo.svg" alt="Autotrasporti Bizzotto"></a>
-    <nav class="nav"><a href="trasporti.html">Trasporti</a><a href="azienda.html">Azienda</a><a href="contatti.html">Contatti</a></nav>
+    <a class="brand" href="index.html" aria-label="Autotrasporti Bizzotto"><img src="../../img/logo.svg" alt="Autotrasporti Bizzotto"></a>
+    <nav class="nav"><a href="trasporti.html">Trasporti</a><a href="azienda.html">Azienda</a><a href="contatti.html" aria-current="page">Contatti</a></nav>
     <div class="head-cta">
       <a class="btn" href="contatti.html">Richiedi un trasporto</a>
     </div>
   </div>
 </header>
 
-<main>
-<section class="hero" id="main" style="padding:0">
-  <div class="hero-media">
-    <figure class="ph"><picture><source type="image/webp" srcset="../img/piazzale-sera-800.webp 800w, ../img/piazzale-sera-1200.webp 1200w, ../img/piazzale-sera-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="../img/piazzale-sera-1600.jpg" srcset="../img/piazzale-sera-800.jpg 800w, ../img/piazzale-sera-1200.jpg 1200w, ../img/piazzale-sera-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="Autocisterna Bizzotto nel piazzale aziendale al tramonto" width="1600" height="900" loading="eager" fetchpriority="high"></picture></figure>
-  </div>
-  <div class="wrap hero-in">
-    <span class="eyebrow">Cassola (VI) · conto terzi</span>
-    <h1>Trasportiamo carburante.<br><em>Dal 1988.</em></h1>
-    <p class="lead">Autocisterne, autisti con patentino ADR e responsabilità piena sul carico: dal deposito al vostro serbatoio, senza intermediari.</p>
-    <div class="hero-actions">
-      <a class="btn" href="#contatti">Richiedi un trasporto</a>
-      <a class="btn btn--ghost" href="#servizi">Cosa trasportiamo</a>
-    </div>
-    <div class="hero-panel">
-      <div class="adr" aria-label="Pannello ADR: codice 30, numero ONU 1202"><span>30</span><span>1202</span></div>
-      
-    </div>
-    <dl class="facts">
-      <div><dt>Attività dal</dt><dd>1988</dd></div>
-      <div><dt>Specializzazione</dt><dd>Cisterna ADR</dd></div>
-      <div><dt>Base operativa</dt><dd>Cassola (VI)</dd></div>
-      <div><dt>Raggio</dt><dd>Veneto e Nord Italia</dd></div>
-    </dl>
-  </div>
-</section>
-
-<section id="servizi">
+<main id="main">
+<section class="pg">
   <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Servizi</span>
-      <h2>Tre cose, fatte bene.</h2>
-      <p>Prodotti petroliferi in cisterna, per operatori energetici, distributori e aziende con deposito interno.</p>
+    <div class="pg-head">
+      <span class="pg-lab">Contatti</span>
+      <h1>Richiedi un trasporto.</h1>
+      <p>Compilate il modulo con i dati del carico: rispondiamo via email con disponibilità,
+      tempi e prezzo. Se il viaggio non rientra in quello che sappiamo fare bene, ve lo
+      diciamo subito.</p>
     </div>
-    <div class="svc">
-      <article class="svc-row">
-        <span class="svc-code">UN 1202</span>
-        <div><h3>Gasolio e prodotti petroliferi</h3></div>
-        <div>
-          <p>Ritiro da deposito o raffineria e consegna a distributori stradali, aziende agricole, cantieri e depositi privati. Quantità e tempi concordati per ogni viaggio.</p>
-          
-        </div>
-      </article>
-      <article class="svc-row">
-        <span class="svc-code">ADR</span>
-        <div><h3>Merci pericolose</h3></div>
-        <div>
-          <p>Autisti abilitati ADR, mezzi omologati e procedure di sicurezza su ogni fase del carico. La parte del lavoro che non si vede è quella che vi mette al riparo.</p>
-          
-        </div>
-      </article>
-      <article class="svc-row">
-        <span class="svc-code">DOCUMENTI</span>
-        <div><h3>Tracciabilità della consegna</h3></div>
-        <div>
-          <p>Documentazione completa per ogni viaggio e riscontro diretto sullo stato della consegna. Un solo interlocutore, dalla richiesta alla consegna.</p>
-          
-        </div>
-      </article>
-    </div>
-    <a class="more" href="trasporti.html">Come lavoriamo, dal ritiro alla firma <i>→</i></a>
-  </div>
-</section>
 
-<section class="story" id="azienda">
-  <div class="wrap story-grid">
-    <div>
-      <span class="eyebrow">Azienda</span>
-      <h2>Quasi quarant'anni sulla stessa strada.</h2>
-      <p style="color:var(--ink);font-size:18px;margin-top:18px">Bizzotto nasce a Cassola nel 1988 e da allora fa una cosa sola: trasportare carburante per chi lo distribuisce. Nessun passaggio di mano, nessuna sede lontana. Chi legge le vostre richieste conosce i mezzi e gli autisti.</p>
-      <ul class="timeline">
-        <li><b>1988</b><span>Inizio dell'attività a Cassola, in provincia di Vicenza.</span></li>
-        <li><b>OGGI</b><span>Flotta di autocisterne dedicata al trasporto di prodotti petroliferi conto terzi.</span></li>
-        
-      </ul>
-      <a class="more" href="azienda.html">Chi siamo, in due pagine <i>→</i></a>
-    </div>
-    <figure class="ph"><picture><source type="image/webp" srcset="../img/montagne-800.webp 800w, ../img/montagne-1200.webp 1200w, ../img/montagne-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="../img/montagne-1600.jpg" srcset="../img/montagne-800.jpg 800w, ../img/montagne-1200.jpg 1200w, ../img/montagne-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="La flotta nel piazzale, davanti alle Prealpi innevate" width="1600" height="698" loading="lazy" decoding="async"></picture></figure>
-  </div>
-</section>
-
-<section class="fleet" id="flotta">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Flotta</span>
-      <h2>I mezzi, davvero.</h2>
-      <p>Sono i mezzi che arrivano da voi.</p>
-    </div>
-    <figure class="ph"><picture><source type="image/webp" srcset="../img/frontali-800.webp 800w, ../img/frontali-1200.webp 1200w, ../img/frontali-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="../img/frontali-1600.jpg" srcset="../img/frontali-800.jpg 800w, ../img/frontali-1200.jpg 1200w, ../img/frontali-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="I frontali dei mezzi allineati, con il cielo al tramonto" width="1600" height="459" loading="lazy" decoding="async"></picture></figure>
-    <div class="fleet-grid">
-      <figure class="ph"><picture><source type="image/webp" srcset="../img/cerchione-800.webp 800w, ../img/cerchione-1200.webp 1200w" sizes="(max-width:900px) 100vw, 60vw"><img src="../img/cerchione-1200.jpg" srcset="../img/cerchione-800.jpg 800w, ../img/cerchione-1200.jpg 1200w" sizes="(max-width:900px) 100vw, 60vw" alt="Dettaglio di un cerchione in lega di un mezzo della flotta" width="1200" height="900" loading="lazy" decoding="async"></picture></figure>
-      <figure class="ph"><picture><source type="image/webp" srcset="../img/adr-800.webp 800w, ../img/adr-1200.webp 1200w" sizes="(max-width:900px) 100vw, 60vw"><img src="../img/adr-1200.jpg" srcset="../img/adr-800.jpg 800w, ../img/adr-1200.jpg 1200w" sizes="(max-width:900px) 100vw, 60vw" alt="Pannello ADR 30/1202 sul retro di una cisterna: gasolio, classe 3" width="1200" height="900" loading="lazy" decoding="async"></picture></figure>
-      <figure class="ph"><picture><source type="image/webp" srcset="../img/cisterna-800.webp 800w, ../img/cisterna-1200.webp 1200w" sizes="(max-width:900px) 100vw, 60vw"><img src="../img/cisterna-1200.jpg" srcset="../img/cisterna-800.jpg 800w, ../img/cisterna-1200.jpg 1200w" sizes="(max-width:900px) 100vw, 60vw" alt="Trattore e cisterna in configurazione di viaggio" width="1200" height="900" loading="lazy" decoding="async"></picture></figure>
-    </div>
-  </div>
-</section>
-
-<section class="banda">
-  <picture><source type="image/webp" srcset="../img/cielo-800.webp 800w, ../img/cielo-1200.webp 1200w, ../img/cielo-1600.webp 1600w" sizes="100vw"><img src="../img/cielo-1600.jpg" srcset="../img/cielo-800.jpg 800w, ../img/cielo-1200.jpg 1200w, ../img/cielo-1600.jpg 1600w" sizes="100vw" alt="Il cielo sulle Prealpi all&#39;ora dei primi giri" width="1600" height="571" loading="lazy" decoding="async"></picture>
-  <p>Le consegne cominciano <em>prima del giorno</em>.</p>
-</section>
-
-<section class="contact" id="contatti">
-  <div class="wrap">
-    <div class="sec-head">
-      <span class="eyebrow">Contatti</span>
-      <h2>Ci serve sapere tre cose:<br>cosa, da dove, a dove.</h2>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <p>Per un preventivo bastano il prodotto, il luogo di ritiro e quello di consegna. Scriveteci: rispondiamo entro la giornata lavorativa.</p>
-        <dl>
-          <div><dt>Email</dt><dd><a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a></dd></div>
-          <div><dt>Sede</dt><dd style="font-weight:400">Via Asiago 33<br>36022 Cassola (VI)</dd></div>
-        </dl>
-      </div>
-      <form data-modulo="preventivo">
+    <div class="pg-cols" style="margin-top:clamp(40px,5vw,64px)">
+      <div>
+        <h2>Il modulo</h2>
+        <form class="pg-form" data-modulo="preventivo">
           <input type="hidden" name="_subject" value="Richiesta di trasporto dal sito">
           <input type="hidden" name="_language" value="it">
-        <div class="f-row">
-          <div class="field"><label for="a1">Azienda</label><input id="a1" name="azienda" autocomplete="organization" required type="text"></div>
-          <div class="field"><label for="a2">Referente</label><input id="a2" name="referente" autocomplete="name" required type="text"></div>
-        </div>
-        <div class="f-row">
-          <div class="field"><label for="a3">Email</label><input id="a3" name="email" data-replyto="1" autocomplete="email" required type="email"></div>
-          <div class="field"><label for="a4">Telefono</label><input id="a4" name="telefono" autocomplete="tel" type="tel"></div>
-        </div>
-        <div class="field"><label for="a5">Prodotto da trasportare</label>
-          <select id="a5" name="prodotto" required><option>Gasolio</option><option>Benzina</option><option>Altro prodotto petrolifero</option><option>Da definire</option></select>
-        </div>
-        <div class="f-row">
-          <div class="field"><label for="a6">Ritiro</label><input id="a6" name="ritiro" type="text" placeholder="Deposito, città"></div>
-          <div class="field"><label for="a7">Consegna</label><input id="a7" name="consegna" required type="text" placeholder="Destinazione"></div>
-        </div>
-        <div class="field"><label for="a8">Note</label><textarea id="a8" name="note" rows="3"></textarea></div>
-        <p class="hp" aria-hidden="true"><label>Non compilare<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></p>
-        <button class="btn" type="submit">Invia la richiesta</button>
+          <div class="full"><label for="az">Azienda <span class="req">*</span></label>
+            <input id="az" name="azienda" type="text" autocomplete="organization" required></div>
+          <div><label for="rf">Referente <span class="req">*</span></label>
+            <input id="rf" name="referente" type="text" autocomplete="name" required></div>
+          <div><label for="em">Email <span class="req">*</span></label>
+            <input id="em" name="email" data-replyto="1" type="email" autocomplete="email" required></div>
+          <div><label for="tl">Telefono</label>
+            <input id="tl" name="telefono" type="tel" autocomplete="tel"></div>
+          <div><label for="pr">Prodotto <span class="req">*</span></label>
+            <select id="pr" name="prodotto" required>
+              <option value="">Scegliete il prodotto</option>
+              <option>Gasolio per autotrazione (UN 1202)</option>
+              <option>Gasolio da riscaldamento (UN 1202)</option>
+              <option>Benzina (UN 1203)</option>
+              <option>Altro prodotto petrolifero</option>
+            </select></div>
+          <div><label for="qt">Quantità per viaggio</label>
+            <input id="qt" name="quantita" type="text" placeholder="litri"></div>
+          <div><label for="rt">Luogo di ritiro</label>
+            <input id="rt" name="ritiro" type="text" placeholder="deposito o raffineria"></div>
+          <div><label for="cn">Luogo di consegna <span class="req">*</span></label>
+            <input id="cn" name="consegna" type="text" required></div>
+          <div><label for="dt">Data o frequenza</label>
+            <input id="dt" name="quando" type="text" placeholder="una data, oppure «ogni settimana»"></div>
+          <div class="full"><label for="nt">Note</label>
+            <textarea id="nt" name="note" placeholder="Tipo di scarico, vincoli di orario, tutto quello che ci serve sapere prima di rispondere."></textarea></div>
+          <div class="full">
+            <p class="hp" aria-hidden="true"><label>Non compilare<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></p>
+            <button class="pg-send" type="submit">Invia la richiesta</button>
         <noscript><p class="form-note">Per inviare la richiesta da questa pagina serve JavaScript. Se preferite tenerlo disattivato, scriveteci a <a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a>: bastano il prodotto, il luogo di ritiro e quello di consegna.</p></noscript>
-        <p class="form-note">Rispondiamo entro la giornata lavorativa.</p>
+            <p class="form-note">La richiesta arriva a info@autotrasportibizzotto.it. Rispondiamo entro la giornata lavorativa.</p>
         <p class="form-priv">Inviando la richiesta dichiarate di aver letto l'<a href="privacy.html">informativa privacy</a>. Usiamo questi dati solo per rispondervi.</p>
-      </form>
+          </div>
+        </form>
+      </div>
+
+      <div>
+        <h2>Dove siamo</h2>
+        <ul class="pg-facts" style="margin-top:26px">
+          <li><span>Ragione sociale</span><b>Autotrasporti Bizzotto Srl</b></li>
+          <li><span>Sede</span><b>Via Asiago 33<br>36022 Cassola (VI)</b></li>
+          <li><span>Email</span><b><a href="mailto:info@autotrasportibizzotto.it"
+            style="color:inherit">info@autotrasportibizzotto.it</a></b></li>
+          <li><span>Partita IVA</span><b>02020960247</b></li>
+          <li><span>Attività dal</span><b>1988</b></li>
+        </ul>
+        <div class="pg-note">Non pubblichiamo un numero di telefono, ed è una scelta.
+        Le richieste passano dal modulo perché così restano scritte: prodotto, quantità e
+        indirizzi non si perdono in una telefonata, e <b>chi risponde ha già tutto sotto
+        gli occhi</b>.</div>
+        <figure class="pg-shot" style="margin-top:32px">
+          <picture><source type="image/webp" srcset="../../img/carico-700.webp 700w, ../../img/carico-1000.webp 1000w" sizes="(max-width:900px) 100vw, 560px"><img src="../../img/carico-1000.jpg" srcset="../../img/carico-700.jpg 700w, ../../img/carico-1000.jpg 1000w" sizes="(max-width:900px) 100vw, 560px" alt="Due autocisterne collegate ai manicotti durante le operazioni di carico" width="900" height="1200" loading="lazy" decoding="async"></picture>
+          <figcaption>Operazioni di carico presidiate</figcaption>
+        </figure>
+      </div>
     </div>
   </div>
 </section>
-</main>
 
+</main>
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -617,9 +551,8 @@ footer a{display:inline-block;min-height:24px;padding:5px 0}
     <p class="legal">Autotrasporti Bizzotto Srl · Via Asiago 33, 36022 Cassola (VI) · P. IVA 02020960247 · REA VI-200814 · Albo autotrasportatori VI/2955214/A<br><a href="privacy.html">Privacy policy</a> · <a href="cookie.html">Cookie policy</a></p>
   </div>
 </footer>
-
-<script src="../mobile-nav.js?v=2" defer></script>
-<script src="../reveal.js" defer></script>
-<script src="../modulo.js" defer></script>
+<script src="../../mobile-nav.js?v=2" defer></script>
+<script src="../../reveal.js" defer></script>
+<script src="../../modulo.js" defer></script>
 </body>
 </html>

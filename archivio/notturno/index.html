@@ -4,15 +4,15 @@
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
-<title>Richiedi un preventivo di trasporto carburanti</title>
+<link rel="icon" href="../../img/favicon.svg" type="image/svg+xml">
+<title>Trasporto carburanti in cisterna conto terzi · Bizzotto</title>
 <!--meta3-->
-<meta name="description" content="Chiedete un preventivo per un trasporto di carburante: prodotto, luogo di ritiro e di consegna. Rispondiamo via email entro la giornata lavorativa.">
+<meta name="description" content="Autotrasporti Bizzotto, Cassola (VI): gasolio, benzina e prodotti petroliferi in cisterna conto terzi, in ADR. Rispondiamo entro la giornata lavorativa.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Autotrasporti Bizzotto Srl">
-<meta property="og:title" content="Richiedi un preventivo di trasporto carburanti">
-<meta property="og:description" content="Chiedete un preventivo per un trasporto di carburante: prodotto, luogo di ritiro e di consegna. Rispondiamo via email entro la giornata lavorativa.">
+<meta property="og:title" content="Trasporto carburanti in cisterna conto terzi · Bizzotto">
+<meta property="og:description" content="Autotrasporti Bizzotto, Cassola (VI): gasolio, benzina e prodotti petroliferi in cisterna conto terzi, in ADR. Rispondiamo entro la giornata lavorativa.">
 <meta property="og:image" content="https://castelsim.github.io/autotrasporti-bizzotto/sito/img/frontali-1600.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -218,21 +218,32 @@ header{transition:box-shadow .3s ease}
 header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
 @keyframes heroUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
 
-/*interni*/
-.pg-open{margin:clamp(44px,5.5vw,70px) 0 0;box-shadow:0 30px 70px rgba(0,0,0,.55)}
-.pg-open img{aspect-ratio:12/5;width:100%;object-fit:cover}
-.pg-steps{background:transparent;border:0;gap:0;border-top:1px solid rgba(255,255,255,.14);margin-top:44px}
-.pg-steps li{background:transparent;padding:34px 0;border-bottom:1px solid rgba(255,255,255,.14);grid-template-columns:96px minmax(0,1fr)}
-.pg-steps b{background:transparent;border-radius:0;padding:0;font:italic 400 38px/1 var(--serif);color:var(--warm)}
-.pg-steps h3{font:600 20px/1.35 var(--sans);margin:0}
-.pg-steps p{max-width:64ch}
-.pg-cta{margin-top:clamp(56px,7vw,88px);border:1px solid rgba(255,255,255,.14);background:var(--deep);padding:clamp(36px,4.5vw,58px) clamp(28px,4vw,56px);display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:center}
-.pg-cta-kick{margin:0 0 10px;font:500 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--amber)}
-.pg-cta-line{margin:0;font:400 clamp(26px,3vw,38px)/1.15 var(--serif);letter-spacing:-.01em}
-.pg-cta-line em{color:var(--warm)}
-@media (max-width:760px){.pg-cta{grid-template-columns:1fr}}
-button.pg-send{width:100%}
-.pg-form textarea{min-height:150px}
+@media (prefers-reduced-motion:no-preference){
+.hero-in > *{animation:heroUp 1.1s cubic-bezier(.16,.6,.2,1) both}
+.hero-in > *:nth-child(2){animation-delay:.15s}
+.hero-in > *:nth-child(3){animation-delay:.3s}
+.hero-in > *:nth-child(4){animation-delay:.5s}
+.hero-bg img{animation:notteZoom 22s ease-out both}
+@keyframes notteZoom{from{transform:scale(1.06)}to{transform:scale(1)}}
+}
+.gal .ph{box-shadow:0 30px 70px rgba(0,0,0,.55)}
+.banda{position:relative;padding:0;overflow:hidden;background:var(--night)}
+.banda img{display:block;width:100%;height:min(68vh,600px);object-fit:cover;filter:brightness(.82) saturate(.92)}
+.banda::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,10,14,.55) 0%,rgba(7,10,14,.2) 45%,rgba(7,10,14,.85) 100%)}
+.banda p{position:absolute;z-index:2;left:0;right:0;top:50%;transform:translateY(-50%);margin:0;padding:0 8vw;text-align:center;color:var(--white);font:400 clamp(25px,3.8vw,46px)/1.25 var(--serif);letter-spacing:-.005em}
+.banda p em{font-style:italic;color:var(--warm)}
+
+/*rifinitura3*/
+.more{display:inline-flex;align-items:center;gap:14px;margin-top:38px;font:italic 400 23px/1 var(--serif);
+  color:var(--warm);text-decoration:none;border-bottom:1px solid rgba(255,211,122,.35);padding-bottom:9px;
+  transition:gap .2s ease,border-color .2s ease}
+.more:hover{gap:22px;border-color:var(--warm)}
+.more i{font-style:normal;font:500 13px/1 var(--mono)}
+.gal-grid{align-items:stretch}
+.gal-grid > .ph{aspect-ratio:auto;height:100%;min-height:470px}
+.gal-col{grid-template-rows:1fr 1fr}
+.gal-col .ph{aspect-ratio:auto;height:100%}
+@media(max-width:900px){.gal-grid > .ph{aspect-ratio:4/3;min-height:0}.gal-col .ph{aspect-ratio:16/10}}
 
 /*fix4*/
 /* Anello di messa a fuoco visibile su qualunque fondo: ambra racchiusa da un alone
@@ -255,30 +266,6 @@ footer a{display:inline-block;min-height:24px;padding:5px 0}
 input:focus,select:focus,textarea:focus{outline:3px solid #F4B223;outline-offset:1px}
 .req{color:#FFD37A}
 nav a[aria-current="page"]{color:#F5F7F9;box-shadow:inset 0 -2px 0 #F4B223}
-
-/*fix4*/
-/* Le misure in ch pensate per la prima schermata non devono colare sulle interne:
-   producevano titoli con la seconda riga di una parola sola. */
-.pg h1,.pg h2,.pg h3{max-width:none}
-/* Il numero del passo non si tiene una colonna da 96px sul telefono. */
-@media (max-width:640px){
-  .pg-steps li{grid-template-columns:1fr;gap:4px}
-  .pg-steps li > *:first-child{margin-bottom:2px}
-}
-/* La tabella dei prodotti impilata recupera le intestazioni. */
-@media (max-width:760px){
-  .pg-tab td::before{content:attr(data-l);display:block;
-    font:600 10px/1 var(--mono,monospace);letter-spacing:.14em;text-transform:uppercase;
-    opacity:.62;margin-bottom:4px}
-  .pg-tab td{padding-top:10px}
-}
-
-/*fix4*/
-header{position:static}
-.pg{padding-top:clamp(28px,4vw,52px)}
-
-/*hp*/
-.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 
 /*modulo8*/
 .form-esito{margin:16px 0 0;padding:13px 15px;border-left:3px solid currentColor;
@@ -411,92 +398,135 @@ header{position:static}
 </script>
 </head>
 <body>
+
 <a class="skip" href="#main">Salta al contenuto</a>
-<header>
+<section class="hero" id="main">
+  <div class="hero-bg">
+    <figure class="ph"><picture><source type="image/webp" srcset="../../img/piazzale-notte-800.webp 800w, ../../img/piazzale-notte-1200.webp 1200w, ../../img/piazzale-notte-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="../../img/piazzale-notte-1600.jpg" srcset="../../img/piazzale-notte-800.jpg 800w, ../../img/piazzale-notte-1200.jpg 1200w, ../../img/piazzale-notte-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="Autocisterna Bizzotto nel piazzale, prima dell&#39;alba" width="1600" height="900" loading="eager" fetchpriority="high"></picture></figure>
+  </div>
+  <header>
     <div class="wrap head-in">
-      <a class="brand" href="index.html" aria-label="Autotrasporti Bizzotto"><img src="../img/logo-reverse.svg" alt="Autotrasporti Bizzotto"></a>
-      <nav><a href="trasporti.html">Trasporti</a><a href="azienda.html">Azienda</a><a href="contatti.html" aria-current="page">Contatti</a></nav>
+      <a class="brand" href="index.html" aria-label="Autotrasporti Bizzotto"><img src="../../img/logo-reverse.svg" alt="Autotrasporti Bizzotto"></a>
+      <nav><a href="trasporti.html">Trasporti</a><a href="azienda.html">Azienda</a><a href="contatti.html">Contatti</a></nav>
       <a class="tel" href="contatti.html">Scrivici</a>
     </div>
   </header>
-
-<main id="main">
-<section class="pg">
-  <div class="wrap">
-    <div class="pg-head">
-      <span class="pg-lab">Contatti</span>
-      <h1>Richiedi un trasporto.</h1>
-      <p>Compilate il modulo con i dati del carico: rispondiamo via email con disponibilità,
-      tempi e prezzo. Se il viaggio non rientra in quello che sappiamo fare bene, ve lo
-      diciamo subito.</p>
-    </div>
-
-    <div class="pg-cols" style="margin-top:clamp(40px,5vw,64px)">
-      <div>
-        <h2>Il modulo</h2>
-        <form class="pg-form" data-modulo="preventivo">
-          <input type="hidden" name="_subject" value="Richiesta di trasporto dal sito">
-          <input type="hidden" name="_language" value="it">
-          <div class="full"><label for="az">Azienda <span class="req">*</span></label>
-            <input id="az" name="azienda" type="text" autocomplete="organization" required></div>
-          <div><label for="rf">Referente <span class="req">*</span></label>
-            <input id="rf" name="referente" type="text" autocomplete="name" required></div>
-          <div><label for="em">Email <span class="req">*</span></label>
-            <input id="em" name="email" data-replyto="1" type="email" autocomplete="email" required></div>
-          <div><label for="tl">Telefono</label>
-            <input id="tl" name="telefono" type="tel" autocomplete="tel"></div>
-          <div><label for="pr">Prodotto <span class="req">*</span></label>
-            <select id="pr" name="prodotto" required>
-              <option value="">Scegliete il prodotto</option>
-              <option>Gasolio per autotrazione (UN 1202)</option>
-              <option>Gasolio da riscaldamento (UN 1202)</option>
-              <option>Benzina (UN 1203)</option>
-              <option>Altro prodotto petrolifero</option>
-            </select></div>
-          <div><label for="qt">Quantità per viaggio</label>
-            <input id="qt" name="quantita" type="text" placeholder="litri"></div>
-          <div><label for="rt">Luogo di ritiro</label>
-            <input id="rt" name="ritiro" type="text" placeholder="deposito o raffineria"></div>
-          <div><label for="cn">Luogo di consegna <span class="req">*</span></label>
-            <input id="cn" name="consegna" type="text" required></div>
-          <div><label for="dt">Data o frequenza</label>
-            <input id="dt" name="quando" type="text" placeholder="una data, oppure «ogni settimana»"></div>
-          <div class="full"><label for="nt">Note</label>
-            <textarea id="nt" name="note" placeholder="Tipo di scarico, vincoli di orario, tutto quello che ci serve sapere prima di rispondere."></textarea></div>
-          <div class="full">
-            <p class="hp" aria-hidden="true"><label>Non compilare<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></p>
-            <button class="pg-send" type="submit">Invia la richiesta</button>
-        <noscript><p class="form-note">Per inviare la richiesta da questa pagina serve JavaScript. Se preferite tenerlo disattivato, scriveteci a <a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a>: bastano il prodotto, il luogo di ritiro e quello di consegna.</p></noscript>
-            <p class="form-note">La richiesta arriva a info@autotrasportibizzotto.it. Rispondiamo entro la giornata lavorativa.</p>
-        <p class="form-priv">Inviando la richiesta dichiarate di aver letto l'<a href="privacy.html">informativa privacy</a>. Usiamo questi dati solo per rispondervi.</p>
-          </div>
-        </form>
+  <div class="wrap hero-in">
+    <span class="lab">Cassola (VI) · dal 1988</span>
+    <h1>Quando voi aprite,<br><em>noi abbiamo già</em> consegnato.</h1>
+    <p>Trasporto di carburanti in cisterna. I giri cominciano al buio perché i distributori devono essere pieni quando arriva il primo cliente.</p>
+    <div class="hero-foot">
+      <div class="cta">
+        <a class="btn" href="#contatti">Richiedi un trasporto</a>
+        <a class="btn btn--line" href="#turno">Come lavoriamo</a>
       </div>
-
-      <div>
-        <h2>Dove siamo</h2>
-        <ul class="pg-facts" style="margin-top:26px">
-          <li><span>Ragione sociale</span><b>Autotrasporti Bizzotto Srl</b></li>
-          <li><span>Sede</span><b>Via Asiago 33<br>36022 Cassola (VI)</b></li>
-          <li><span>Email</span><b><a href="mailto:info@autotrasportibizzotto.it"
-            style="color:inherit">info@autotrasportibizzotto.it</a></b></li>
-          <li><span>Partita IVA</span><b>02020960247</b></li>
-          <li><span>Attività dal</span><b>1988</b></li>
-        </ul>
-        <div class="pg-note">Non pubblichiamo un numero di telefono, ed è una scelta.
-        Le richieste passano dal modulo perché così restano scritte: prodotto, quantità e
-        indirizzi non si perdono in una telefonata, e <b>chi risponde ha già tutto sotto
-        gli occhi</b>.</div>
-        <figure class="pg-shot" style="margin-top:32px">
-          <picture><source type="image/webp" srcset="../img/carico-700.webp 700w, ../img/carico-1000.webp 1000w" sizes="(max-width:900px) 100vw, 560px"><img src="../img/carico-1000.jpg" srcset="../img/carico-700.jpg 700w, ../img/carico-1000.jpg 1000w" sizes="(max-width:900px) 100vw, 560px" alt="Due autocisterne collegate ai manicotti durante le operazioni di carico" width="900" height="1200" loading="lazy" decoding="async"></picture>
-          <figcaption>Operazioni di carico presidiate</figcaption>
-        </figure>
+      <div class="hero-meta">
+        <b>ADR classe 3</b> · liquidi infiammabili<br>
+        <b>UN 1202</b> gasolio · <b>UN 1203</b> benzina<br>
+        Conto terzi · Veneto e Nord Italia
       </div>
     </div>
   </div>
 </section>
 
+<main>
+<section class="shift" id="turno">
+  <div class="wrap">
+    <span class="lab">Una giornata</span>
+    <h2>Il lavoro comincia <em>quando è ancora buio</em></h2>
+    <p>Non è un dettaglio romantico: è il motivo per cui i committenti tornano da noi. La consegna deve essere finita prima che il punto vendita apra.</p>
+    <div class="hours">
+      <article>
+        <time>04:30</time>
+        <h3>Controllo del mezzo</h3>
+        <p>Verifiche prima della partenza, documenti, dotazioni di sicurezza. Nessun mezzo esce senza controllo.</p>
+      </article>
+      <article>
+        <time>05:15</time>
+        <h3>Carico al deposito</h3>
+        <p>Prodotto e quantità verificati, pannello arancione esposto con il codice della merce caricata.</p>
+      </article>
+      <article>
+        <time>07:00</time>
+        <h3>Prima consegna</h3>
+        <p>Collegamento, messa a terra, travaso presidiato. L'autista resta sul posto fino alla fine.</p>
+      </article>
+      <article>
+        <time>13:30</time>
+        <h3>Documenti chiusi</h3>
+        <p>Documento di trasporto firmato e riscontro al committente. Il giro si chiude quando la carta è in ordine.</p>
+      </article>
+    </div>
+    <a class="more" href="trasporti.html">Il resto del lavoro, per esteso <i>→</i></a>
+  </div>
+</section>
+
+<section class="gal" id="mezzi">
+  <div class="wrap">
+    <span class="lab">Mezzi</span>
+    <h2>I mezzi che arrivano da voi</h2>
+    <div class="gal-grid">
+      <figure class="ph"><picture><source type="image/webp" srcset="../../img/frontali-800.webp 800w, ../../img/frontali-1200.webp 1200w, ../../img/frontali-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="../../img/frontali-1600.jpg" srcset="../../img/frontali-800.jpg 800w, ../../img/frontali-1200.jpg 1200w, ../../img/frontali-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="I frontali dei mezzi allineati, con il cielo al tramonto" width="1600" height="459" loading="lazy" decoding="async"></picture></figure>
+      <div class="gal-col">
+        <figure class="ph"><picture><source type="image/webp" srcset="../../img/manicotti-800.webp 800w, ../../img/manicotti-1200.webp 1200w" sizes="(max-width:900px) 100vw, 60vw"><img src="../../img/manicotti-1200.jpg" srcset="../../img/manicotti-800.jpg 800w, ../../img/manicotti-1200.jpg 1200w" sizes="(max-width:900px) 100vw, 60vw" alt="Manicotto di scarico collegato al pozzetto, sotto la cisterna" width="1200" height="900" loading="lazy" decoding="async"></picture></figure>
+        <figure class="ph"><picture><source type="image/webp" srcset="../../img/cisterna-notte-800.webp 800w, ../../img/cisterna-notte-1200.webp 1200w" sizes="(max-width:900px) 100vw, 40vw"><img src="../../img/cisterna-notte-1200.jpg" srcset="../../img/cisterna-notte-800.jpg 800w, ../../img/cisterna-notte-1200.jpg 1200w" sizes="(max-width:900px) 100vw, 40vw" alt="Autocisterna nel piazzale, di notte, prima della partenza" width="1200" height="900" loading="lazy" decoding="async"></picture></figure>
+      </div>
+    </div>
+    <a class="more" href="azienda.html">Come è fatta l'azienda <i>→</i></a>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="wrap">
+    <blockquote>Un carico di gasolio <em>non ammette</em> improvvisazione.</blockquote>
+    <span class="lab">Dal 1988, sempre lo stesso mestiere</span>
+  </div>
+</section>
+
+<section class="banda">
+  <picture><source type="image/webp" srcset="../../img/flotta-tramonto-800.webp 800w, ../../img/flotta-tramonto-1200.webp 1200w, ../../img/flotta-tramonto-1600.webp 1600w" sizes="100vw"><img src="../../img/flotta-tramonto-1600.jpg" srcset="../../img/flotta-tramonto-800.jpg 800w, ../../img/flotta-tramonto-1200.jpg 1200w, ../../img/flotta-tramonto-1600.jpg 1600w" sizes="100vw" alt="I mezzi della flotta rientrati nel piazzale al tramonto" width="1600" height="900" loading="lazy" decoding="async"></picture>
+  <p>Il turno finisce <em>quando gli altri cominciano</em>.</p>
+</section>
+
+<section class="contact" id="contatti">
+  <div class="wrap">
+    <span class="lab">Contatti</span>
+    <h2>Cosa, da dove, <em>a dove</em></h2>
+    <div class="contact-grid">
+      <div>
+        <dl>
+          <div><dt>Email</dt><dd class="small"><a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a></dd></div>
+          <div><dt>Sede</dt><dd class="small">Via Asiago 33 · 36022 Cassola (VI)</dd></div>
+          <div><dt>Risposta</dt><dd class="small">Entro la giornata lavorativa</dd></div>
+        </dl>
+      </div>
+      <form data-modulo="preventivo">
+          <input type="hidden" name="_subject" value="Richiesta di trasporto dal sito">
+          <input type="hidden" name="_language" value="it">
+        <div class="f2">
+          <div class="field"><label for="h1">Azienda</label><input id="h1" type="text" name="azienda" autocomplete="organization" required></div>
+          <div class="field"><label for="h2f">Referente</label><input id="h2f" type="text" name="referente" autocomplete="name" required></div>
+        </div>
+        <div class="f2">
+          <div class="field"><label for="h3">Email</label><input id="h3" type="email" name="email" data-replyto="1" autocomplete="email" required></div>
+          <div class="field"><label for="h4">Telefono</label><input id="h4" type="tel" name="telefono" autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="h5">Prodotto</label><select id="h5" name="prodotto" required><option>Gasolio</option><option>Benzina</option><option>Altro prodotto petrolifero</option></select></div>
+        <div class="f2">
+          <div class="field"><label for="h6">Ritiro</label><input id="h6" type="text" name="ritiro" required></div>
+          <div class="field"><label for="h7">Consegna</label><input id="h7" type="text" name="consegna" required></div>
+        </div>
+        <p class="hp" aria-hidden="true"><label>Non compilare<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></p>
+        <button class="btn" type="submit">Invia la richiesta</button>
+        <noscript><p class="form-note">Per inviare la richiesta da questa pagina serve JavaScript. Se preferite tenerlo disattivato, scriveteci a <a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a>: bastano il prodotto, il luogo di ritiro e quello di consegna.</p></noscript>
+        <p class="form-priv">Inviando la richiesta dichiarate di aver letto l'<a href="privacy.html">informativa privacy</a>. Usiamo questi dati solo per rispondervi.</p>
+        <p class="note">Una richiesta scritta è già metà del preventivo.</p>
+      </form>
+    </div>
+  </div>
+</section>
 </main>
+
 <footer>
   <div class="wrap">
     <span class="lab">Autotrasporti Bizzotto Srl</span>
@@ -505,8 +535,9 @@ header{position:static}
     <p class="legal">Via Asiago 33, 36022 Cassola (VI) · P. IVA 02020960247 · REA VI-200814 · Albo autotrasportatori VI/2955214/A · <a href="privacy.html">Privacy</a> · <a href="cookie.html">Cookie</a></p>
   </div>
 </footer>
-<script src="../mobile-nav.js?v=2" defer></script>
-<script src="../reveal.js" defer></script>
-<script src="../modulo.js" defer></script>
+
+<script src="../../mobile-nav.js?v=2" defer></script>
+<script src="../../reveal.js" defer></script>
+<script src="../../modulo.js" defer></script>
 </body>
 </html>
