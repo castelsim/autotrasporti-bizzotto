@@ -283,6 +283,7 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
 .form-esito[data-tipo="attesa"]{border-color:#F4B223;background:rgba(244,178,35,.10)}
 .form-priv{margin:14px 0 0;font-size:13px;line-height:1.6;opacity:.8;max-width:56ch}
 </style>
+<link rel="stylesheet" href="stile.css">
 <!--dati5-->
 <script type="application/ld+json">
 {
@@ -325,11 +326,9 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
         "addressRegion": "VI",
         "addressCountry": "IT"
       },
-      "email": "info@autotrasportibizzotto.it",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "sales",
-        "email": "info@autotrasportibizzotto.it",
         "availableLanguage": "it",
         "areaServed": "IT"
       },
@@ -415,34 +414,31 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
 </header>
 
 <main>
-<section class="hero" id="main" style="padding-bottom:0">
+<section class="hero-foto" id="main">
+  <picture>
+    <source type="image/webp" srcset="img/piazzale-sera-800.webp 800w, img/piazzale-sera-1200.webp 1200w, img/piazzale-sera-1600.webp 1600w" sizes="100vw">
+    <img src="img/piazzale-sera-1600.jpg" srcset="img/piazzale-sera-800.jpg 800w, img/piazzale-sera-1200.jpg 1200w, img/piazzale-sera-1600.jpg 1600w" sizes="100vw" alt="Autocisterna Bizzotto nel piazzale aziendale al tramonto" width="1600" height="900" loading="eager" fetchpriority="high">
+  </picture>
   <div class="wrap">
-    <div class="quota">
-      <span class="lab">Autotrasporti Bizzotto Srl · Cassola (VI)</span>
-      <h1>Trasporto di carburanti in cisterna, <b>dal 1988.</b></h1>
-    </div>
-    <div class="hero-row">
-      <div>
-        <p class="hero-lead">Ritiriamo prodotti petroliferi da depositi e raffinerie e li consegniamo a distributori, aziende e cantieri. Autisti abilitati ADR, mezzi omologati, un solo referente per tutto il viaggio.</p>
-        <div class="cta-row">
-          <a class="btn" href="#contatti">Richiedi un trasporto</a>
-          <a class="btn btn--line" href="#trasporti">Cosa trasportiamo</a>
-        </div>
-      </div>
-      <div class="specs">
-        <dl>
-          <div><dt>Merce</dt><dd>Prodotti petroliferi</dd></div>
-          <div><dt>Regime</dt><dd>ADR classe 3</dd></div>
-          <div><dt>Servizio</dt><dd>Conto terzi</dd></div>
-          <div><dt>Area</dt><dd>Veneto · Nord Italia</dd></div>
-        </dl>
-      </div>
-    </div>
-    <div class="figure-wide">
-      <figure class="ph"><picture><source type="image/webp" srcset="img/piazzale-sera-800.webp 800w, img/piazzale-sera-1200.webp 1200w, img/piazzale-sera-1600.webp 1600w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/piazzale-sera-1600.jpg" srcset="img/piazzale-sera-800.jpg 800w, img/piazzale-sera-1200.jpg 1200w, img/piazzale-sera-1600.jpg 1600w" sizes="(max-width:900px) 100vw, 60vw" alt="Autocisterna Bizzotto nel piazzale aziendale al tramonto" width="1600" height="900" loading="eager" fetchpriority="high"></picture></figure>
-      <div class="figcap"><span>Mezzo in configurazione di viaggio</span><span>Cassola (VI)</span></div>
+    <span class="lab">Autotrasporti Bizzotto Srl · Cassola (VI)</span>
+    <h1>Trasporto di carburanti in cisterna, <b>dal 1988.</b></h1>
+    <p class="hero-lead">Ritiriamo prodotti petroliferi da depositi e raffinerie e li consegniamo
+      a distributori, aziende e cantieri. Autisti abilitati ADR, mezzi omologati, un solo
+      referente per tutto il viaggio.</p>
+    <div class="cta-row">
+      <a class="btn" href="#contatti">Richiedi un trasporto</a>
+      <a class="btn btn--line" href="#trasporti">Cosa trasportiamo</a>
     </div>
   </div>
+</section>
+
+<section class="nastro">
+  <dl class="wrap">
+    <div><dt>Merce</dt><dd>Prodotti petroliferi</dd></div>
+    <div><dt>Regime</dt><dd>ADR classe 3</dd></div>
+    <div><dt>Servizio</dt><dd>Conto terzi</dd></div>
+    <div><dt>Area</dt><dd>Veneto · Nord Italia</dd></div>
+  </dl>
 </section>
 
 <section id="trasporti">
@@ -488,7 +484,6 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
           <p>Bizzotto nasce a Cassola nel 1988 e da allora fa una cosa sola: trasportare carburante per chi lo distribuisce.</p>
           <p>Chi legge le richieste conosce i mezzi, gli autisti e i tempi reali del giro: nessun passaggio da un ufficio all'altro.</p>
           </div>
-        <figure class="ph"><picture><source type="image/webp" srcset="img/cisterna-800.webp 800w, img/cisterna-1200.webp 1200w" sizes="(max-width:900px) 100vw, 60vw"><img src="img/cisterna-1200.jpg" srcset="img/cisterna-800.jpg 800w, img/cisterna-1200.jpg 1200w" sizes="(max-width:900px) 100vw, 60vw" alt="Trattore e cisterna in configurazione di viaggio" width="1200" height="900" loading="lazy" decoding="async"></picture></figure>
       </div>
       <a class="more" href="azienda.html">L'azienda in dettaglio <i>→</i></a>
     </div>
@@ -496,9 +491,13 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
 </section>
 
 
-<section class="banda">
-  <picture><source type="image/webp" srcset="img/montagne-800.webp 800w, img/montagne-1200.webp 1200w, img/montagne-1600.webp 1600w" sizes="100vw"><img src="img/montagne-1600.jpg" srcset="img/montagne-800.jpg 800w, img/montagne-1200.jpg 1200w, img/montagne-1600.jpg 1600w" sizes="100vw" alt="La flotta nel piazzale, davanti alle Prealpi innevate" width="1600" height="698" loading="lazy" decoding="async"></picture>
-  <div class="wrap cap"><span>Cassola (VI)</span><span>Il piazzale, prima del primo giro</span></div>
+<section class="dichiara">
+  <div class="wrap">
+    <p>Dal 1988 facciamo <b>una cosa sola</b>.</p>
+    <p class="sotto">Non trasporto generico: carburanti e prodotti petroliferi in cisterna,
+      in ADR, per chi li distribuisce. È tutto quello che sappiamo fare, ed è il motivo
+      per cui chi ci prova la prima volta poi resta.</p>
+  </div>
 </section>
 
 <section class="pale" id="contatti">
@@ -510,33 +509,90 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
       <div class="contact-grid">
         <div>
           <dl>
-            <div><dt>Email</dt><dd><a href="mailto:info@autotrasportibizzotto.it" style="font-size:16px">info@autotrasportibizzotto.it</a></dd></div>
             <div><dt>Sede</dt><dd style="font-weight:400;font-size:17px">Via Asiago 33<br>36022 Cassola (VI)</dd></div>
             <div><dt>Risposta</dt><dd style="font-weight:400;font-size:17px">Entro la giornata lavorativa</dd></div>
+            <div><dt>Richieste</dt><dd style="font-weight:400;font-size:17px">Solo dal modulo qui a fianco</dd></div>
           </dl>
         </div>
-        <form data-modulo="preventivo">
+        <form class="mod" data-modulo="preventivo">
           <input type="hidden" name="_subject" value="Richiesta di trasporto dal sito">
           <input type="hidden" name="_language" value="it">
-          <div class="f2">
-            <div class="field"><label for="g1">Azienda</label><input id="g1" type="text" name="azienda" autocomplete="organization" required></div>
-            <div class="field"><label for="g2">Referente</label><input id="g2" type="text" name="referente" autocomplete="name" required></div>
-          </div>
-          <div class="f2">
-            <div class="field"><label for="g3">Email</label><input id="g3" type="email" name="email" data-replyto="1" autocomplete="email" required></div>
-            <div class="field"><label for="g4">Telefono</label><input id="g4" type="tel" name="telefono" autocomplete="tel"></div>
-          </div>
-          <div class="field"><label for="g5">Prodotto</label><select id="g5" name="prodotto" required><option>Gasolio per autotrazione</option><option>Gasolio da riscaldamento</option><option>Benzina</option><option>Altro</option></select></div>
-          <div class="f2">
-            <div class="field"><label for="g6">Luogo di ritiro</label><input id="g6" type="text" name="ritiro" required></div>
-            <div class="field"><label for="g7">Luogo di consegna</label><input id="g7" type="text" name="consegna" required></div>
-          </div>
-          <div class="field"><label for="g8">Note</label><textarea id="g8" rows="2" name="note"></textarea></div>
+
+          <fieldset>
+            <legend>1 · Il viaggio</legend>
+            <p class="passo">Con cosa, da dove e a dove riusciamo già a rispondervi.</p>
+            <div class="griglia">
+              <div class="campo largo">
+                <label for="h-prodotto">Prodotto</label>
+                <select id="h-prodotto" name="prodotto" required aria-describedby="h-prodotto-err">
+                  <option value="">Scegliete il prodotto…</option>
+                  <option>Gasolio per autotrazione (UN 1202)</option>
+                  <option>Gasolio da riscaldamento (UN 1202)</option>
+                  <option>Benzina (UN 1203)</option>
+                  <option>Altro prodotto petrolifero</option>
+                </select>
+                <span class="err" id="h-prodotto-err"></span>
+              </div>
+              <div class="campo">
+                <label for="h-ritiro">Luogo di ritiro</label>
+                <input id="h-ritiro" name="ritiro" type="text" required
+                       placeholder="deposito o raffineria" aria-describedby="h-ritiro-err">
+                <span class="err" id="h-ritiro-err"></span>
+              </div>
+              <div class="campo">
+                <label for="h-consegna">Luogo di consegna</label>
+                <input id="h-consegna" name="consegna" type="text" required
+                       placeholder="città o indirizzo" aria-describedby="h-consegna-err">
+                <span class="err" id="h-consegna-err"></span>
+              </div>
+              <div class="campo">
+                <label for="h-quantita">Quantità per viaggio <span class="opz">— se la sapete</span></label>
+                <input id="h-quantita" name="quantita" type="text" placeholder="es. 15.000 litri">
+              </div>
+              <div class="campo">
+                <label for="h-quando">Data o frequenza <span class="opz">— se la sapete</span></label>
+                <input id="h-quando" name="quando" type="text" placeholder="una data, oppure «ogni martedì»">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>2 · Chi siete</legend>
+            <p class="passo">Ci serve per rispondere e per intestare il preventivo.</p>
+            <div class="griglia">
+              <div class="campo">
+                <label for="h-azienda">Azienda</label>
+                <input id="h-azienda" name="azienda" type="text" required
+                       autocomplete="organization" aria-describedby="h-azienda-err">
+                <span class="err" id="h-azienda-err"></span>
+              </div>
+              <div class="campo">
+                <label for="h-email">Email</label>
+                <input id="h-email" name="email" type="email" required
+                       autocomplete="email" inputmode="email" aria-describedby="h-email-err">
+                <span class="err" id="h-email-err"></span>
+              </div>
+              <div class="campo">
+                <label for="h-referente">Referente <span class="opz">— facoltativo</span></label>
+                <input id="h-referente" name="referente" type="text" autocomplete="name">
+              </div>
+              <div class="campo">
+                <label for="h-telefono">Telefono <span class="opz">— facoltativo</span></label>
+                <input id="h-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel">
+              </div>
+              <div class="campo largo">
+                <label for="h-note">Note <span class="opz">— facoltative</span></label>
+                <textarea id="h-note" name="note"
+                  placeholder="Tipo di scarico, vincoli di orario, accessi difficili: tutto quello che ci serve sapere prima di rispondere."></textarea>
+              </div>
+            </div>
+          </fieldset>
+
           <p class="hp" aria-hidden="true"><label>Non compilare<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></p>
-        <button class="btn" type="submit">Invia la richiesta</button>
-        <noscript><p class="form-note">Per inviare la richiesta da questa pagina serve JavaScript. Se preferite tenerlo disattivato, scriveteci a <a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a>: bastano il prodotto, il luogo di ritiro e quello di consegna.</p></noscript>
-        <p class="form-priv">Inviando la richiesta dichiarate di aver letto l'<a href="privacy.html">informativa privacy</a>. Usiamo questi dati solo per rispondervi.</p>
-          <p class="note">Rispondiamo entro la giornata lavorativa.</p>
+          <button class="invia" type="submit">Invia la richiesta</button>
+          <p class="coda">Rispondiamo entro la giornata lavorativa. Inviando dichiarate di aver
+            letto l'<a href="privacy.html">informativa privacy</a>: usiamo questi dati solo per rispondervi.</p>
+          <noscript><p class="coda">Per inviare la richiesta da questa pagina serve JavaScript attivo.</p></noscript>
         </form>
       </div>
     </div>
@@ -549,7 +605,7 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
     <div class="foot">
       <div><h4>Autotrasporti Bizzotto Srl</h4><p style="margin:0;max-width:34ch">Trasporto di carburanti e prodotti petroliferi in cisterna, conto terzi.</p></div>
       <div><h4>Trasporti</h4><ul><li><a href="trasporti.html">Gasolio</a></li><li><a href="trasporti.html">Benzina</a></li><li><a href="trasporti.html">Altri prodotti</a></li></ul></div>
-      <div><h4>Contatti</h4><ul><li><a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a></li><li>Via Asiago 33, Cassola (VI)</li></ul></div>
+      <div><h4>Contatti</h4><ul><li><a href="contatti.html">Richieste dal modulo</a></li><li>Via Asiago 33, Cassola (VI)</li></ul></div>
     </div>
     <p class="legal">P. IVA 02020960247 · REA VI-200814 · Albo autotrasportatori VI/2955214/A · <a href="privacy.html">Privacy policy</a> · <a href="cookie.html">Cookie policy</a></p>
   </div>
