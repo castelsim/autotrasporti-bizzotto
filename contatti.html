@@ -290,6 +290,7 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
 .form-esito[data-tipo="attesa"]{border-color:#F4B223;background:rgba(244,178,35,.10)}
 .form-priv{margin:14px 0 0;font-size:13px;line-height:1.6;opacity:.8;max-width:56ch}
 </style>
+<link rel="stylesheet" href="stile.css">
 <!--dati5-->
 <script type="application/ld+json">
 {
@@ -332,11 +333,9 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
         "addressRegion": "VI",
         "addressCountry": "IT"
       },
-      "email": "info@autotrasportibizzotto.it",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "sales",
-        "email": "info@autotrasportibizzotto.it",
         "availableLanguage": "it",
         "areaServed": "IT"
       },
@@ -434,42 +433,85 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
     <div class="pg-cols" style="margin-top:clamp(40px,5vw,64px)">
       <div>
         <h2>Il modulo</h2>
-        <form class="pg-form" data-modulo="preventivo">
+        <form class="mod" data-modulo="preventivo">
           <input type="hidden" name="_subject" value="Richiesta di trasporto dal sito">
           <input type="hidden" name="_language" value="it">
-          <div class="full"><label for="az">Azienda <span class="req">*</span></label>
-            <input id="az" name="azienda" type="text" autocomplete="organization" required></div>
-          <div><label for="rf">Referente <span class="req">*</span></label>
-            <input id="rf" name="referente" type="text" autocomplete="name" required></div>
-          <div><label for="em">Email <span class="req">*</span></label>
-            <input id="em" name="email" data-replyto="1" type="email" autocomplete="email" required></div>
-          <div><label for="tl">Telefono</label>
-            <input id="tl" name="telefono" type="tel" autocomplete="tel"></div>
-          <div><label for="pr">Prodotto <span class="req">*</span></label>
-            <select id="pr" name="prodotto" required>
-              <option value="">Scegliete il prodotto</option>
-              <option>Gasolio per autotrazione (UN 1202)</option>
-              <option>Gasolio da riscaldamento (UN 1202)</option>
-              <option>Benzina (UN 1203)</option>
-              <option>Altro prodotto petrolifero</option>
-            </select></div>
-          <div><label for="qt">Quantità per viaggio</label>
-            <input id="qt" name="quantita" type="text" placeholder="litri"></div>
-          <div><label for="rt">Luogo di ritiro</label>
-            <input id="rt" name="ritiro" type="text" placeholder="deposito o raffineria"></div>
-          <div><label for="cn">Luogo di consegna <span class="req">*</span></label>
-            <input id="cn" name="consegna" type="text" required></div>
-          <div><label for="dt">Data o frequenza</label>
-            <input id="dt" name="quando" type="text" placeholder="una data, oppure «ogni settimana»"></div>
-          <div class="full"><label for="nt">Note</label>
-            <textarea id="nt" name="note" placeholder="Tipo di scarico, vincoli di orario, tutto quello che ci serve sapere prima di rispondere."></textarea></div>
-          <div class="full">
-            <p class="hp" aria-hidden="true"><label>Non compilare<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></p>
-            <button class="pg-send" type="submit">Invia la richiesta</button>
-        <noscript><p class="form-note">Per inviare la richiesta da questa pagina serve JavaScript. Se preferite tenerlo disattivato, scriveteci a <a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a>: bastano il prodotto, il luogo di ritiro e quello di consegna.</p></noscript>
-            <p class="form-note">La richiesta arriva a info@autotrasportibizzotto.it. Rispondiamo entro la giornata lavorativa.</p>
-        <p class="form-priv">Inviando la richiesta dichiarate di aver letto l'<a href="privacy.html">informativa privacy</a>. Usiamo questi dati solo per rispondervi.</p>
-          </div>
+
+          <fieldset>
+            <legend>1 · Il viaggio</legend>
+            <p class="passo">Con cosa, da dove e a dove riusciamo già a rispondervi.</p>
+            <div class="griglia">
+              <div class="campo largo">
+                <label for="c-prodotto">Prodotto</label>
+                <select id="c-prodotto" name="prodotto" required aria-describedby="c-prodotto-err">
+                  <option value="">Scegliete il prodotto…</option>
+                  <option>Gasolio per autotrazione (UN 1202)</option>
+                  <option>Gasolio da riscaldamento (UN 1202)</option>
+                  <option>Benzina (UN 1203)</option>
+                  <option>Altro prodotto petrolifero</option>
+                </select>
+                <span class="err" id="c-prodotto-err"></span>
+              </div>
+              <div class="campo">
+                <label for="c-ritiro">Luogo di ritiro</label>
+                <input id="c-ritiro" name="ritiro" type="text" required
+                       placeholder="deposito o raffineria" aria-describedby="c-ritiro-err">
+                <span class="err" id="c-ritiro-err"></span>
+              </div>
+              <div class="campo">
+                <label for="c-consegna">Luogo di consegna</label>
+                <input id="c-consegna" name="consegna" type="text" required
+                       placeholder="città o indirizzo" aria-describedby="c-consegna-err">
+                <span class="err" id="c-consegna-err"></span>
+              </div>
+              <div class="campo">
+                <label for="c-quantita">Quantità per viaggio <span class="opz">— se la sapete</span></label>
+                <input id="c-quantita" name="quantita" type="text" placeholder="es. 15.000 litri">
+              </div>
+              <div class="campo">
+                <label for="c-quando">Data o frequenza <span class="opz">— se la sapete</span></label>
+                <input id="c-quando" name="quando" type="text" placeholder="una data, oppure «ogni martedì»">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>2 · Chi siete</legend>
+            <p class="passo">Ci serve per rispondere e per intestare il preventivo.</p>
+            <div class="griglia">
+              <div class="campo">
+                <label for="c-azienda">Azienda</label>
+                <input id="c-azienda" name="azienda" type="text" required
+                       autocomplete="organization" aria-describedby="c-azienda-err">
+                <span class="err" id="c-azienda-err"></span>
+              </div>
+              <div class="campo">
+                <label for="c-email">Email</label>
+                <input id="c-email" name="email" type="email" required
+                       autocomplete="email" inputmode="email" aria-describedby="c-email-err">
+                <span class="err" id="c-email-err"></span>
+              </div>
+              <div class="campo">
+                <label for="c-referente">Referente <span class="opz">— facoltativo</span></label>
+                <input id="c-referente" name="referente" type="text" autocomplete="name">
+              </div>
+              <div class="campo">
+                <label for="c-telefono">Telefono <span class="opz">— facoltativo</span></label>
+                <input id="c-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel">
+              </div>
+              <div class="campo largo">
+                <label for="c-note">Note <span class="opz">— facoltative</span></label>
+                <textarea id="c-note" name="note"
+                  placeholder="Tipo di scarico, vincoli di orario, accessi difficili: tutto quello che ci serve sapere prima di rispondere."></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <p class="hp" aria-hidden="true"><label>Non compilare<input name="_gotcha" type="text" tabindex="-1" autocomplete="off"></label></p>
+          <button class="invia" type="submit">Invia la richiesta</button>
+          <p class="coda">Rispondiamo entro la giornata lavorativa. Inviando dichiarate di aver
+            letto l'<a href="privacy.html">informativa privacy</a>: usiamo questi dati solo per rispondervi.</p>
+          <noscript><p class="coda">Per inviare la richiesta da questa pagina serve JavaScript attivo.</p></noscript>
         </form>
       </div>
 
@@ -478,19 +520,13 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
         <ul class="pg-facts" style="margin-top:26px">
           <li><span>Ragione sociale</span><b>Autotrasporti Bizzotto Srl</b></li>
           <li><span>Sede</span><b>Via Asiago 33<br>36022 Cassola (VI)</b></li>
-          <li><span>Email</span><b><a href="mailto:info@autotrasportibizzotto.it"
-            style="color:inherit">info@autotrasportibizzotto.it</a></b></li>
           <li><span>Partita IVA</span><b>02020960247</b></li>
           <li><span>Attività dal</span><b>1988</b></li>
         </ul>
-        <div class="pg-note">Non pubblichiamo un numero di telefono, ed è una scelta.
+        <div class="pg-note">Non pubblichiamo un numero di telefono né un indirizzo email, ed è una scelta.
         Le richieste passano dal modulo perché così restano scritte: prodotto, quantità e
         indirizzi non si perdono in una telefonata, e <b>chi risponde ha già tutto sotto
         gli occhi</b>.</div>
-        <figure class="pg-shot" style="margin-top:32px">
-          <picture><source type="image/webp" srcset="img/carico-700.webp 700w, img/carico-1000.webp 1000w" sizes="(max-width:900px) 100vw, 560px"><img src="img/carico-1000.jpg" srcset="img/carico-700.jpg 700w, img/carico-1000.jpg 1000w" sizes="(max-width:900px) 100vw, 560px" alt="Due autocisterne collegate ai manicotti durante le operazioni di carico" width="900" height="1200" loading="lazy" decoding="async"></picture>
-          <figcaption>Operazioni di carico presidiate</figcaption>
-        </figure>
       </div>
     </div>
   </div>
@@ -502,7 +538,7 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
     <div class="foot">
       <div><h4>Autotrasporti Bizzotto Srl</h4><p style="margin:0;max-width:34ch">Trasporto di carburanti e prodotti petroliferi in cisterna, conto terzi.</p></div>
       <div><h4>Trasporti</h4><ul><li><a href="trasporti.html">Gasolio</a></li><li><a href="trasporti.html">Benzina</a></li><li><a href="trasporti.html">Altri prodotti</a></li></ul></div>
-      <div><h4>Contatti</h4><ul><li><a href="mailto:info@autotrasportibizzotto.it">info@autotrasportibizzotto.it</a></li><li>Via Asiago 33, Cassola (VI)</li></ul></div>
+      <div><h4>Contatti</h4><ul><li><a href="contatti.html">Richieste dal modulo</a></li><li>Via Asiago 33, Cassola (VI)</li></ul></div>
     </div>
     <p class="legal">P. IVA 02020960247 · REA VI-200814 · Albo autotrasportatori VI/2955214/A · <a href="privacy.html">Privacy policy</a> · <a href="cookie.html">Cookie policy</a></p>
   </div>
