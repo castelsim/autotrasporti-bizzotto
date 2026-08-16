@@ -51,7 +51,7 @@
     '<div class="mnav-sheet">' +
       '<button class="mnav-close" type="button">Chiudi ✕</button>' +
       links.map(function (l) { return '<a href="' + l.href + '">' + l.text + '</a>'; }).join('') +
-      '<a class="mnav-tel" href="mailto:info@autotrasportibizzotto.it">Scrivi a info@autotrasportibizzotto.it</a>' +
+      '<a class="mnav-tel" href="contatti.html">Richiedi un trasporto</a>' +
     '</div>';
   document.body.appendChild(panel);
 
