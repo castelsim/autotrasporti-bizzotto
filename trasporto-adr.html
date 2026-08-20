@@ -3,14 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="https://autotrasportibizzotto.it/img/favicon.svg" type="image/svg+xml">
-<meta name="robots" content="noindex">
-<title>Pagina non trovata · Autotrasporti Bizzotto</title>
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://autotrasportibizzotto.it/trasporto-adr.html">
+<title>Trasporto ADR di carburanti: cosa deve avere il vettore</title>
 <!--meta3-->
-<meta name="description" content="La pagina cercata non esiste.">
+<meta name="description" content="Certificato ADR del mezzo, prove della cisterna, patentino, consulente DGSA, piano di sicurezza, e-DAS: gli obblighi di legge di chi trasporta carburante, e come controllarli.">
+<meta property="og:url" content="https://autotrasportibizzotto.it/trasporto-adr.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Autotrasporti Bizzotto Srl">
+<meta property="og:title" content="Trasporto ADR di carburanti: cosa deve avere il vettore">
+<meta property="og:description" content="Certificato ADR del mezzo, prove della cisterna, patentino, consulente DGSA, piano di sicurezza, e-DAS: gli obblighi di legge di chi trasporta carburante, e come controllarli.">
+<meta property="og:image" content="https://autotrasportibizzotto.it/img/in-viaggio-1600.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -215,36 +219,23 @@ a.pg-send:hover::after{transform:translateX(4px)}
 header{transition:box-shadow .3s ease}
 header.scrolled{box-shadow:0 12px 34px rgba(8,12,17,.14)}
 @keyframes heroUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
-
-@media (prefers-reduced-motion:no-preference){
-.hero .wrap > *{animation:heroUp .8s cubic-bezier(.16,.6,.2,1) both}
-.hero .wrap > *:nth-child(2){animation-delay:.08s}
-.hero .wrap > *:nth-child(3){animation-delay:.16s}
-.hero .wrap > *:nth-child(4){animation-delay:.24s}
-.hero .wrap > *:nth-child(5){animation-delay:.32s}
-}
 .js .rv{transform:translateY(14px)}
-#azienda .ph{outline:1px solid var(--hair);outline-offset:13px;margin:14px}
-.banda{padding:0 0 72px}
-.banda img{display:block;width:100%;height:min(54vh,480px);object-fit:cover}
-.banda .cap{display:flex;justify-content:space-between;gap:20px;padding-top:14px;border-top:1px solid var(--hair);margin-top:0;font:400 11.5px/1.6 var(--mono);color:var(--ink);letter-spacing:.06em}
 
 /*interni*/
-.trio{grid-template-columns:repeat(2,1fr)}
-.trio .ph{aspect-ratio:3/2}
-.trio .ph:first-child{grid-column:1/-1;aspect-ratio:1600/459}
-
-/*rifinitura3*/
-.more{display:inline-flex;align-items:center;gap:13px;margin-top:34px;font:500 11.5px/1 var(--mono);
-  letter-spacing:.2em;text-transform:uppercase;color:var(--graphite);text-decoration:none;
-  border-bottom:1px solid var(--amber);padding-bottom:10px;transition:gap .2s ease}
-.more:hover{gap:21px}
-.more i{font-style:normal}
-@media(min-width:901px){
-  .two{grid-template-columns:1fr 1.05fr;align-items:stretch}
-  .two > div{align-self:center}
-  .two .ph{aspect-ratio:auto;height:100%;min-height:330px}
-}
+.pg-shot figcaption{color:#A7B0BA}
+.pg-open{margin:clamp(44px,5.5vw,70px) 0 0;outline:1px solid var(--hair);outline-offset:12px}
+.pg-open img{aspect-ratio:12/5;width:100%;object-fit:cover}
+.pg-steps{background:transparent;border:0;gap:0;border-top:1px solid var(--graphite);margin-top:44px}
+.pg-steps li{background:transparent;padding:34px 0;border-bottom:1px solid var(--hair);grid-template-columns:96px minmax(0,1fr)}
+.pg-steps b{background:transparent;border-radius:0;padding:0 0 5px;font:500 24px/1 var(--mono);letter-spacing:.08em;color:var(--graphite);border-bottom:2px solid var(--amber)}
+.pg-steps h3{font:700 20px/1.35 var(--sans);margin:0}
+.pg-steps p{max-width:64ch}
+.pg-cta{margin-top:clamp(56px,7vw,88px);border-top:1px solid var(--graphite);border-bottom:1px solid var(--hair);padding:clamp(36px,4.5vw,54px) 0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:center}
+.pg-cta-kick{margin:0 0 10px;font:500 11px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--ink)}
+.pg-cta-line{margin:0;font:700 clamp(22px,2.6vw,30px)/1.3 var(--sans);letter-spacing:-.01em}
+@media (max-width:760px){.pg-cta{grid-template-columns:1fr}}
+button.pg-send{width:100%}
+.pg-form textarea{min-height:150px}
 
 /*fix4*/
 /* Anello di messa a fuoco visibile su qualunque fondo: ambra racchiusa da un alone
@@ -270,39 +261,241 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
 /* La nota si stacca dal fondo pagina: 4 valori RGB non bastavano. */
 .pg-note{background:#F1F4F6}
 
-/*modulo8*/
-.form-esito{margin:16px 0 0;padding:13px 15px;border-left:3px solid currentColor;
-  font-size:14.5px;line-height:1.6;max-width:60ch}
-.form-esito:empty{display:none}
-.form-esito[data-tipo="ok"]{border-color:#1F7A4D;background:rgba(31,122,77,.09)}
-.form-esito[data-tipo="errore"]{border-color:#B4451E;background:rgba(180,69,30,.09)}
-.form-esito[data-tipo="attesa"]{border-color:#F4B223;background:rgba(244,178,35,.10)}
-.form-priv{margin:14px 0 0;font-size:13px;line-height:1.6;opacity:.8;max-width:56ch}
+/*fix4*/
+/* Le misure in ch pensate per la prima schermata non devono colare sulle interne:
+   producevano titoli con la seconda riga di una parola sola. */
+.pg h1,.pg h2,.pg h3{max-width:none}
+/* Il numero del passo non si tiene una colonna da 96px sul telefono. */
+@media (max-width:640px){
+  .pg-steps li{grid-template-columns:1fr;gap:4px}
+  .pg-steps li > *:first-child{margin-bottom:2px}
+}
+/* La tabella dei prodotti impilata recupera le intestazioni. */
+@media (max-width:760px){
+  .pg-tab td::before{content:attr(data-l);display:block;
+    font:600 10px/1 var(--mono,monospace);letter-spacing:.14em;text-transform:uppercase;
+    opacity:.62;margin-bottom:4px}
+  .pg-tab td{padding-top:10px}
+}
+
+/*blocchi6*/
+.cnf{border-top:2px solid currentColor;margin-top:30px}
+.cnf > div{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:baseline;
+  padding:15px 2px;border-bottom:1px solid var(--linea-cnf,#d8dde1)}
+.cnf dt{font-weight:600;margin:0}
+.cnf dt small{display:block;font-weight:400;font-size:13.5px;opacity:.66;margin-top:4px;letter-spacing:0}
+.cnf dd{margin:0;text-align:right;font:500 13.5px/1.45 var(--mono,ui-monospace,monospace)}
+.cnf-fonte{font-size:14px;opacity:.72;margin-top:16px;max-width:66ch}
+.chi{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:30px}
+.chi article{border-top:3px solid var(--bordo-chi,#F4B223);padding-top:16px}
+.chi h3{margin:0 0 9px;font-size:17px}
+.chi p{margin:0;font-size:15px;opacity:.82;max-width:42ch}
+@media (max-width:820px){
+  .chi{grid-template-columns:1fr;gap:26px}
+  .cnf > div{grid-template-columns:1fr}
+  .cnf dd{text-align:left;margin-top:7px}
+}
 </style>
-<link rel="stylesheet" href="https://autotrasportibizzotto.it/stile.css">
+<link rel="stylesheet" href="stile.css">
 <!--dati5-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://autotrasportibizzotto.it/#azienda",
+      "name": "Autotrasporti Bizzotto Srl",
+      "legalName": "Autotrasporti Bizzotto S.r.l.",
+      "url": "https://autotrasportibizzotto.it/",
+      "image": "https://autotrasportibizzotto.it/img/in-viaggio-1600.jpg",
+      "description": "Trasporto di carburanti e prodotti petroliferi in cisterna conto terzi, in regime ADR, con base a Cassola (VI).",
+      "isicV4": "4923",
+      "vatID": "IT02020960247",
+      "taxID": "02020960247",
+      "foundingDate": "1988",
+      "identifier": [
+        {
+          "@type": "PropertyValue",
+          "name": "Partita IVA",
+          "value": "02020960247"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "REA",
+          "value": "VI-200814"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "Albo nazionale autotrasportatori",
+          "value": "VI/2955214/A"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "postalCode": "36022",
+        "addressLocality": "Cassola",
+        "addressRegion": "VI",
+        "addressCountry": "IT"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "sales",
+        "availableLanguage": "it",
+        "areaServed": "IT"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Veneto"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Italia settentrionale"
+        }
+      ],
+      "knowsAbout": [
+        "Trasporto di carburanti in cisterna",
+        "Trasporto ADR di merci pericolose classe 3",
+        "UN 1202 gasolio",
+        "UN 1203 benzina",
+        "Autotrasporto conto terzi"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Trasporti in cisterna",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Trasporto di gasolio in cisterna (UN 1202)",
+              "serviceType": "Trasporto di prodotti petroliferi in cisterna",
+              "provider": {
+                "@id": "https://autotrasportibizzotto.it/#azienda"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Trasporto di benzina in cisterna (UN 1203)",
+              "serviceType": "Trasporto di prodotti petroliferi in cisterna",
+              "provider": {
+                "@id": "https://autotrasportibizzotto.it/#azienda"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Trasporto ADR di merci pericolose classe 3",
+              "serviceType": "Trasporto di merci pericolose ADR",
+              "provider": {
+                "@id": "https://autotrasportibizzotto.it/#azienda"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://autotrasportibizzotto.it/#sito",
+      "url": "https://autotrasportibizzotto.it/",
+      "name": "Autotrasporti Bizzotto Srl",
+      "inLanguage": "it-IT",
+      "publisher": {
+        "@id": "https://autotrasportibizzotto.it/#azienda"
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
-
 <a class="skip" href="#main">Salta al contenuto</a>
 <header>
   <div class="wrap head-in">
-    <a class="brand" href="https://autotrasportibizzotto.it/index.html" aria-label="Autotrasporti Bizzotto"><img src="https://autotrasportibizzotto.it/img/logo.svg" alt="Autotrasporti Bizzotto"></a>
-    <nav><a href="https://autotrasportibizzotto.it/trasporti.html">Trasporti</a><a href="https://autotrasportibizzotto.it/azienda.html">Azienda</a><a href="https://autotrasportibizzotto.it/contatti.html">Contatti</a></nav>
+    <a class="brand" href="index.html" aria-label="Autotrasporti Bizzotto"><img src="img/logo.svg" alt="Autotrasporti Bizzotto"></a>
+    <nav><a href="trasporti.html">Trasporti</a><a href="azienda.html">Azienda</a><a href="contatti.html">Contatti</a></nav>
   </div>
 </header>
 
-<main>
-<section class="pg" id="main" style="padding:clamp(56px,9vw,120px) 0">
+<main id="main">
+<section class="pg">
   <div class="wrap">
-    <p class="pg-lab">Errore 404</p>
-    <h1 style="max-width:16ch">Questa pagina non c'è.</h1>
-    <p style="max-width:54ch;color:var(--ink)">Può darsi che l'indirizzo sia stato scritto
-      a mano, oppure che la pagina sia stata spostata. Da qui si riparte:</p>
-    <p style="display:flex;gap:14px;flex-wrap:wrap;margin-top:28px">
-      <a class="btn" href="https://autotrasportibizzotto.it/">Torna alla home</a>
-      <a class="btn btn--line" href="https://autotrasportibizzotto.it/contatti.html">Richiedi un trasporto</a>
-    </p>
+    <div class="pg-head">
+      <span class="pg-lab">Trasporto ADR</span>
+      <h1>Chi trasporta carburante<br>deve avere queste cose.</h1>
+      <p>Non sono meriti: sono obblighi di legge. Le scriviamo qui perché
+      <strong>chi affida merce pericolosa a un vettore ne risponde insieme al vettore</strong>:
+      se il mezzo che arriva da voi non è in regola, il problema diventa anche vostro.
+      Serve una lista per controllare, e in giro non si trova.</p>
+    </div>
+
+    <h2 style="margin-top:clamp(48px,6vw,80px)">Sei documenti, e a cosa servono</h2>
+    <ol class="pg-steps">
+      <li><b>01</b><div><h3>Certificato di approvazione ADR del veicolo</h3>
+        <p>Lo rilascia la Motorizzazione per <em>quel</em> mezzo e per le merci che può
+        portare: una cisterna omologata per il gasolio non è automaticamente omologata per
+        altro. Vale un anno e va rinnovato.</p></div></li>
+      <li><b>02</b><div><h3>Prove periodiche della cisterna</h3>
+        <p>La cisterna non basta che sia sana all'origine: va riprovata. Prova intermedia
+        ogni tre anni, prova completa ogni sei. È il controllo che dice se il serbatoio
+        tiene ancora la pressione e se gli accessori funzionano.</p></div></li>
+      <li><b>03</b><div><h3>Patentino ADR dell'autista</h3>
+        <p>Il certificato di formazione professionale, con l'estensione per le cisterne
+        e per la classe 3. Dura cinque anni e si rinnova con un esame. Senza, quel viaggio
+        non si può fare: non è una formalità dell'azienda, è del singolo autista.</p></div></li>
+      <li><b>04</b><div><h3>Consulente per la sicurezza (DGSA)</h3>
+        <p>Chi trasporta merci pericolose deve averne nominato uno e averlo comunicato.
+        Il consulente scrive la relazione annuale e quella in caso di incidente. È la
+        figura che nessuno nomina finché non serve.</p></div></li>
+      <li><b>05</b><div><h3>Piano di sicurezza</h3>
+        <p>Il gasolio in cisterna rientra fra le merci ad alto rischio: serve un piano
+        scritto su chi può avvicinarsi al mezzo, dove sosta, cosa si fa se sparisce.
+        Riguarda il furto e l'uso doloso, non l'incidente stradale.</p></div></li>
+      <li><b>06</b><div><h3>e-DAS</h3>
+        <p>Il documento elettronico che accompagna i prodotti soggetti ad accisa. Senza,
+        il carico dal deposito non parte. È la parte fiscale del viaggio, e viaggia insieme
+        a quella della sicurezza.</p></div></li>
+    </ol>
+
+    <div class="pg-note">C'è una settima cosa che non è un documento: il
+    <b>contalitri verificato</b>. La quantità che vi viene consegnata è quella che segna
+    il misuratore del mezzo, e quel misuratore è soggetto a verificazione periodica.
+    Se non lo è, state accettando un numero senza garanzia.</div>
+
+    <h2 style="margin-top:clamp(48px,6vw,80px)">Come si controlla, in pratica</h2>
+    <p>Non fidatevi di un elenco su un sito, nemmeno di questo: <strong>chiedete le
+    copie</strong>. Un vettore in regola le manda in un'ora, perché le ha già pronte;
+    chi tergiversa vi sta dicendo qualcosa. Le tre iscrizioni qui sotto invece non
+    dovete chiederle a noi: si controllano da soli, cercando la partita IVA nel
+    Registro delle imprese.</p>
+
+    <dl class="cnf">
+      <div><dt>Iscrizione all'Albo nazionale degli autotrasportatori<small>Il titolo che
+        permette di trasportare per conto di terzi</small></dt><dd>VI/2955214/A</dd></div>
+      <div><dt>Numero REA<small>Repertorio economico amministrativo, Camera di commercio di
+        Vicenza</small></dt><dd>VI-200814</dd></div>
+      <div><dt>Partita IVA e codice fiscale<small>Autotrasporti Bizzotto S.r.l., Cassola
+        (VI)</small></dt><dd>02020960247</dd></div>
+      <div><dt>Documenti del singolo viaggio<small>Certificato ADR del mezzo, prova della
+        cisterna, patentino dell'autista</small></dt>
+        <dd>ve li mandiamo<br>prima del primo carico</dd></div>
+    </dl>
+    <p class="cnf-fonte">Questa pagina descrive obblighi di legge validi per chiunque
+    trasporti merci pericolose in cisterna, non solo per noi. Serve a farvi le domande
+    giuste, anche se poi il carico lo affidate a un altro.</p>
+
+    <div class="pg-cta">
+      <div><p class="pg-cta-kick">Richieste</p>
+      <p class="pg-cta-line">Un carico da muovere? Bastano tre cose: cosa, da dove, a dove.</p></div>
+      <a class="btn" href="contatti.html">Richiedi un trasporto</a>
+    </div>
   </div>
 </section>
 </main>
@@ -310,15 +503,13 @@ nav a[aria-current="page"]{color:#121820;box-shadow:inset 0 -2px 0 #F4B223}
   <div class="wrap">
     <div class="foot">
       <div><h4>Autotrasporti Bizzotto Srl</h4><p style="margin:0;max-width:34ch">Trasporto di carburanti e prodotti petroliferi in cisterna, conto terzi.</p></div>
-      <div><h4>Trasporti</h4><ul><li><a href="https://autotrasportibizzotto.it/trasporti.html">Gasolio</a></li><li><a href="https://autotrasportibizzotto.it/trasporti.html">Benzina</a></li><li><a href="https://autotrasportibizzotto.it/trasporti.html">Altri prodotti</a></li><li><a href="https://autotrasportibizzotto.it/trasporto-adr.html">Trasporto ADR</a></li></ul></div>
-      <div><h4>Contatti</h4><ul><li><a href="https://autotrasportibizzotto.it/contatti.html">Richieste dal modulo</a></li><li>Cassola (VI)</li></ul></div>
+      <div><h4>Trasporti</h4><ul><li><a href="trasporti.html">Gasolio</a></li><li><a href="trasporti.html">Benzina</a></li><li><a href="trasporti.html">Altri prodotti</a></li><li><a href="trasporto-adr.html">Trasporto ADR</a></li></ul></div>
+      <div><h4>Contatti</h4><ul><li><a href="contatti.html">Richieste dal modulo</a></li><li>Cassola (VI)</li></ul></div>
     </div>
-    <p class="legal">P. IVA 02020960247 · REA VI-200814 · Albo autotrasportatori VI/2955214/A · <a href="https://autotrasportibizzotto.it/privacy.html">Privacy policy</a> · <a href="https://autotrasportibizzotto.it/cookie.html">Cookie policy</a></p>
+    <p class="legal">P. IVA 02020960247 · REA VI-200814 · Albo autotrasportatori VI/2955214/A · <a href="privacy.html">Privacy policy</a> · <a href="cookie.html">Cookie policy</a></p>
   </div>
 </footer>
-
-<script src="https://autotrasportibizzotto.it/mobile-nav.js?v=2" defer></script>
-<script src="https://autotrasportibizzotto.it/reveal.js" defer></script>
-<script src="https://autotrasportibizzotto.it/modulo.js" defer></script>
+<script src="mobile-nav.js?v=2" defer></script>
+<script src="reveal.js" defer></script>
 </body>
 </html>
