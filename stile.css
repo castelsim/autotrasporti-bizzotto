@@ -119,3 +119,15 @@
 .esito h3{margin:0 0 10px;font:700 20px/1.25 "Schibsted Grotesk",system-ui,sans-serif;color:#121820}
 .esito p{margin:0;font:400 16px/1.62 "Schibsted Grotesk",system-ui,sans-serif;color:#454F59}
 .esito p+p{margin-top:12px}
+
+/* ────────────────────────────────────────────────────────────────────────
+   Bottone fisso in testata. È l'unica cosa che il riferimento fa meglio:
+   loro hanno «CONTATTACI» sempre sotto gli occhi, noi si arrivava al modulo
+   solo passando dalla voce Contatti. Sotto i 960 px sparisce, perché lì
+   comanda il Menu e l'invito sta in fondo al pannello.
+   ──────────────────────────────────────────────────────────────────────── */
+.head-cta{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;
+  background:#121820;color:#fff;text-decoration:none;border-radius:2px;white-space:nowrap;
+  font:600 14px/1 "Schibsted Grotesk",system-ui,sans-serif}
+.head-cta:hover{background:#000}
+@media(max-width:960px){.head-cta{display:none}}
