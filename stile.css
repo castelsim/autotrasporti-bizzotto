@@ -1,3 +1,17 @@
+/* ────────────────────────────────────────────────────────────────────────
+   I caratteri stanno sul nostro dominio, non su Google: una connessione in
+   meno, nessun terzo che vede l'indirizzo IP di chi visita, e la pagina
+   comincia a disegnarsi senza aspettare un dominio esterno.
+   Sono font liberi (Open Font License): ospitarli è consentito.
+   Schibsted Grotesk è variabile, un file solo copre da 400 a 800.
+   ──────────────────────────────────────────────────────────────────────── */
+@font-face{font-family:"Schibsted Grotesk";font-style:normal;font-weight:400 800;
+  font-display:swap;src:url(font/schibsted-grotesk-var.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;
+  font-display:swap;src:url(font/ibm-plex-mono-400.woff2) format("woff2")}
+@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:500;
+  font-display:swap;src:url(font/ibm-plex-mono-500.woff2) format("woff2")}
+
 /* Autotrasporti Bizzotto — foglio comune.
    Le pagine hanno ancora il loro stile dentro <head>; qui stanno le regole
    nuove, condivise, e vincono perché questo foglio è caricato dopo. */
