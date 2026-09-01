@@ -25,7 +25,6 @@ var ENDPOINT = "INSERIRE-QUI-L-INDIRIZZO-FORMSPREE";
     prodotto: "Scegliete il prodotto da trasportare.",
     ritiro:   "Scriveteci da dove va ritirato il carico.",
     consegna: "Scriveteci dove va consegnato.",
-    azienda:  "Scriveteci il nome dell'azienda.",
     email:    "Serve un indirizzo email: è lì che vi rispondiamo."
   };
   var EMAIL_STORTA = "Controllate l'indirizzo: sembra manchi la chiocciola o il dominio.";
