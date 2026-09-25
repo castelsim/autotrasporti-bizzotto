@@ -145,3 +145,17 @@
   font:600 14px/1 "Schibsted Grotesk",system-ui,sans-serif}
 .head-cta:hover{background:#000}
 @media(max-width:960px){.head-cta{display:none}}
+
+/* ────────────────────────────────────────────────────────────────────────
+   Rifinitura 25/09.
+   1. Su telefono il testo dell'apertura cade sulla cabina bianca del camion:
+      il velo si scurisce al centro, dove sta il paragrafo.
+   2. Le voci del menu erano alte 15 px: si portano a 24, la misura minima
+      per un bersaglio (WCAG 2.2, 2.5.8), senza spostare la riga.
+   3. «— se serve» era a 3,8:1 su bianco: passa al grigio dei testi (5,9:1).
+   ──────────────────────────────────────────────────────────────────────── */
+@media(max-width:760px){
+  .hero-foto::after{background:linear-gradient(180deg,rgba(8,12,17,.62) 0%,rgba(8,12,17,.66) 38%,rgba(8,12,17,.9) 100%)}
+}
+nav a{display:inline-block;padding-block:5px}
+.mod label .opz{color:#5A646E}
