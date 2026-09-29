@@ -1,23 +1,28 @@
-# Autotrasporti Bizzotto — materiali di lavoro
+# Autotrasporti Bizzotto — sito
 
-Bozze del sito di **Autotrasporti Bizzotto Srl** (Cassola, VI): trasporto di carburanti in cisterna, conto terzi.
+Sorgente di **https://autotrasportibizzotto.it**, il sito di Autotrasporti Bizzotto Srl (Cassola, VI): trasporto di carburanti in cisterna, conto terzi, in ADR.
 
-Pubblicate qui solo per poterle guardare da qualsiasi dispositivo e mostrarle. **Non è il sito dell'azienda** e non è indicizzato (`robots.txt` + `noindex`).
+Sito statico pubblicato con GitHub Pages dal ramo `main`: ogni modifica unita su `main` è online in un paio di minuti.
 
-## Cosa c'è
+## Pagine
 
-- `mockup_sito/` — otto direzioni di homepage a confronto
-- `logo_prove/` — tre wordmark in tracciati, da confrontare col logo attuale
+| File | Pagina |
+|------|--------|
+| `index.html` | Home |
+| `trasporti.html` | Cosa si trasporta e come funziona una consegna |
+| `trasporto-adr.html` | Gli obblighi di legge di chi trasporta carburante |
+| `azienda.html` | L'azienda, i mezzi, una giornata di lavoro |
+| `contatti.html` | Modulo di richiesta |
+| `privacy.html`, `cookie.html` | Informative |
 
-## Stato
+Lo stile comune sta in `stile.css`, caricato dopo lo stile in testa a ogni pagina. I caratteri sono in `font/`, serviti dal dominio stesso. Le fotografie sono in `img/`, in WebP e JPG a più larghezze.
 
-- I moduli non inviano niente: mostrano quali dati si chiedono a chi richiede un trasporto.
-- Nessun numero di telefono, per scelta: il canale è il modulo verso `info@autotrasportibizzotto.it`.
-- Le fotografie definitive non ci sono ancora: al loro posto ci sono segnaposto che descrivono lo scatto necessario.
-- «Dal 1988» è da confermare con visura camerale prima della pubblicazione.
+## Il modulo
 
-## Quando si va online per davvero
+Il sito non pubblica telefono né email: le richieste passano solo dal modulo. Per attivarlo si incolla l'indirizzo Formspree nella riga indicata in cima a `modulo.js`. Finché resta il segnaposto il modulo non spedisce e lo dice a chi lo compila.
 
-Il dominio `autotrasportibizzotto.it` è registrato ma solo parcheggiato. Per puntarlo qui servono, nel DNS Aruba, quattro record A verso GitHub Pages (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) e un CNAME `www`, più un file `CNAME` in questo repository.
+## Motori di ricerca
 
-GitHub Pages non processa i moduli: servirà un servizio esterno tipo Formspree o Web3Forms perché le richieste arrivino via email.
+- `sitemap.xml` elenca le pagine da indicizzare: va aggiornata la data `lastmod` quando una pagina cambia.
+- Le pagine nuove si segnalano a Bing e agli altri motori IndexNow con la chiave in radice (file `.txt` di 32 caratteri).
+- `archivio/` contiene i materiali di lavoro (proposte grafiche, prove del marchio): è escluso dai motori con `robots.txt` e `noindex`.
